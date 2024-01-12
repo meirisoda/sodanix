@@ -8,11 +8,14 @@
       url = github:nix-community/home-manager;
       inputs.nixpkgs.follows = "nixpkgs"; # instead of using nixpkgs version in home-manager, use the one I definted above! aka. STABLE
     };
+    nixos-hardware = {
+      url = github:NixOS/nixos-hardware/master;
+    };
   };
 
   # build stuff! gives you what you want!! 
   # MAKE SURE TO CALL THE INPUTS HERE (below)
-  outputs = { nixpkgs, home-manager, ... }: let 
+  outputs = { nixpkgs, home-manager, nixos-hardware, ... }: let 
     config = { 
       allowUnfree = true; 
       permittedInsecurePackages = [ # FUCK OBSIDIAN
@@ -29,6 +32,7 @@
         };
       };
       modules = [
+        nixos-hardware.nixosModules.asus-zephyrus-ga402
         home-manager.nixosModules.default
         ./configuration.nix
       ];
