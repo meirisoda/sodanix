@@ -13,6 +13,9 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = linuxKernel.kernels.linux_6_7; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
+  # or remove to follow default kernel in 23.11 (because I am not in unstable)
+  # stay up to date on this
 
   networking.hostName = "sodanix"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -86,14 +89,7 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.soda = {
-    isNormalUser = true;
-    description = "soda";
-    extraGroups = [ "networkmanager" "wheel" ];
-    shell = pkgs.zsh;
-    packages = with pkgs; [
-      firefox
-      kate
-    ];
+    isNormalUser = true;boot.kernelPackages = pkgs.linuxPackages_latest;
   };
 
   nix = {
