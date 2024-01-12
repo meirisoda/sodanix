@@ -11,11 +11,14 @@
     nixos-hardware = {
       url = github:NixOS/nixos-hardware/master;
     };
+    nixpkgs-unstable = {
+      url = github:NixOS/nixpkgs/nixos-unstable;
+    };
   }; # MAKE SURE TO UPDATE THE FUCKING FLAKE.LOCK PLEASE
 
   # build stuff! gives you what you want!! 
   # MAKE SURE TO CALL THE INPUTS HERE (below)
-  outputs = { nixpkgs, home-manager, nixos-hardware, ... }: let 
+  outputs = { nixpkgs, nixpkgs-unstable, home-manager, nixos-hardware, ... }: let 
     config = { 
       allowUnfree = true; 
       permittedInsecurePackages = [ # FUCK OBSIDIAN
@@ -27,6 +30,10 @@
       system = "x86_64-linux";
       specialArgs = {
         pkgs = import nixpkgs { 
+          inherit config; # it's up there
+          system = "x86_64-linux"; 
+        };
+        unstablepkgs = import nixpkgs-unstable { 
           inherit config; # it's up there
           system = "x86_64-linux"; 
         };
