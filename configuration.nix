@@ -6,7 +6,7 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [ 
       ./hardware-configuration.nix
     ];
 
@@ -96,10 +96,13 @@
     ];
   };
 
-nix.settings.allowed-users = [
-  "@wheel"
-  "soda"
-];
+  nix = {
+    settings.allowed-users = [
+      "@wheel"
+      "soda"
+    ];
+    extraOptions = ''experimental-features = nix-command flakes'';
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
