@@ -29,7 +29,7 @@
         };
       };
       modules = [
-        homemanager.nixosModules.default
+        home-manager.nixosModules.default
         ./configuration.nix
       ];
     };
