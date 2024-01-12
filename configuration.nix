@@ -9,7 +9,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = unstablepkgs.linuxKernel.kernels.linux_zen; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
+  boot.kernelPackages = unstablepkgs.linuxPackages_zen; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
   # or remove to follow default kernel in 23.11 (because I am not in unstable)
   # stay up to date on this
 
