@@ -13,7 +13,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxKernel.kernels.linux_6_7; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
+  boot.kernelPackages = pkgs.linuxKernel.kernels.linux_6_5; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
   # or remove to follow default kernel in 23.11 (because I am not in unstable)
   # stay up to date on this
 
