@@ -85,7 +85,14 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.soda = {
-    isNormalUser = true;boot.kernelPackages = pkgs.linuxPackages_latest;
+    isNormalUser = true;
+    description = "soda";
+    extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
+    packages = with pkgs; [
+      firefox
+      kate
+    ];
   };
 
   nix = {
