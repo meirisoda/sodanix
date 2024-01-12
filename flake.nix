@@ -11,7 +11,7 @@
     nixos-hardware = {
       url = github:NixOS/nixos-hardware/master;
     };
-  };
+  }; # MAKE SURE TO UPDATE THE FUCKING FLAKE.LOCK PLEASE
 
   # build stuff! gives you what you want!! 
   # MAKE SURE TO CALL THE INPUTS HERE (below)
