@@ -23,11 +23,6 @@
 
   hardware.nvidia = {
     modesetting.enable = true;
-    # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
-    powerManagement.enable = false;
-    # Fine-grained power management. Turns off GPU when not in use.
-    # Experimental and only works on modern Nvidia GPUs (Turing or newer).
-    powerManagement.finegrained = false; 
     # Enable the Nvidia settings menu,
 	  # accessible via `nvidia-settings`.
     nvidiaSettings = true;
@@ -35,7 +30,7 @@
     prime = {
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:65:0:0";
-      reverseSync.enable = true;
+      reverseSync.enable = true; # SDDM breaks when HDMI plugged in prior to restart - make sure to plug in HDMI after boot
       # sync = {
       #  enable = true;
       #};
