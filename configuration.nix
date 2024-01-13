@@ -20,7 +20,7 @@
       # or remove to follow default kernel in 23.11 (because I am not in unstable)
       # stay up to date on this
     initrd.kernelModules = [ "nvidia" ];
-    extraModulePackages = [ cconfig.boot.kernelPackages.nvidiaPackages.stable ];
+    extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.stable ];
   };
 
   networking.hostName = "sodanix"; # Define your hostname
