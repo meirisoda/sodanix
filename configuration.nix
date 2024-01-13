@@ -159,6 +159,11 @@
             name = "powerlevel10k";
             src = "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
           }
+          {
+            file = "p10k.zsh";
+            name = "powerlevel10k-config";
+            src = ./.p10k.zsh;
+          }
         ];
         shellAliases = {
           ga = "git add";
