@@ -106,6 +106,7 @@
     openssh
     obs-studio
     obsidian
+    pfetch
     piper
     prismlauncher
     puredata
