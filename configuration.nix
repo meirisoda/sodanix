@@ -157,7 +157,7 @@
   # HOME MANAGER
   home-manager.users."soda" = {
     home = {
-      stateVersion = "23.11"
+      stateVersion = "23.11";
     };
     programs = {
       git = {
