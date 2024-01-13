@@ -156,6 +156,9 @@
 
   # HOME MANAGER
   home-manager.users."soda" = {
+    home = {
+      stateVersion = "23.11"
+    };
     programs = {
       git = {
         enable = true;
@@ -188,6 +191,24 @@
             src = "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
           }
         ];
+        shellAliases = {
+          ga = "git add";
+          gac = "git commit -am";
+          gp = "git push";
+          gpl = "git pull";
+          rssound = "systemctl --user restart pipewire";
+        };
+      };
+      kitty = {
+        enable = true;
+        settings = {
+          background_opacity = "0.5";
+          background_blur = 5;
+        };
+      };
+      fzf = {
+        enable = true;
+        enableBashIntegration = true;
       };
     };
   };
