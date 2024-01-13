@@ -34,7 +34,7 @@
     prime = {
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:65:0:0";
-      reverseSync = {
+      sync = {
         enable = true;
       };
       offload = {
