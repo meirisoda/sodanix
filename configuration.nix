@@ -159,11 +159,6 @@
             name = "powerlevel10k";
             src = "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
           }
-          {
-            file = "p10k.zsh";
-            name = "powerlevel10k-config";
-            src = "./Configurations/p10k.zsh";
-          }
         ];
         shellAliases = {
           ga = "git add";
@@ -177,7 +172,7 @@
         enable = true;
         settings = {
           background_opacity = "0.5";
-          background_blur = 5;
+          background_blur = 2;
         };
       };
       fzf = {
