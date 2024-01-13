@@ -72,12 +72,6 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -158,6 +152,44 @@
   # ZSH fucking
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+
+  # HOME MANAGER
+  home-manager.users.${username} = {
+    programs = {
+      git = {
+        enable = true;
+        userName = "meirisoda";
+        userEmail = "appleblossom2001@gmail.com";
+        lfs = {
+          enable = true;
+        };
+      };
+      zsh = {
+        initExtraBeforeCompInit = ''
+          P10K_INSTANT_PROMPT="$XDG_CACHE_HOME/p10k-instant-prompt-''${(%):-%n}.zsh"
+          [[ ! -r "$P10K_INSTANT_PROMPT" ]] || source "$P10K_INSTANT_PROMPT"
+        '';
+        enable = true;
+        enableAutosuggestions = true;
+        syntaxHighlighting.enable = true;
+        autocd = true;
+        dirHashes = {
+          docs  = "$HOME/Documents";
+          pr  = "$HOME/Documents/projects";
+        };
+        oh-my-zsh = {
+          enable = true;
+        };
+        plugins = [
+          {
+            file = "powerlevel10k.zsh-theme";
+            name = "powerlevel10k";
+            src = "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
+          }
+        ];
+      };
+    };
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
