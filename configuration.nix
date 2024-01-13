@@ -109,7 +109,6 @@
     prismlauncher
     puredata
     steam
-    sunvox
     supergfxctl
     spotify
     tidal-hifi
