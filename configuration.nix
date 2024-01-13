@@ -154,7 +154,7 @@
   users.defaultUserShell = pkgs.zsh;
 
   # HOME MANAGER
-  home-manager.users.${username} = {
+  home-manager.users.soda = {
     programs = {
       git = {
         enable = true;
