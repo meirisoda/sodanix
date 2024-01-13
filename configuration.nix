@@ -93,6 +93,7 @@
     barrier
     bitwarden
     blender
+    discord
     github-desktop
     google-chrome
     gparted
@@ -171,7 +172,6 @@
         enable = true;
         settings = {
           background_opacity = "0.75";
-          background_blur = 2;
         };
       };
       fzf = {
