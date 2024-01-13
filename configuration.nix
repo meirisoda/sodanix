@@ -89,6 +89,7 @@
     barrier
     bitwarden
     blender
+    btop
     cudatoolkit
     discord
     github-desktop
