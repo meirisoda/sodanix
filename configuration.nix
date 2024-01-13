@@ -4,6 +4,8 @@
   imports =
     [ 
       ./hardware-configuration.nix
+      ./configs/yubikey.nix
+      ./configs/ssh.nix
     ];
 
   # Bootloader.
@@ -48,7 +50,6 @@
 
   #Services
   services.printing.enable = true;
-  services.openssh.enable = true;
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
@@ -63,6 +64,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
+  
 
   users.users.soda = {
     isNormalUser = true;
@@ -86,8 +88,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
     asusctl
     barrier
@@ -171,8 +171,7 @@
       kitty = {
         enable = true;
         settings = {
-          background_opacity = "0.75";
-          background_blur = 1;
+          background_opacity = "0.8";
         };
       };
       fzf = {
