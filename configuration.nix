@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./home-manager.nix
-      ./configs/plasma.nix
+      ./configs/x11.nix
       ./configs/yubikey.nix
       ./configs/ssh.nix
     ];
@@ -36,17 +36,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
-
-  #Services
-  services.printing.enable = true;
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
@@ -98,6 +87,7 @@
     kitty
     libreoffice
     localsend
+    lshw
     lutris
     neofetch
     openssh
@@ -123,10 +113,6 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
-  # HOME MANAGER
-
-
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.11";
+  system.stateVersion = "23.11"; # defines the version of NixOS I am on
 
 }
