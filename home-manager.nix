@@ -45,8 +45,8 @@
       kitty = {
         enable = true;
         settings = {
-          background_opacity = "0.75";
-          background_blur = 8;
+          background_opacity = "0.5";
+          background_blur = 5;
         };
       };
       fzf = {
