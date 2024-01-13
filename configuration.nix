@@ -73,6 +73,11 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config..packageOverrides = self : rec {
+    blender = self.blender.override {
+      cudaSupport = true;
+    };
+  };
 
   environment.systemPackages = with pkgs; [
     asusctl
