@@ -71,13 +71,12 @@
     extraOptions = ''experimental-features = nix-command flakes'';
   };
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.packageOverrides = self : rec {
-    blender = self.blender.override {
+    # Allow unfree packages
+    nixpkgs.config = {
+      allowUnfree = true;
       cudaSupport = true;
     };
-  };
+    
 
   environment.systemPackages = with pkgs; [
     asusctl
