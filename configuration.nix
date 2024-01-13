@@ -161,7 +161,7 @@
           }
         ];
         shellAliases = {
-          ga = "git add";
+          ga = "git add *";
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
