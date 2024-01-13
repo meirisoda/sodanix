@@ -94,11 +94,11 @@
     "sodasddm": {
       "flake": false,
       "locked": {
-        "lastModified": 1705147661,
-        "narHash": "sha256-yB8nKHE/JI2hW/vbdWOtuCUqVBklJHcVCQfTApQxam4=",
+        "lastModified": 1705148187,
+        "narHash": "sha256-XokdSOQBgFAiB+7RI3tD8xuT1+lwXutSYcJ/SgbEgjQ=",
         "owner": "meirisoda",
         "repo": "kde-plasma-sodasddm",
-        "rev": "4520a01caf4fb66bd954e7d28eeeb12d0ef42a95",
+        "rev": "10bec5bcff7ba1e0c817aa73168f9a2b55e03731",
         "type": "github"
       },
       "original": {
