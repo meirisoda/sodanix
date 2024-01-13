@@ -31,10 +31,10 @@
 	  # accessible via `nvidia-settings`.
     nvidiaSettings = true;
     prime = {
+      nvidiaBusId = "PCI:01:00.0";
+      amdgpuBusId = "PCI:65:00.0";
       offload = {
         enable =  true;
-        nvidiaBusId = "PCI:01:00.0";
-        amdgpuBusId = "PCI:65:00.0";
         enableOffloadCmd = true; # Provides `nvidia-offload` command.
       };
     };
