@@ -44,7 +44,7 @@
         # enableOffloadCmd = true; # Provides `nvidia-offload` command.
       };
     };
-    package = config.boot.kernelPackages.nvidiaPackages.production;
+    package = cconfig.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   hardware.opengl = with pkgs; {
