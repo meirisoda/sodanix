@@ -87,7 +87,24 @@
         "home-manager": "home-manager",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-stable": "nixpkgs-stable"
+        "nixpkgs-stable": "nixpkgs-stable",
+        "sodasddm": "sodasddm"
+      }
+    },
+    "sodasddm": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1705147661,
+        "narHash": "sha256-yB8nKHE/JI2hW/vbdWOtuCUqVBklJHcVCQfTApQxam4=",
+        "owner": "meirisoda",
+        "repo": "kde-plasma-sodasddm",
+        "rev": "4520a01caf4fb66bd954e7d28eeeb12d0ef42a95",
+        "type": "github"
+      },
+      "original": {
+        "owner": "meirisoda",
+        "repo": "kde-plasma-sodasddm",
+        "type": "github"
       }
     }
   },

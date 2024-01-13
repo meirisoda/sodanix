@@ -16,6 +16,7 @@
     };
     sodasddm = {
       url = github:meirisoda/kde-plasma-sodasddm;
+      flake = false;
     };
   }; # MAKE SURE TO UPDATE THE FUCKING FLAKE.LOCK PLEASE
 
