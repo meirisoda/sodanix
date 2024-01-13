@@ -79,6 +79,7 @@
     barrier
     bitwarden
     blender
+    cudatoolkit
     discord
     github-desktop
     google-chrome
