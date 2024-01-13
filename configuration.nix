@@ -1,4 +1,4 @@
-{ config, pkgs, unstablepkgs, ... }:
+{ config, pkgs, unstablepkgs, username, ... }:
 
 {
   imports =
@@ -121,6 +121,7 @@
     neofetch
     openssh
     obs-studio
+    obsidian
     piper
     prismlauncher
     puredata
@@ -154,7 +155,7 @@
   users.defaultUserShell = pkgs.zsh;
 
   # HOME MANAGER
-  home-manager.users.soda = {
+  home-manager.users."soda" = {
     programs = {
       git = {
         enable = true;
