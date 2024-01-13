@@ -30,12 +30,12 @@
     prime = {
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:65:0:0";
-      # reverseSync.enable = true; # SDDM breaks when HDMI plugged in prior to restart - make sure to plug in HDMI after boot
-      # sync = {
-      #  enable = true;
-      #};
+      # reverseSync.enable = true; 
+      sync = {
+       enable = true;
+      };
       offload = {
-        enable =  true;
+        # enable =  true;
         enableOffloadCmd = true; # Provides `nvidia-offload` command.
       };
     };
