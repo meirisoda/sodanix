@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, username, ... }:
+{ config, pkgs, stablepkgs, ... }:
 
 {
   imports =
@@ -13,22 +13,13 @@
   # or remove to follow default kernel in 23.11 (because I am not in unstable)
   # stay up to date on this
 
-  networking.hostName = "sodanix"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  networking.hostName = "sodanix"; # Define your hostname
 
   # Enable networking
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
   time.timeZone = "America/New_York";
-
-  # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
-
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";
     LC_IDENTIFICATION = "en_US.UTF-8";
@@ -47,9 +38,7 @@
   # Enable the KDE Plasma Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
-
-  # Wayland
-  services.xserver.displayManager.defaultSession = "plasmawayland";
+  services.xserver.displayManager.defaultSession = "plasmawayland"; # Wayland
 
   # Configure keymap in X11
   services.xserver = {
@@ -57,8 +46,9 @@
     xkbVariant = "";
   };
 
-  # Enable CUPS to print documents.
+  #Services
   services.printing.enable = true;
+  services.openssh.enable = true;
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
@@ -74,10 +64,6 @@
     pulse.enable = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.soda = {
     isNormalUser = true;
     description = "soda";
@@ -131,22 +117,10 @@
     yubico-pam
     zoom-us
     zsh
+    zsh-powerlevel10k
   ];
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
-
-  # ZSH fucking
+  # zsh
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
@@ -165,14 +139,15 @@
         };
       };
       zsh = {
+        initExtraBeforeCompInit = ''
+          # p10k instant prompt
+          P10K_INSTANT_PROMPT="$XDG_CACHE_HOME/p10k-instant-prompt-''${(%):-%n}.zsh"
+          [[ ! -r "$P10K_INSTANT_PROMPT" ]] || source "$P10K_INSTANT_PROMPT"
+        '';
         enable = true;
         enableAutosuggestions = true;
         syntaxHighlighting.enable = true;
         autocd = true;
-        dirHashes = {
-          docs  = "$HOME/Documents";
-          pr  = "$HOME/Documents/projects";
-        };
         oh-my-zsh = {
           enable = true;
         };
@@ -181,6 +156,11 @@
             file = "powerlevel10k.zsh-theme";
             name = "powerlevel10k";
             src = "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
+          }
+          {
+            file = "p10k.zsh";
+            name = "powerlevel10k-config";
+            src = "./Configurations/p10k.zsh";
           }
         ];
         shellAliases = {
@@ -205,18 +185,8 @@
     };
   };
 
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
 
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.11"; # Did you read the comment?
+  system.stateVersion = "23.11";
 
 }
