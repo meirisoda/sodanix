@@ -11,11 +11,17 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = stablepkgs.linuxPackages_zen; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
-  # or remove to follow default kernel in 23.11 (because I am not in unstable)
-  # stay up to date on this
+  boot = {
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+    kernelPackages = stablepkgs.linuxPackages_zen; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
+      # or remove to follow default kernel in 23.11 (because I am not in unstable)
+      # stay up to date on this
+    initrd.kernelModules = [ "nvidia" ];
+    extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
+  };
 
   networking.hostName = "sodanix"; # Define your hostname
 
