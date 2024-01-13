@@ -24,14 +24,14 @@
         };
         plugins = [
           {
+            file = "powerlevel10k.zsh-theme";
             name = "powerlevel10k";
-            file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-            src = pkgs.zsh-powerlevel10k;
+            src = "${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k";
           }
           {
             name = "powerlevel10k-config";
             file = "p10k.zsh";
-            src = ./configs;
+            src = ./p10k;
           }
         ];
         shellAliases = {
@@ -45,7 +45,7 @@
       kitty = {
         enable = true;
         settings = {
-          background_opacity = "0.8";
+          background_opacity = "0.75";
         };
       };
       fzf = {
