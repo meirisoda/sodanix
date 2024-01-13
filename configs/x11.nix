@@ -12,6 +12,7 @@
       layout = "us";
       xkbVariant = "";
       videoDrivers = [
+        "amdgpu"
         "nvidia"
       ];
     };
