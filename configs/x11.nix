@@ -36,7 +36,7 @@
       };
       offload = {
         # enable =  true;
-        enableOffloadCmd = true; # Provides `nvidia-offload` command.
+        # enableOffloadCmd = true; # Provides `nvidia-offload` command.
       };
     };
     package = config.boot.kernelPackages.nvidiaPackages.stable;
