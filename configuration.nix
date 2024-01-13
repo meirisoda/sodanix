@@ -162,7 +162,7 @@
           {
             file = "p10k.zsh";
             name = "powerlevel10k-config";
-            src = ./.p10k.zsh;
+            src = ./configs/.p10k.zsh;
           }
         ];
         shellAliases = {
