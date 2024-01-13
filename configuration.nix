@@ -5,6 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./home-manager.nix
+      ./configs/plasma.nix
       ./configs/yubikey.nix
       ./configs/ssh.nix
     ];
@@ -37,11 +38,6 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
-  services.xserver.displayManager.defaultSession = "plasmawayland"; # Wayland
 
   # Configure keymap in X11
   services.xserver = {
