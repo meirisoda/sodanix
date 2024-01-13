@@ -6,7 +6,7 @@
     };
     home-manager = {
       url = github:nix-community/home-manager;
-      inputs.nixpkgs.follows = "nixpkgs"; # instead of using nixpkgs version in home-manager, use the one I definted above! aka. STABLE
+      # instead of using nixpkgs version in home-manager, use the one I defined above! aka. STABLE
     };
     nixos-hardware = {
       url = github:NixOS/nixos-hardware/master;
