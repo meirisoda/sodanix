@@ -39,7 +39,7 @@
         };
       };
       modules = [
-        nixos-hardware.nixosModules.asus-zephyrus-ga402
+        # nixos-hardware.nixosModules.asus-zephyrus-ga402
         home-manager.nixosModules.default
         ./configuration.nix
       ];
