@@ -96,6 +96,7 @@
     github-desktop
     google-chrome
     gparted
+    figma-linux
     kitty
     libreoffice
     localsend
@@ -108,6 +109,7 @@
     prismlauncher
     puredata
     steam
+    sunvox
     supergfxctl
     spotify
     tidal-hifi
