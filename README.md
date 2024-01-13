@@ -1,2 +1,2 @@
 # sodanix
-My nixOS configuration
+soda's nixOS configuration
