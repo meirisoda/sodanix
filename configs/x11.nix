@@ -30,13 +30,24 @@
     # Enable the Nvidia settings menu,
 	  # accessible via `nvidia-settings`.
     nvidiaSettings = true;
+    prime = {
+      offload = {
+        enable =  true;
+        nvidiaBusId = "PCI:01:00.0";
+        amdgpuBusId = "PCI:65:00.0";
+        enableOffloadCmd = lib.mkIf config.hardware.nvidia.prime.offload.enable true; # Provides `nvidia-offload` command.
+      };
+    };
     package = config.boot.kernelPackages.nvidiaPackages.production;
   };
 
-  hardware.opengl = {
+  hardware.opengl = with pkgs; {
     enable = true;
     driSupport = true;
     driSupport32Bit = true;
+    extraPackages = [
+      vaapiVdpau
+    ];
   };
 
   fonts = {
