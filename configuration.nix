@@ -1,4 +1,4 @@
-{ config, pkgs, unstablepkgs, username, ... }:
+{ config, pkgs, stablepkgs, username, ... }:
 
 {
   imports =
@@ -9,7 +9,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = unstablepkgs.linuxPackages_zen; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
+  boot.kernelPackages = stablepkgs.linuxPackages_zen; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
   # or remove to follow default kernel in 23.11 (because I am not in unstable)
   # stay up to date on this
 
@@ -107,10 +107,6 @@
     barrier
     bitwarden
     blender
-    btop
-    discord
-    flameshot
-    git
     github-desktop
     google-chrome
     gparted
@@ -157,7 +153,7 @@
   # HOME MANAGER
   home-manager.users."soda" = {
     home = {
-      stateVersion = "23.11";
+      stateVersion = "24.05";
     };
     programs = {
       git = {

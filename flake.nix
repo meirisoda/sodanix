@@ -2,7 +2,7 @@
   # Get the repos for stuff you want aka maybe nur later? 
   inputs = {
     nixpkgs = {
-      url = github:NixOS/nixpkgs/nixos-23.11;
+      url = github:NixOS/nixpkgs/nixos-unstable;
     };
     home-manager = {
       url = github:nix-community/home-manager;
@@ -11,14 +11,14 @@
     nixos-hardware = {
       url = github:NixOS/nixos-hardware/master;
     };
-    nixpkgs-unstable = {
-      url = github:NixOS/nixpkgs/nixos-unstable;
+    nixpkgs-stable = {
+      url = github:NixOS/nixpkgs/nixos-23.11;
     };
   }; # MAKE SURE TO UPDATE THE FUCKING FLAKE.LOCK PLEASE
 
   # build stuff! gives you what you want!! 
   # MAKE SURE TO CALL THE INPUTS HERE (below)
-  outputs = { nixpkgs, nixpkgs-unstable, home-manager, nixos-hardware, ... }: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, ... }: let 
     config = { 
       allowUnfree = true; 
       permittedInsecurePackages = [ # FUCK OBSIDIAN
@@ -33,7 +33,7 @@
           inherit config; # it's up there
           system = "x86_64-linux"; 
         };
-        unstablepkgs = import nixpkgs-unstable { 
+        stablepkgs = import nixpkgs-stable { 
           inherit config; # it's up there
           system = "x86_64-linux"; 
         };
