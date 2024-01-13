@@ -1,0 +1,2 @@
+# sodanix
+My nixOS configuration
