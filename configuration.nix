@@ -95,6 +95,7 @@
     google-chrome
     gparted
     figma-linux
+    flameshot
     kitty
     libreoffice
     localsend
