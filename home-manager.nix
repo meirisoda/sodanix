@@ -39,9 +39,12 @@
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
-          upg = "sudo git stash; git stash clear; git pull; nixos-rebuild switch --flake";
           nvo = "nvidia-offload";
           rssound = "systemctl --user restart pipewire";
+          flakeupg = "nix flake upgrade";
+        };
+        functions = {
+          gacp = "git add -A && git commit -am $argv; git push";
         };
       };
       kitty = {
