@@ -6,9 +6,10 @@
       ./x11/plasma.nix
     ];
   services = {
+    ratbagd.enable = true; #mouse
     xserver = {
       enable = true;
-      libinput = {
+      libinput = { # mouse
         enable = true;
         mouse = {
           scrollMethod = "button";
