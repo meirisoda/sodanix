@@ -8,6 +8,7 @@
       ./configs/x11.nix
       ./configs/yubikey.nix
       ./configs/ssh.nix
+      ./configs/packages.nix
     ];
 
   # Bootloader.
@@ -83,46 +84,6 @@
       cudaSupport = true;
     };
     
-
-  environment.systemPackages = with pkgs; [
-    asusctl
-    barrier
-    bitwarden
-    blender
-    btop
-    cudatoolkit
-    discord
-    github-desktop
-    google-chrome
-    gparted
-    figma-linux
-    flameshot
-    kitty
-    libreoffice
-    localsend
-    lshw
-    lutris
-    neofetch
-    openssh
-    obs-studio
-    obsidian
-    pdfsam-basic
-    pfetch
-    piper
-    prismlauncher
-    puredata
-    steam
-    supergfxctl
-    spotify
-    tidal-hifi
-    vscodium
-    wget
-    xorg.xrandr
-    yubico-pam
-    zoom-us
-    zsh
-    zsh-powerlevel10k
-  ];
 
   # zsh
   programs.zsh.enable = true;
