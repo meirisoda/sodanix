@@ -8,7 +8,13 @@
   services = {
     xserver = {
       enable = true;
-      libinput.enable = true;
+      libinput = {
+        enable = true;
+        mouse = {
+          scrollMethod = "button";
+          scrollButton = 3;
+        };
+      };
       layout = "us";
       xkbVariant = "";
       videoDrivers = [
