@@ -37,14 +37,12 @@
         shellAliases = {
           ga = "git add *";
           gac = "git commit -am";
+          gacp = "git add -A && git commit -am $argv; git push";
           gp = "git push";
           gpl = "git pull";
           nvo = "nvidia-offload";
           rssound = "systemctl --user restart pipewire";
           flakeupg = "nix flake upgrade";
-        };
-        functions = {
-          gacp = "git add -A && git commit -am $argv; git push";
         };
       };
       kitty = {
