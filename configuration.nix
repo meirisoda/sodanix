@@ -106,6 +106,7 @@
     openssh
     obs-studio
     obsidian
+    pdfsam-basic
     pfetch
     piper
     prismlauncher
