@@ -4,7 +4,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      ./home-manager.nix
+      ./configs/home-manager.nix
       ./configs/x11.nix
       ./configs/yubikey.nix
       ./configs/ssh.nix
