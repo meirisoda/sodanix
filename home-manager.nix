@@ -39,7 +39,6 @@
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
-          sgpl = "sudo git pull";
           upg = "sudo git stash; git stash clear; git pull; nixos-rebuild switch --flake";
           nvo = "nvidia-offload";
           rssound = "systemctl --user restart pipewire";
