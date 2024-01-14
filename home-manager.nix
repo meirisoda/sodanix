@@ -39,6 +39,8 @@
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
+          upg = "sudo bash -c \"cd /etc/nixos; git stash; git stash clear; git pull; nixos-rebuild switch --flake \\\".#${host-name}\\\"\"";
+          nvo = "nvidia-offload";
           rssound = "systemctl --user restart pipewire";
         };
       };
