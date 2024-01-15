@@ -38,14 +38,14 @@
           sodanix = "cd /home/soda/Documents/sodanix";
           cdnixos = "cd /etc/nixos";
           out = "../..";
-          flakeupdate = "nix flake lock --update-input";
+          flakeupg = "nix flake upgrade";
+          flakeupd = "nix flake lock --update-input";
           ga = "git add *";
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
           nvo = "nvidia-offload";
           rssound = "systemctl --user restart pipewire";
-          flakeupg = "nix flake upgrade";
         };
       };
       kitty = {
