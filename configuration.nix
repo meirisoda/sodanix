@@ -10,6 +10,7 @@
       ./configuration/packages.nix
       ./configuration/x11.nix
       ./configuration/ssh.nix
+      ./configuration/virtualisation.nix
     ];
 
   # Bootloader.
