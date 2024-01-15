@@ -30,6 +30,7 @@
     supergfxctl
     virt-manager
     qbittorrent
+    qemu
     "${watershot}"
 
     # programs
