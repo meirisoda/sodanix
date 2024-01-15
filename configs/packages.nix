@@ -19,6 +19,7 @@
     gparted
     flameshot
     lshw
+    mpv
     neofetch
     pfetch
     piper
