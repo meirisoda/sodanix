@@ -5,10 +5,10 @@
     [ 
       ./hardware-configuration.nix
       ./configs/home-manager.nix
+      ./configs/packages.nix
       ./configs/x11.nix
       ./configs/yubikey.nix
       ./configs/ssh.nix
-      ./configs/packages.nix
     ];
 
   # Bootloader.
@@ -66,7 +66,7 @@
     shell = pkgs.zsh;
     packages = with pkgs; [
       firefox
-      kate
+      vscodium
     ];
   };
 
@@ -78,11 +78,11 @@
     extraOptions = ''experimental-features = nix-command flakes'';
   };
 
-    # Allow unfree packages
-    nixpkgs.config = {
-      allowUnfree = true;
-      cudaSupport = true;
-    };
+  # Allow unfree packages
+  nixpkgs.config = {
+    allowUnfree = true;
+    cudaSupport = true;
+  };
     
 
   # zsh

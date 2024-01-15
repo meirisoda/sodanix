@@ -1,12 +1,10 @@
 {
-  # Get the repos for stuff you want aka maybe nur later? 
   inputs = {
     nixpkgs = {
       url = github:NixOS/nixpkgs/nixos-unstable;
     };
     home-manager = {
       url = github:nix-community/home-manager;
-      # instead of using nixpkgs version in home-manager, use the one I defined above! aka. STABLE
     };
     nixos-hardware = {
       url = github:NixOS/nixos-hardware/master;
@@ -18,14 +16,12 @@
       url = github:meirisoda/kde-plasma-sodasddm;
       flake = false;
     };
-  }; # MAKE SURE TO UPDATE THE FUCKING FLAKE.LOCK PLEASE
+  }; 
 
-  # build stuff! gives you what you want!! 
-  # MAKE SURE TO CALL THE INPUTS HERE (below)
   outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, sodasddm, ... }: let 
     config = { 
       allowUnfree = true; 
-      permittedInsecurePackages = [ # FUCK OBSIDIAN
+      permittedInsecurePackages = [ 
         "electron-25.9.0"
       ];
     };

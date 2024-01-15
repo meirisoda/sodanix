@@ -3,16 +3,19 @@
 {
   environment.systemPackages = with pkgs; [
     # system 
+    curl
     openssh
     wget
     xorg.xrandr
     yubico-pam
+    # developlment
+    cmake
+    cudatoolkit
     zsh
     zsh-powerlevel10k
     # utilities
     asusctl
     barrier
-    cudatoolkit
     gparted
     flameshot
     lshw
@@ -38,6 +41,7 @@
     prismlauncher
     puredata
     steam
+    (pkgs.callPackage ../programs/sunvox.nix {})
     spotify
     tidal-hifi
     vscodium
