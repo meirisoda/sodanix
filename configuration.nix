@@ -74,6 +74,10 @@
       "soda"
     ];
     extraOptions = ''experimental-features = nix-command flakes'';
+    gc = {
+      automatic = true; 
+      dates = "weekly";
+    };
   };
     
 
