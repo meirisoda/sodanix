@@ -35,6 +35,7 @@
           }
         ];
         shellAliases = {
+          sodanix = "cd /home/soda/Documents/sodanix";
           ga = "git add *";
           gac = "git commit -am";
           gp = "git push";

@@ -24,6 +24,7 @@
     pfetch
     piper
     supergfxctl
+    "${watershot}"
     # programs
     bitwarden
     blender

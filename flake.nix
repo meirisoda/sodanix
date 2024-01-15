@@ -16,9 +16,12 @@
       url = github:meirisoda/kde-plasma-sodasddm;
       flake = false;
     };
+    watershot = {
+      url = github:Kirottu/watershot;
+    };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, sodasddm, ... }: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, sodasddm, watershot,... }: let 
     config = { 
       allowUnfree = true; 
       permittedInsecurePackages = [ 
