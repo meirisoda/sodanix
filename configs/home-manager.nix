@@ -36,6 +36,9 @@
         ];
         shellAliases = {
           sodanix = "cd /home/soda/Documents/sodanix";
+          cdnixos = "cd /etc/nixos";
+          out = "../..";
+          flakeupdate = "nix flake lock --update-input";
           ga = "git add *";
           gac = "git commit -am";
           gp = "git push";
