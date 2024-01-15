@@ -6,10 +6,10 @@
       ./configuration/hardware/hardware-configuration.nix
       ./configuration/hardware/yubikey.nix
       ./configuration/hardware/bluetooth.nix
+      ./configuration/network/ssh.nix
       ./configuration/home-manager.nix
       ./configuration/packages.nix
       ./configuration/x11.nix
-      ./configuration/ssh.nix
       ./configuration/virtualisation.nix
     ];
 
