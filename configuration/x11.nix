@@ -9,6 +9,16 @@
     ratbagd.enable = true; #mouse
     xserver = {
       enable = true;
+      displayManager = {
+        sddm = {
+          enable = true;
+          wayland.enable = true;
+        };
+      };
+      videoDrivers = [
+        "amdgpu"
+        "nvidia"
+      ];
       libinput = { # mouse
         enable = true;
         mouse = {
@@ -18,10 +28,6 @@
       };
       layout = "us";
       xkbVariant = "";
-      videoDrivers = [
-        "amdgpu"
-        "nvidia"
-      ];
     };
     printing = {
       enable = true;
