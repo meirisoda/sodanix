@@ -8,7 +8,7 @@
     wget
     xorg.xrandr
     yubico-pam
-    
+
     # developlment
     cmake
     cudatoolkit
@@ -20,6 +20,7 @@
     barrier
     gparted
     grim
+    ffmpeg
     flameshot
     lshw
     mpv
@@ -27,12 +28,16 @@
     pfetch
     piper
     supergfxctl
+    virt-manager
+    qbittorrent
     "${watershot}"
 
     # programs
+    audacity
     bitwarden
     blender
     btop
+    calibre
     discord
     github-desktop
     google-chrome
@@ -53,5 +58,11 @@
     vscodium
     zoom-us
   ];
+
+  # Allow unfree packages
+  nixpkgs.config = {
+    allowUnfree = true;
+    cudaSupport = true;
+  };
 
 }

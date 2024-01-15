@@ -3,12 +3,13 @@
 {
   imports =
     [ 
-      ./hardware-configuration.nix
-      ./configs/home-manager.nix
-      ./configs/packages.nix
-      ./configs/x11.nix
-      ./configs/yubikey.nix
-      ./configs/ssh.nix
+      ./configuration/hardware/hardware-configuration.nix
+      ./configuration/hardware/yubikey.nix
+      ./configuration/hardware/bluetooth.nix
+      ./configuration/home-manager.nix
+      ./configuration/packages.nix
+      ./configuration/x11.nix
+      ./configuration/ssh.nix
     ];
 
   # Bootloader.
@@ -43,10 +44,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-
-  # Enable bluetooth
-  hardware.bluetooth.enable = true;
-
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -76,12 +73,6 @@
       "soda"
     ];
     extraOptions = ''experimental-features = nix-command flakes'';
-  };
-
-  # Allow unfree packages
-  nixpkgs.config = {
-    allowUnfree = true;
-    cudaSupport = true;
   };
     
 
