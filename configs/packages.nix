@@ -8,15 +8,18 @@
     wget
     xorg.xrandr
     yubico-pam
+    
     # developlment
     cmake
     cudatoolkit
     zsh
     zsh-powerlevel10k
+    
     # utilities
     asusctl
     barrier
     gparted
+    grim
     flameshot
     lshw
     mpv
@@ -25,6 +28,7 @@
     piper
     supergfxctl
     "${watershot}"
+
     # programs
     bitwarden
     blender

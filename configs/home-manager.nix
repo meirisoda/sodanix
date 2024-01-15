@@ -73,10 +73,10 @@
           color14 = "#dbf4ff";
           color7 = "#ededec";
           color15 = "#ffffff";
-          active_tab_foreground = "#ffffff";
-          active_tab_background = "#535353";
-          inactive_tab_foreground = "#ffffff";
-          inactive_tab_background = "#353535";
+          # active_tab_foreground = "#ffffff";
+          # active_tab_background = "#535353";
+          # inactive_tab_foreground = "#ffffff";
+          # inactive_tab_background = "#353535";
         };
       };
       fzf = {
