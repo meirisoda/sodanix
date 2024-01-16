@@ -33,6 +33,7 @@
     qbittorrent
     qemu
     "${watershot}"
+    wineWowPackages.stable
 
     # programs
     audacity
