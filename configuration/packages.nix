@@ -22,6 +22,7 @@
     grim
     ffmpeg
     flameshot
+    kime
     lshw
     mpv
     neofetch
