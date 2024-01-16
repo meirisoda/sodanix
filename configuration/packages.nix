@@ -25,6 +25,7 @@
     lshw
     mpv
     neofetch
+    noisetorch
     pfetch
     piper
     supergfxctl
@@ -66,4 +67,9 @@
     cudaSupport = true;
   };
 
+  programs = {
+    zsh.enable = true;
+    noisetorch.enable = true; 
+  };
+  users.defaultUserShell = pkgs.zsh;
 }

@@ -79,11 +79,7 @@
       dates = "weekly";
     };
   };
-    
-
-  # zsh
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
+  
 
   system.stateVersion = "23.11"; # defines the version of NixOS I am on
 
