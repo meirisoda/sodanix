@@ -19,9 +19,7 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = stablepkgs.linuxPackages_6_7; # NEED TO MANUALLY UPDATE THE KERNEL DON'T FORGET ABOUT THIS PLEASE 
-      # or remove to follow default kernel in 23.11 (because I am not in unstable)
-      # stay up to date on this
+    kernelPackages = stablepkgs.linuxPackages_6_7; # manually update kernel // run uname -a to see current version
     initrd.kernelModules = [ "nvidia" ];
     extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.stable ];
   };
