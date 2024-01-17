@@ -9,7 +9,7 @@
       ./configuration/network/ssh.nix
       ./configuration/home-manager.nix
       ./configuration/packages.nix
-      ./configuration/modules/x11.nix
+      ./configuration/x11.nix
       ./configuration/virtualisation.nix
     ];
 
