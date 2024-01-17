@@ -11,6 +11,7 @@
       ./configuration/packages.nix
       ./configuration/x11.nix
       ./configuration/virtualisation.nix
+      ./programs/kime.nix
     ];
 
   # Bootloader.
@@ -47,7 +48,7 @@
     };
     inputMethod = {
       enabled = "kime";
-      kime = {
+      kime.config = {
         daemonModules = [
           "Wayland"
           "Indicator"
@@ -56,6 +57,7 @@
       };
     };
   }; 
+  
 
   # Enable sound with pipewire.
   sound.enable = true;
