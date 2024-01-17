@@ -1,4 +1,5 @@
-with import <nixpkgs> { };
+{ nixpkgs,... }:
+
 let qt5Version = qt5.qtbase.version;
 in stdenv.mkDerivation rec {
   pname = "kime";

@@ -47,7 +47,7 @@
     };
     inputMethod = {
       enabled = "kime";
-      kime.config = {
+      kime = {
         daemonModules = [
           "Wayland"
           "Indicator"
