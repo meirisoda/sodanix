@@ -83,20 +83,22 @@
         enable = true;
         enableBashIntegration = true;
       };
+    };
+    services = {
       dunst = {
-      enable = true;
-      settings = {
-        global = {
-          origin = "bottom-right";
-          font = "Droid Sans 9";
-        };
-        urgency_normal = {
-          background = "#A0B9D5";
-          foreground = "#000000";
-          timeout = 5;
+        enable = true;
+        settings = {
+          global = {
+            origin = "bottom-right";
+            font = "Droid Sans 9";
+          };
+          urgency_normal = {
+            background = "#A0B9D5";
+            foreground = "#000000";
+            timeout = 5;
+          };
         };
       };
-    };
     };
   };
 }
