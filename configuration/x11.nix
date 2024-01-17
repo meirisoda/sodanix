@@ -28,10 +28,22 @@
       };
       layout = "us";
       xkbVariant = "";
-    };
+    };  
     asusd = {
       enable = true; 
       enableUserService = true; 
+    };
+    dunst = {
+      enable = true;
+      global = {
+        origin = "bottom-right";
+        font = "Droid Sans 9";
+      };
+      urgency_normal = {
+        background = "#A0B9D5";
+        foreground = "#000000";
+        timeout = 5;
+      };
     };
     printing = {
       enable = true;

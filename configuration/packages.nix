@@ -18,6 +18,7 @@
     # utilities
     asusctl
     barrier
+    dunst
     gparted
     grim
     ffmpeg
@@ -55,7 +56,6 @@
     pdfsam-basic
     prismlauncher
     puredata
-    sonic-pi
     steam
     (pkgs.callPackage ../programs/sunvox.nix {})
     spotify
