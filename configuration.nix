@@ -9,8 +9,9 @@
       ./configuration/network/ssh.nix
       ./configuration/home-manager.nix
       ./configuration/packages.nix
-      ./configuration/x11.nix
+      ./configuration/modules/x11.nix
       ./configuration/virtualisation.nix
+      ./configuration/modules
     ];
 
   # Bootloader.
@@ -44,16 +45,6 @@
       LC_PAPER = "en_US.UTF-8";
       LC_TELEPHONE = "en_US.UTF-8";
       LC_TIME = "en_US.UTF-8";
-    };
-    inputMethod = {
-      enabled = "kime";
-      kime = {
-        daemonModules = [
-          "Wayland"
-          "Indicator"
-        ];
-        iconColor = "White";
-      };
     };
   }; 
   
