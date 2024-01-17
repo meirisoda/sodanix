@@ -3,7 +3,7 @@
 {
   imports =
     [
-      ./x11/plasma.nix
+      ./modules/x11/plasma.nix
     ];
   services = {
     ratbagd.enable = true; #mouse
