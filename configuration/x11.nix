@@ -29,7 +29,6 @@
       layout = "us";
       xkbVariant = "";
     };
-    supergfxd.enable = true; 
     asusd = {
       enable = true; 
       enableUserService = true; 
