@@ -1,0 +1,6 @@
+- obsidian submodules check
+- blender recognize nvidia
+- external monitors defaulting to 60hz 
+- restructure config folders
+    - separate hosts ("rog" and "xps") in flake.nix 
+    - folder for system and home 
