@@ -11,7 +11,6 @@
       ./configuration/packages.nix
       ./configuration/x11.nix
       ./configuration/virtualisation.nix
-      ./programs/kime.nix
     ];
 
   # Bootloader.
