@@ -34,6 +34,7 @@
     virt-manager
     qbittorrent
     qemu
+    qpwgraph
     "${watershot}"
     wineWowPackages.stable
 
