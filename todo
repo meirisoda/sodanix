@@ -1,6 +1,39 @@
 - obsidian submodules check
-- blender recognize nvidia
+- blender not recognizing nvidia 
 - external monitors defaulting to 60hz 
-- restructure config folders
-    - separate hosts ("rog" and "xps") in flake.nix 
-    - folder for system and home 
+- nearlyfreespeech
+- add second yubikey !!!! # please do this holy fuck
+- restructure config folders:
+    - default.nix
+    - flake.nix:
+        - inputs
+        - outputs # see hosts
+            - ROG
+            - XPS
+    - system folder:
+        - core 
+            - boot
+            - security (unsure)
+        - hardware
+            - bluetooth
+        - network
+            - ssh
+            - network manager
+        - programs (unsure)
+        - nix (unsure)
+    - home folder:
+        - packages
+            - system
+            - utilities
+            - 
+    - hosts:
+        - ROG
+            - hardware configuration
+             - add hardware-config to flake.nix
+            # https://github.com/NixOS/nixos-hardware
+            # make sure to add if host name
+        - XPS
+            - hardware configuration
+            - add hardware-config to flake.nix
+            # https://github.com/NixOS/nixos-hardware
+            # make sure to add if host name
