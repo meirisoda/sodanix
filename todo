@@ -5,23 +5,27 @@
 - add second yubikey !!!! # please do this holy fuck
 - restructure config folders:
     - default.nix
+        - includes time and locale
+        - input methods 
+        - bootloader
     - flake.nix:
         - inputs
         - outputs # see hosts
             - ROG
             - XPS
-    - system folder:
+    - system:
         - core 
             - boot
             - security (unsure)
         - hardware
             - bluetooth
+            - sound 
         - network
             - ssh
             - network manager
         - programs (unsure)
         - nix (unsure)
-    - home folder:
+    - home:
         - packages
             - system
             - utilities
