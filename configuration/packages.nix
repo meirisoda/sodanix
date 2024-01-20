@@ -57,7 +57,6 @@
     obs-studio
     obsidian
     pdfsam-basic
-    prismlauncher
     puredata
     # sonic-pi
     steam
@@ -66,6 +65,11 @@
     tidal-hifi
     vscodium
     zoom-us
+
+    # games 
+    ppsspp-sdl-wayland
+    prismlauncher
+    yuzu-mainline
   ];
 
   # Allow unfree packages
