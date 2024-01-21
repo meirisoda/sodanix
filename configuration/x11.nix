@@ -33,6 +33,16 @@
       enable = true; 
       enableUserService = true; 
     };
+    syncthing = {
+      enable = true; 
+      user = "soda";
+      dataDir = "home/soda/Documents/syncthing";
+      configDir = "/home/soda/.config/syncthing";
+      extraOptions.gui = {
+        user = "soda";
+        password = "banana";
+      }; 
+    };
     printing = {
       enable = true;
     };
