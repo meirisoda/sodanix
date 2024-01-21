@@ -38,6 +38,10 @@
     };
   };
 
+  environment.variables = {
+    KWIN_DRM_USE_MODIFIERS = "0";
+  };
+
   hardware.nvidia = {
     modesetting.enable = true;
     # Enable the Nvidia settings menu,

@@ -31,6 +31,7 @@
     pfetch
     piper
     supergfxctl
+    syncthing
     virt-manager
     qbittorrent
     qemu
