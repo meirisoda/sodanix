@@ -44,6 +44,7 @@
     blender
     btop
     calibre
+    cbonsai
     discord
     gimp
     github-desktop
