@@ -60,7 +60,7 @@
     obsidian
     pdfsam-basic
     puredata
-    # sonic-pi
+    sonic-pi
     steam
     (pkgs.callPackage ../programs/sunvox.nix {})
     spotify
