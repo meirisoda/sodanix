@@ -3,11 +3,11 @@
 - external monitors defaulting to 60hz 
 - nearlyfreespeech
 - add second yubikey !!!! # please do this holy fuck
-- restructure config folders:
+- # TODO restructure config folders:
     - default.nix
         - includes time and locale
         - input methods 
-        - bootloader
+        - bootloader # TODO figure out how to do by host!! 
     - flake.nix:
         - inputs
         - outputs # see hosts
@@ -15,14 +15,14 @@
             - XPS
     - system:
         - core 
-            - boot
+            - boot # TODO figure out how to do by host!! 
             - security (unsure)
-        - hardware
-            - bluetooth
-            - sound 
-        - network
-            - ssh
-            - network manager
+        # - hardware
+        #     - bluetooth
+        #     - sound 
+        # - network
+            # - ssh
+            # - network manager
         - programs (unsure)
         - nix (unsure)
     - home:
@@ -30,14 +30,14 @@
             - system
             - utilities
             - 
-    - hosts:
-        - ROG
-            - hardware configuration
-             - add hardware-config to flake.nix
-            # https://github.com/NixOS/nixos-hardware
-            # make sure to add if host name
-        - XPS
-            - hardware configuration
-            - add hardware-config to flake.nix
-            # https://github.com/NixOS/nixos-hardware
-            # make sure to add if host name
+    - hosts: # TODO check modules
+        # - ROG
+        #     - hardware configuration
+        #      - add hardware-config to flake.nix
+        #     # https://github.com/NixOS/nixos-hardware
+        #     # make sure to add if host name
+        # - XPS
+        #     - hardware configuration
+        #     - add hardware-config to flake.nix 
+        #     # https://github.com/NixOS/nixos-hardware
+        #     # make sure to add if host name

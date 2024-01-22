@@ -50,6 +50,7 @@
 
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";
+    RUST_BACKTRACE="1";
   };
 
   hardware.nvidia = {
