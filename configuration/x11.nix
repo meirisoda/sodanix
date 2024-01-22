@@ -38,7 +38,7 @@
       user = "soda";
       dataDir = "home/soda/Documents/syncthing";
       configDir = "/home/soda/.config/syncthing";
-      extraOptions.gui = {
+      settings.gui = {
         user = "soda";
         password = "banana";
       }; 
