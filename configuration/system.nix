@@ -12,16 +12,19 @@
   fileSystems."/" =
     { device = "/dev/disk/by-label/ROOT";
       fsType = "ext4";
+      neededForBoot = true;
     };
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-label/BOOT";
       fsType = "vfat";
+      neededForBoot = true;
     };
 
   fileSystems."/home" =
     { device = "/dev/disk/by-label/HOME";
       fsType = "ext4";
+      neededForBoot = true;
     };
 
   swapDevices =
