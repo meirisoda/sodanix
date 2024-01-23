@@ -1,8 +1,15 @@
 { config, pkgs, stablepkgs, sodasddm, ... }:
 
 {
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
-  services.xserver.displayManager.sddm.theme = "${sodasddm}";
+  services.xserver = {
+    displayManager = {
+      plasma5.enable = true;
+      sddm = {
+        enable = true;
+        theme = "${sodasddm}";
+      };
+    };
+  };
+  
   programs.xwayland.enable = true;
 }

@@ -4,9 +4,10 @@
   imports =
     [ 
       ./configuration/boot.nix
+      ./configuration/x11.nix
       ./configuration/system.nix
       ./configuration/hosts.nix
-      ./configuration/packages/packages.nix
+      ./configuration/packages.nix
       ./soda.nix
     ];
 
@@ -42,10 +43,10 @@
       "soda"
     ];
     extraOptions = ''experimental-features = nix-command flakes'';
-    gc = {
-      automatic = true; 
-      dates = "weekly";
-    };
+    # gc = {
+    #   automatic = true; 
+    #   dates = "weekly";
+    # };
   };
 
   programs = { # TODO where to put.

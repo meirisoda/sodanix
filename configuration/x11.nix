@@ -1,18 +1,16 @@
 { config, pkgs, stablepkgs, ... }:
 
 {
-  imports =
-    [
-      ./x11/plasma.nix
-    ];
   services = {
     ratbagd.enable = true; #mouse
     xserver = {
       enable = true;
       displayManager = {
+        plasma5.enable = true;
         sddm = {
           enable = true;
           wayland.enable = true;
+          theme = "${sodasddm}";
         };
       };
       libinput = { # mouse
@@ -26,6 +24,8 @@
       xkbVariant = "";
     };  
   };
+
+  programs.xwayland.enable = true; 
 
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";

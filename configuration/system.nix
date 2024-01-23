@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ lib, config, pkgs, ... }:
 
 {
   imports = [
@@ -7,6 +7,7 @@
     ./system/printing.nix
     ./system/sound.nix
     ./system/yubikey.nix
+    (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
   fileSystems."/" =
