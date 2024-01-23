@@ -2,27 +2,21 @@
 
 {
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [ # only rog!! 
-    # === system === #
-    curl
-    openssh
-    wget
-    xorg.xrandr
-    yubico-pam
+    # system
 
-    # === development === #
-    cmake
+    # development
     cudatoolkit
     
-    # === utilities === #
+    # utilities
     asusctl
     supergfxctl
     # "${watershot}"
 
-    # === virtualization === #
+    # virtualisation
     virt-manager
     qemu
 
-    # === programs === #
+    # programs
     blender
     calibre
     cbonsai
@@ -31,29 +25,31 @@
     krita
     puredata
     sonic-pi
-    (pkgs.callPackage ./programs/sunvox.nix {})
+    (pkgs.callPackage ./packages/programs/sunvox.nix {})
 
-    # === games === # 
+    # games
     lutris
     ppsspp-sdl-wayland
     prismlauncher
     steam
     yuzu-mainline
+    
   ] else [
     
-  ]) ++ [ # both systems
-    # === system  === #
+  ]) ++ [ # TODO both systems
+    # system
     curl
     openssh
     wget
     xorg.xrandr
     yubico-pam
 
-    # === development === #
+    # development
+    cmake
     zsh
     zsh-powerlevel10k
     
-    # === utilities === #
+    # utilities
     barrier
     gparted
     ffmpeg
@@ -70,7 +66,7 @@
     qpwgraph
     wineWowPackages.stable
 
-    # === programs === #
+    # program
     audacity
     bitwarden
     btop
