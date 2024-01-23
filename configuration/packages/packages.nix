@@ -31,7 +31,7 @@
     krita
     puredata
     sonic-pi
-    (pkgs.callPackage ../programs/sunvox.nix {})
+    (pkgs.callPackage ./programs/sunvox.nix {})
 
     # === games === # 
     lutris

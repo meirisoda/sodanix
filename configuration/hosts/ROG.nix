@@ -35,6 +35,8 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
   
-  initrd.kernelModules = [ "nvidia" ];
-  extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.stable ];
+  boot = {
+    initrd.kernelModules = [ "nvidia" ];
+    extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.stable ];
+  };
 }

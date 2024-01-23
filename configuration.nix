@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, username, hostname, ... }:
+{ config, pkgs, stablepkgs, hostname, lib, ... }:
 
 {
   imports =
@@ -6,8 +6,7 @@
       ./configuration/boot.nix
       ./configuration/system.nix
       ./configuration/hosts.nix
-      ./configuration/home-manager.nix
-      ./configuration/packages.nix
+      ./configuration/packages/packages.nix
       ./soda.nix
     ];
 
@@ -53,7 +52,8 @@
     zsh.enable = true;
     noisetorch.enable = true; 
   };
-  users.defaultUserShell = pkgs.zsh;
+  
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
   system.stateVersion = "23.11"; 
 

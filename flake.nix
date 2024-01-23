@@ -49,12 +49,12 @@
     };
   in {
     nixosConfigurations = {
-      ROG = nixpkgs.lib.nixosSystem { # ROG
+      sodaROG = nixpkgs.lib.nixosSystem { # ROG
         system = "x86_64-linux";
         specialArgs = allConfig;
         modules = rogmodules;
       };
-      XPS = nixpkgs.lib.nixosSystem { # XPS
+      sodaXPS = nixpkgs.lib.nixosSystem { # XPS
         system = "x86_64-linux";
         specialArgs = allConfig // { host-name = "sodaXPS"; };
         modules = xpsmodules;

@@ -1,9 +1,12 @@
-{ config, pkgs, hostname, ... }:
+{ config, pkgs, hostname, lib, ... }:
 
 {
-  networking.networkmanager = {
-    enable = true;
+  networking = {
+    networkmanager = {
+      enable = true;
+    };
     hostName = hostname;
+    useDHCP = lib.mkDefault true;
   };
 
   services = {
