@@ -31,7 +31,8 @@
 
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";
-    RUST_BACKTRACE="1";
+    LIBSEAT_BACKEND = "logind"; 
+    # RUST_BACKTRACE="1";
   };
 
   hardware.opengl = with pkgs; {
