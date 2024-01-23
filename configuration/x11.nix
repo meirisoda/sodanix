@@ -5,8 +5,10 @@
     ratbagd.enable = true; #mouse
     xserver = {
       enable = true;
+      desktopManager = {
+        plasma5.enable = true; 
+      };
       displayManager = {
-        plasma5.enable = true;
         sddm = {
           enable = true;
           wayland.enable = true;
