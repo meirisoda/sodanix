@@ -56,7 +56,7 @@
       };
       sodaXPS = nixpkgs.lib.nixosSystem { # XPS
         system = "x86_64-linux";
-        specialArgs = allConfig // { host-name = "sodaXPS"; };
+        specialArgs = allConfig // { hostname = "sodaXPS"; };
         modules = xpsmodules;
       };
     };
