@@ -6,6 +6,7 @@
       ./configuration/boot.nix
       ./configuration/system.nix
       ./configuration/hosts.nix
+      ./configuration/x11.nix
       ./configuration/packages/packages.nix
       ./soda.nix
     ];
