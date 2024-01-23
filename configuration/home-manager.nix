@@ -1,7 +1,7 @@
-{ config, pkgs, stablepkgs, ... }:
+{ config, pkgs, stablepkgs, username, ... }:
 
 {
-  home-manager.users."soda" = {
+  home-manager.users.${username} = {
     home = {
       stateVersion = "24.05";
     };
@@ -9,7 +9,7 @@
       git = {
         enable = true;
         userName = "meirisoda";
-        userEmail = "appleblossom2001@gmail.com";
+        userEmail = "meirisoda@proton.me";
         lfs = {
           enable = true;
         };
@@ -35,7 +35,7 @@
           }
         ];
         shellAliases = {
-          sodanix = "cd /home/soda/Documents/sodanix";
+          sodanix = "cd /home/soda/Documents/nix/sodanix";
           cdnixos = "cd /etc/nixos";
           out = "..";
           flakeupg = "nix flake upgrade";

@@ -21,32 +21,44 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, sodasddm, watershot,... }: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, sodasddm, watershot,... }@attrs: let 
     config = { 
       allowUnfree = true; 
+      cudaSupport = true;
       permittedInsecurePackages = [ 
         "electron-25.9.0"
       ];
     };
+    # TODO figure out a better way to do this
+    rogmodules = [
+      nixos-hardware.nixosModules.asus-zephyrus-ga402
+      home-manager.nixosModules.default
+      ./configuration.nix
+    ];
+    xpsmodules = [
+      nixos-hardware.nixosModules.dell-xps-13-9380
+      home-manager.nixosModules.default
+      ./configuration.nix
+    ];
+    allConfig = {
+      inherit attrs;
+      pkgs = import nixpkgs { system = "x86_64-linux"; inherit config; };
+      stablepkgs = import nixpkgs-stable { system = "x86_64-linux"; inherit config; };
+      inherit sodasddm; 
+      hostname = "sodaROG"; 
+    };
   in {
-    nixosConfigurations."sodanix" = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      specialArgs = {
-        pkgs = import nixpkgs { 
-          inherit config; # it's up there
-          system = "x86_64-linux"; 
-        };
-        stablepkgs = import nixpkgs-stable { 
-          inherit config; # it's up there
-          system = "x86_64-linux"; 
-        };
-        inherit sodasddm;
+    nixosConfigurations = {
+      ROG = nixpkgs.lib.nixosSystem { # ROG
+        system = "x86_64-linux";
+        specialArgs = allConfig;
+        modules = rogmodules;
       };
-      modules = [
-        nixos-hardware.nixosModules.asus-zephyrus-ga402
-        home-manager.nixosModules.default
-        ./configuration.nix
-      ];
+      XPS = nixpkgs.lib.nixosSystem { # XPS
+        system = "x86_64-linux";
+        specialArgs = allConfig // { host-name = "sodaXPS"; };
+        modules = xpsmodules;
+      };
     };
   };
 }

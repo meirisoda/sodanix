@@ -1,33 +1,15 @@
-{ config, pkgs, stablepkgs, ... }:
+{ config, pkgs, stablepkgs, username, hostname, ... }:
 
 {
   imports =
     [ 
-      ./configuration/hardware/hardware-configuration.nix
-      ./configuration/hardware/yubikey.nix
-      ./configuration/hardware/bluetooth.nix
-      ./configuration/network/ssh.nix
+      ./configuration/boot.nix
+      ./configuration/system.nix
+      ./configuration/hosts.nix
       ./configuration/home-manager.nix
       ./configuration/packages.nix
-      ./configuration/x11.nix
-      ./configuration/virtualisation.nix
+      ./soda.nix
     ];
-
-  # Bootloader.
-  boot = {
-    loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-    };
-    kernelPackages = stablepkgs.linuxPackages_6_7; # manually update kernel // run uname -a to see current version
-    initrd.kernelModules = [ "nvidia" ];
-    extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.stable ];
-  };
-
-  networking.hostName = "sodanix"; # Define your hostname
-
-  # Enable networking
-  networking.networkmanager.enable = true;
 
   time.timeZone = "America/New_York";
   i18n = {
@@ -54,32 +36,6 @@
       };
     };
   }; 
-  
-
-  # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    audio.enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    jack.enable = true;
-    pulse.enable = true;
-  };
-  
-
-  users.users.soda = {
-    isNormalUser = true;
-    description = "soda";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd"];
-    shell = pkgs.zsh;
-    packages = with pkgs; [
-      firefox
-      vscodium
-    ];
-  };
 
   nix = {
     settings.allowed-users = [
@@ -92,8 +48,13 @@
       dates = "weekly";
     };
   };
-  
 
-  system.stateVersion = "23.11"; # defines the version of NixOS I am on
+  programs = { # TODO where to put.
+    zsh.enable = true;
+    noisetorch.enable = true; 
+  };
+  users.defaultUserShell = pkgs.zsh;
+
+  system.stateVersion = "23.11"; 
 
 }

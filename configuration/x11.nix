@@ -15,10 +15,6 @@
           wayland.enable = true;
         };
       };
-      videoDrivers = [
-        "amdgpu"
-        "nvidia"
-      ];
       libinput = { # mouse
         enable = true;
         mouse = {
@@ -29,49 +25,11 @@
       layout = "us";
       xkbVariant = "";
     };  
-    asusd = {
-      enable = true; 
-      enableUserService = true; 
-    };
-    syncthing = {
-      enable = true; 
-      user = "soda";
-      dataDir = "home/soda/Documents/syncthing";
-      configDir = "/home/soda/.config/syncthing";
-      settings.gui = {
-        user = "soda";
-        password = "banana";
-      }; 
-    };
-    printing = {
-      enable = true;
-    };
   };
 
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";
     RUST_BACKTRACE="1";
-  };
-
-  hardware.nvidia = {
-    modesetting.enable = true;
-    # Enable the Nvidia settings menu,
-	  # accessible via `nvidia-settings`.
-    nvidiaSettings = true;
-    open = false;
-    prime = {
-      nvidiaBusId = "PCI:1:0:0";
-      amdgpuBusId = "PCI:65:0:0";
-      reverseSync.enable = true; 
-      # sync = {
-      #  enable = true;
-      # };
-      offload = {
-        # enable =  true;
-        enableOffloadCmd = true; # Provides `nvidia-offload` command.
-      };
-    };
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   hardware.opengl = with pkgs; {
