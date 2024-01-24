@@ -6,7 +6,7 @@
     ./system/network.nix
     ./system/printing.nix
     ./system/sound.nix
-    # ./system/yubikey.nix
+    ./system/yubikey.nix
   ];
 
   fileSystems."/" =

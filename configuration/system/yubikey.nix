@@ -13,11 +13,4 @@
     kde.u2fAuth = true;
     xscreensaver.u2fAuth = true;
   };
-
-  security.pam.yubico = {
-    enable = true;
-    debug = true;
-    mode = "challenge-response";
-    id = [ "20194367" ];
-  };
 }
