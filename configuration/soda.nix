@@ -6,7 +6,7 @@ in
 {
   imports =
   [
-    ((import ./configuration/home-manager.nix) (allconfig // { inherit username; }))
+    ((import ./home-manager.nix) (allconfig // { inherit username; }))
   ];
 
   users.defaultUserShell = pkgs.zsh;
