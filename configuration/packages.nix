@@ -22,7 +22,6 @@
     cbonsai
     gimp
     github-desktop
-    komikku
     krita
     puredata
     sonic-pi

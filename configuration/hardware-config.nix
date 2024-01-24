@@ -7,7 +7,6 @@
     ./hardware/printing.nix
     ./hardware/sound.nix
     ./hardware/yubikey.nix
-    ./hardware/inputmethod.nix
   ];
 
   fileSystems."/" =
