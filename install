@@ -1,0 +1,13 @@
+swapon /dev/disk/by-label/SWAP
+
+mkdir /mnt/boot
+
+mount /dev/disk/by-label/BOOT /mnt/boot
+
+mount /dev/disk/by-label/ROOT /mnt
+
+mkdir /mnt/home
+
+mount /dev/disk/by-label/HOME /mnt/home
+
+nixos-install --no-root-passwd --flake "github:meirisoda/sodanix#HOSTNAME"
