@@ -31,6 +31,7 @@
 
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";
+    GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
     LIBSEAT_BACKEND = "logind"; 
     # RUST_BACKTRACE="1";
   };
