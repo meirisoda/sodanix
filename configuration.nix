@@ -38,18 +38,27 @@
   }; 
 
   nix = {
-    settings.allowed-users = [
-      "@wheel"
-      "soda"
-    ];
     extraOptions = ''experimental-features = nix-command flakes'';
+    settings = {
+      allowed-users = [
+        "@wheel"
+        "soda"
+      ];
+      trusted-substituters = [
+        "https://tln32asus.student.cwru.edu:5000/"
+      ];
+      trusted-public-keys = [
+        "tln32asus.student.cwru.edu:V8MCTN/ox+Y5GxqFsjAml4IfcUvTacLFIqw48A9Ic/o="
+      ];
+    };
     gc = {
       automatic = true; 
       dates = "weekly";
+      options = "--delete-older-than 7d";
     };
   };
 
-  programs = { # TODO where to put.
+  programs = {
     zsh.enable = true;
     noisetorch.enable = true; 
   };
