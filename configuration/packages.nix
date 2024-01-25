@@ -68,6 +68,7 @@
     wineWowPackages.stable
 
     # program
+    ani-cli
     audacity
     bitwarden
     btop
