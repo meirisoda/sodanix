@@ -5,6 +5,12 @@
     home = {
       stateVersion = "24.05";
     };
+    dconf.settings = {
+      "org/virt-manager/virt-manager/connections" = {
+        autoconnect = ["qemu:///system"];
+        uris = ["qemu:///system"];
+      };
+    };
     programs = {
       git = {
         enable = true;
