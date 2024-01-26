@@ -6,7 +6,7 @@
       enable = true;
     };
     hostName = hostname;
-    useDHCP = lib.mkDefault true;
+    # useDHCP = lib.mkDefault true;
   };
 
   services = {
