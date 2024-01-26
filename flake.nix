@@ -21,7 +21,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, sodasddm, watershot, hostname, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, sodasddm, watershot,... }@attrs: let 
     config = { 
       allowUnfree = true; 
       cudaSupport = true;
