@@ -52,6 +52,7 @@
     
     # utilities
     barrier
+    btop
     gparted
     ffmpeg
     flameshot
@@ -71,7 +72,6 @@
     ani-cli
     audacity
     bitwarden
-    btop
     calibre
     discord
     google-chrome
