@@ -27,7 +27,10 @@
     };  
   };
 
-  programs.xwayland.enable = true; 
+  programs = {
+    xwayland.enable = true; 
+    hyprland.enable = true;
+  };
 
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";

@@ -20,6 +20,27 @@
           enable = true;
         };
       };
+      ssh = {
+        enable = true; 
+        matchBlocks = let 
+          identityFile = "/home/${username}/.ssh/id_ed25519";
+          user = "${username}";
+          port = 22;
+        in {
+          "sodarog" = {
+            hostname = "sodarog.student.cwru.edu";
+            inherit user port identityFile;
+          };
+          "sodaxps" = {
+            hostname = "sodaxps.student.cwru.edu";
+            inherit user port identityFile;
+          };
+          "nfs" = {
+            hostname = "meirisoda_meirisoda@ssh.nyc1.nearlyfreespeech.net";
+            inherit user port identityFile;
+          };
+        };
+      };
       zsh = {
         enable = true;
         enableAutosuggestions = true;
