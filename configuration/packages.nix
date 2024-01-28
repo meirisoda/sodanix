@@ -22,6 +22,7 @@
     cbonsai
     gimp
     github-desktop
+    inkscape
     komikku
     krita
     puredata

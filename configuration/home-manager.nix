@@ -37,7 +37,8 @@
           };
           "nfs" = {
             hostname = "meirisoda_meirisoda@ssh.nyc1.nearlyfreespeech.net";
-            inherit user port identityFile;
+            user = "meirisoda_meirisoda"; 
+            inherit port identityFile;
           };
         };
       };
@@ -73,6 +74,7 @@
           gpl = "git pull";
           nvo = "nvidia-offload";
           rssound = "systemctl --user restart pipewire";
+          nfs = "ssh meirisoda_meirisoda@ssh.nyc1.nearlyfreespeech.net";
         };
       };
       kitty = {
