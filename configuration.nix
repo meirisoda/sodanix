@@ -58,7 +58,9 @@
       trusted-public-keys = [
         "tln32asus.student.cwru.edu:V8MCTN/ox+Y5GxqFsjAml4IfcUvTacLFIqw48A9Ic/o="
       ];
+      "max-jobs" = 8;
     };
+    distributedBuilds = true;
     gc = {
       automatic = true; 
       dates = "weekly";
