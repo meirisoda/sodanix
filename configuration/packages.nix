@@ -88,4 +88,13 @@
     vscodium
     zoom-us
   ];
+
+  programs = {
+    zsh.enable = true;
+    noisetorch.enable = true; 
+    virt-manager.enable = true;
+    kdeconnect = {
+      enable = true;
+    };
+  };
 }

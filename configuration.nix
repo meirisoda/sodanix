@@ -68,12 +68,6 @@
     };
   };
 
-  programs = {
-    zsh.enable = true;
-    noisetorch.enable = true; 
-    virt-manager.enable = true;
-  };
-
   virtualisation.libvirtd.enable = true;
 
   
