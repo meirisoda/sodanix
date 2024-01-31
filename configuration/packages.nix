@@ -60,6 +60,8 @@
     kime
     lshw
     mpv
+    mullvad
+    mullvad-vpn
     neofetch
     noisetorch
     pfetch
