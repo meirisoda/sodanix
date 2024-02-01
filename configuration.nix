@@ -46,7 +46,10 @@
 
 
   nix = {
-    extraOptions = ''experimental-features = nix-command flakes'';
+    extraOptions = ''
+      experimental-features = nix-command flakes 
+      builders-use-substitutes = true
+    '';
     settings = {
       allowed-users = [
         "@wheel"
@@ -54,6 +57,7 @@
       ];
       trusted-substituters = [
         "https://tln32asus.student.cwru.edu:5000/"
+        "https://sodaxps.student.cwru.edu:5000/"
       ];
       trusted-public-keys = [
         "tln32asus.student.cwru.edu:V8MCTN/ox+Y5GxqFsjAml4IfcUvTacLFIqw48A9Ic/o="
@@ -70,7 +74,6 @@
   };
 
   virtualisation.libvirtd.enable = true;
-
   
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
