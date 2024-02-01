@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, attrs}: 
+{ config, pkgs, stablepkgs, attrs, ...}: 
 
 {
   services.nginx = {
