@@ -63,7 +63,7 @@
         "tln32asus.student.cwru.edu:V8MCTN/ox+Y5GxqFsjAml4IfcUvTacLFIqw48A9Ic/o="
       ];
       "max-jobs" = 8;
-      "builders" = ''ssh://soda@sodaxps.student.cwru.edu i686_linux,x86_64-linux - 8 5 kvm - AAAAC3NzaC1lZDI1NTE5AAAAIGR9AVULx7ORzK63jvr+yHRuOyCJRoy3H03cdNy8x0EK'';
+      "builders" = ''ssh://soda@sodaxps.student.cwru.edu i686_linux,x86_64-linux - 8 5 kvm - AAAAC3NzaC1lZDI1NTE5AAAAIGUQvWrDYFHZIrUGgEZ6yeY3yEKdphCtaB6RrdxDezEe'';
     };
     distributedBuilds = true;
     gc = {
