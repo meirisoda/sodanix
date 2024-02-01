@@ -66,15 +66,13 @@
           sodanix = "cd /home/soda/Documents/nix/sodanix";
           cdnixos = "cd /etc/nixos";
           out = "..";
-          flakeupg = "nix flake upgrade";
-          flakeupd = "nix flake lock --update-input";
           ga = "git add *";
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
           nvo = "nvidia-offload";
-          rssound = "systemctl --user restart pipewire";
-          nfs = "ssh meirisoda_meirisoda@ssh.nyc1.nearlyfreespeech.net";
+          xps = "ssh soda@sodaxps.student.cwru.edu";
+          rog = "ssh soda@sodarog.student.cwru.edu";
         };
       };
       kitty = {
