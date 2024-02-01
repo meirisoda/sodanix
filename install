@@ -10,4 +10,4 @@ mkdir /mnt/home
 
 mount /dev/disk/by-label/HOME /mnt/home
 
-nixos-install --no-root-passwd --flake "github:meirisoda/sodanix#HOSTNAME"
+nixos-install --no-root-passwd --flake "github:meirisoda/sodanix#nixosConfigurations.HOSTNAME"
