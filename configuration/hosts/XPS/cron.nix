@@ -3,6 +3,6 @@
 {
   services.cron = {
     enable = true; 
-    systemCronJobs = [''0 23 * * Sat sh ${./../../../update.sh}''];
+    systemCronJobs = [''0 23 * * Fri sh ${./../../../update.sh}''];
   };
 }
