@@ -17,17 +17,25 @@
     qemu
 
     # programs
+    ani-cli
+    audacity
     blender
     calibre
     cbonsai
+    figma-linux
     gimp
     github-desktop
     inkscape
     komikku
     krita
+    libreoffice
+    obs-studio
+    obsidian
+    pdfsam-basic
     puredata
     sonic-pi
     (pkgs.callPackage ./packages/programs/sunvox.nix {})
+    zoom-us
 
     # games
     lutris
@@ -72,23 +80,15 @@
     wineWowPackages.stable
 
     # program
-    ani-cli
-    audacity
     bitwarden
     calibre
     discord
     google-chrome
-    figma-linux
     kitty
-    libreoffice
     localsend
-    obs-studio
-    obsidian
-    pdfsam-basic
     spotify
     tidal-hifi
     vscodium
-    zoom-us
   ];
 
   programs = {
