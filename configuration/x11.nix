@@ -23,8 +23,10 @@
           scrollButton = 3;
         };
       };
-      layout = "us";
-      xkbVariant = "";
+      xkb = {
+        layout = "us";
+        Variant = "";
+      };
     };  
   };
 # TODO programs

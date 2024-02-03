@@ -47,7 +47,7 @@
 
   nix = {
     extraOptions = ''
-      experimental-features = nihttps://www.youtube.com/shorts/3emLgbFS3dsx-command flakes 
+      experimental-features = nix-command flakes 
       builders-use-substitutes = true
     '';
     settings = {
