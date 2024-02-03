@@ -2,8 +2,8 @@
 
 {
   services = {
-    ratbagd.enable = true; #mouse
-    mullvad-vpn.enable = true; # vpn 
+    ratbagd.enable = true;
+    mullvad-vpn.enable = true; 
     xserver = {
       enable = true;
       desktopManager = {
@@ -16,7 +16,7 @@
           # theme = "${sodasddm}";
         };
       };
-      libinput = { # mouse
+      libinput = { 
         enable = true;
         mouse = {
           scrollMethod = "button";
@@ -37,7 +37,6 @@
     KWIN_DRM_USE_MODIFIERS = "0";
     GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
     LIBSEAT_BACKEND = "logind"; 
-    # RUST_BACKTRACE="1";
   };
 # TODO hardware opengl
   hardware.opengl = with pkgs; {
@@ -55,6 +54,8 @@
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
+      fira-code
+      fira-code-symbols
     ];
     enableDefaultPackages = true;
   };
