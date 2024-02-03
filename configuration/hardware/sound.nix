@@ -11,7 +11,7 @@
     alsa.support32Bit = true;
     # jack.enable = true;
     pulse.enable = true;
-    config.pipewire = {
+    extraConfig.pipewire = {
       "context.properties" = [
         {
           "link.max-buffers" = 64;
