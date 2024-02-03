@@ -25,7 +25,7 @@
       };
       xkb = {
         layout = "us";
-        Variant = "";
+        variant = "";
       };
     };  
   };
