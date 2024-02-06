@@ -19,7 +19,7 @@
     # Enable the Nvidia settings menu,
 	  # accessible via `nvidia-settings`.
     nvidiaSettings = true;
-    open = false;
+    open = true;
     prime = {
       reverseSync.enable = true; 
       # sync = {
