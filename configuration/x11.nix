@@ -7,7 +7,8 @@
     xserver = {
       enable = true;
       desktopManager = {
-        plasma5.enable = true; 
+        xfce.enable = true;
+        # plasma5.enable = true; 
       };
       displayManager = {
         # lightdm = {
