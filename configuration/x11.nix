@@ -10,18 +10,18 @@
         plasma5.enable = true; 
       };
       displayManager = {
-        lightdm = {
-          enable = true;
-          greeters = {
-            slick.enable = true; 
-            gtk.enable = false;
-          };
-        };
-        # sddm = {
+        # lightdm = {
           # enable = true;
-          # wayland.enable = true;
-          # theme = "${sodasddm}";
-        #};
+          # greeters = {
+            # slick.enable = true; 
+            # gtk.enable = false;
+          # };
+        # };
+        sddm = {
+          enable = true;
+          wayland.enable = true;
+          theme = "${sodasddm}";
+        };
       };
       libinput = { 
         enable = true;
