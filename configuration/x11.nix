@@ -10,11 +10,12 @@
         plasma5.enable = true; 
       };
       displayManager = {
-        sddm = {
-          enable = true;
-          wayland.enable = true;
+        lightdm.enable = true; 
+        # sddm = {
+          # enable = true;
+          # wayland.enable = true;
           # theme = "${sodasddm}";
-        };
+        #};
       };
       libinput = { 
         enable = true;
