@@ -8,7 +8,7 @@
       enable = true;
       desktopManager = {
         xfce.enable = true;
-        # plasma5.enable = true; 
+        plasma5.enable = true; 
       };
       displayManager = {
         # lightdm = {
@@ -21,7 +21,7 @@
         sddm = {
           enable = true;
           wayland.enable = true;
-          theme = "${sodasddm}";
+          # theme = "${sodasddm}";
         };
       };
       libinput = { 
