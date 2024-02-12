@@ -45,7 +45,7 @@
 # TODO env vars
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";
-    # KWIN_DRM_DEVICES = ;
+    KWIN_DRM_DEVICES = "/dev/dri/by-path/pci-0000\\:65\\:00.0-card" ;
     GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
     # LIBSEAT_BACKEND = "logind"; 
     WLR_NO_HARDWARE_CURSORS = "1";
