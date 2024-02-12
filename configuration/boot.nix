@@ -10,6 +10,6 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = pkgs.linuxPackages_6_7; # manually update kernel // run uname -a to see current version
+    kernelPackages = pkgs.linuxPackages_latest; # manually update kernel // run uname -a to see current version
   };
 }
