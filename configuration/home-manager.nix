@@ -11,6 +11,16 @@
         uris = ["qemu:///system"];
       };
     };
+    wayland = {
+      windowmanager.hyprland = {
+        enable = true;
+      #   settings = {
+      #     bind = [
+
+      #     ]
+      #   };
+      # };
+    };
     programs = {
       git = {
         enable = true;

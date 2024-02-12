@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [ # only rog!! 
     # system
+    rofi-wayland
 
     # development
     cudatoolkit
