@@ -26,7 +26,7 @@
       #  enable = true;
       # };
       offload = {
-        enable =  true;
+        # enable =  true;
         enableOffloadCmd = true; # Provides `nvidia-offload` command.
       };
       nvidiaBusId = "PCI:1:0:0";
