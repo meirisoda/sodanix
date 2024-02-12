@@ -1,10 +1,10 @@
 swapon /dev/disk/by-label/SWAP
 
+mount /dev/disk/by-label/ROOT /mnt
+
 mkdir /mnt/boot
 
 mount /dev/disk/by-label/BOOT /mnt/boot
-
-mount /dev/disk/by-label/ROOT /mnt
 
 mkdir /mnt/home
 
