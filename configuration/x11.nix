@@ -7,7 +7,6 @@
     xserver = {
       enable = true;
       desktopManager = {
-        xfce.enable = true;
         plasma5.enable = true; 
       };
       displayManager = {
