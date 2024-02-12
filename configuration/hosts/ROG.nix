@@ -30,11 +30,11 @@
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:65:0:0";
     };
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
   
   boot = {
     initrd.kernelModules = [ "nvidia" ];
-    extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.beta ];
+    extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.stable ];
   };
 }

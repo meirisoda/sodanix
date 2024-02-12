@@ -29,7 +29,6 @@
         "electron-25.9.0"
       ];
     };
-    # TODO figure out a better way to do this
     rogmodules = [
       nixos-hardware.nixosModules.asus-zephyrus-ga402
       home-manager.nixosModules.default

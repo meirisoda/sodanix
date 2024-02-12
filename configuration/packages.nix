@@ -1,7 +1,7 @@
 { config, lib, hostname, pkgs, stablepkgs, ...}:
 
 {
-  environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [ # only rog!! 
+  environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [
     # system
     rofi-wayland
 

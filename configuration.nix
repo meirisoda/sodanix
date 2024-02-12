@@ -26,13 +26,6 @@
       LC_TIME = "en_US.UTF-8";
     };
     inputMethod = {
-      # enabled = "fcitx5";
-      # fcitx5 = { 
-      #   settings.addons = [
-      #     fcitx-mozc
-      #     fcitx-hangul
-      #   ];
-      # };
       enabled = "kime";
       kime = {
         daemonModules = [
