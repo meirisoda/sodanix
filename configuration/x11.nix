@@ -45,8 +45,9 @@
 # TODO env vars
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";
+    # KWIN_DRM_DEVICES = ;
     GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
-    LIBSEAT_BACKEND = "logind"; 
+    # LIBSEAT_BACKEND = "logind"; 
     WLR_NO_HARDWARE_CURSORS = "1";
   };
 # TODO hardware opengl
