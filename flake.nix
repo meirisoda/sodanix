@@ -30,7 +30,7 @@
       ];
     };
     rogmodules = [
-      nixos-hardware.nixosModules.asus-zephyrus-ga402x.nvidia
+      nixos-hardware.nixosModules.asus-zephyrus-ga402
       home-manager.nixosModules.default
       ./configuration.nix
     ];
