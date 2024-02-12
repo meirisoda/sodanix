@@ -10,6 +10,7 @@
     
     # utilities
     asusctl
+    nvtop-nvidia
     supergfxctl
     # "${watershot}"
 

@@ -17,7 +17,7 @@
   hardware.nvidia = {
     modesetting.enable = true;
     nvidiaSettings = true;
-    open = false;
+    open = true;
     prime = {
       reverseSync.enable = true; 
       # sync = {
