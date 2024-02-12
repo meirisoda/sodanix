@@ -2,11 +2,11 @@
 
 {
   boot = {
-    initrd.kernelModules = [ ];
+    initrd.kernelModules = [ "nvidia" ];
     initrd.availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" ];
     # blacklistedKernelModules = [ "nouveau" ];
     kernelModules = if hostname == "sodaROG" then [ "kvm-amd" ] else []; 
-    extraModulePackages = [ ];
+    extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
