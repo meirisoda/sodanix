@@ -98,8 +98,5 @@
     kdeconnect = {
       enable = true;
     };
-    hyprland = {
-      enableNvidiaPatches = true;
-    };
   };
 }
