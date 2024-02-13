@@ -11,6 +11,7 @@
         uris = ["qemu:///system"];
       };
     };
+
     programs = {
       git = {
         enable = true;
@@ -112,6 +113,7 @@
         enableBashIntegration = true;
       };
     };
+    
     # services = {
     #   dunst = {
     #     enable = true;
