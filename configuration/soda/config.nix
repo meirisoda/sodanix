@@ -4,6 +4,6 @@
   imports =
     [ 
       ./vscode.nix
-      ./plasma.nix
+      # ./plasma.nix
     ];
 }
