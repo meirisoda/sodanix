@@ -10,7 +10,7 @@
       ritwickdey.liveserver
       jnoortheen.nix-ide
       # LaurentTreguier.simple-icons
-      aaron-bond.better-comments
+      # aaron-bond.better-comments
       bbenoist.nix
     ];
   }) 
