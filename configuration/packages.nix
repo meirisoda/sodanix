@@ -3,12 +3,12 @@
 {
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [
     # system
-    rofi-wayland
 
     # development
     cudatoolkit
     
     # utilities
+    android-tools
     asusctl
     nvtop-nvidia
     supergfxctl
@@ -32,7 +32,6 @@
     krita
     libreoffice
     obs-studio
-    obsidian
     pdfsam-basic
     puredata
     sonic-pi
@@ -76,6 +75,7 @@
     noisetorch
     pfetch
     piper
+    rofi-wayland
     syncthing
     qbittorrent
     qpwgraph
@@ -88,6 +88,7 @@
     google-chrome
     kitty
     localsend
+    obsidian
     spotify
     tidal-hifi
     vscodium
