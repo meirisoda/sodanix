@@ -4,7 +4,7 @@
   imports =
     [ 
       ./packages/vscode.nix
-      ./packages/hyprland.nix
+      # ./packages/hyprland.nix
       # ./packages/plasma.nix
     ];
 }
