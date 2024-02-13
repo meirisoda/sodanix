@@ -2,7 +2,7 @@ name: Update repo
 run-name: ${{ github.actor }} is updating the flake lock
 on:
   schedule:
-    - cron: "0 0/6 * * *"
+    - cron: "0 0/12 * * *"
   workflow_dispatch:
   push:
 jobs:
