@@ -1,5 +1,4 @@
-{ pkgs, attrs, username, hostname, ... }@ allConfig:
-
+{ pkgs, attrs, username, hostname, ... }:
 {
   home-manager.users.${username} = {
     wayland.windowManager = {
