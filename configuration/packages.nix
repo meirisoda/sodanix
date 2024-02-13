@@ -49,8 +49,10 @@
     
   ]) ++ [ # TODO both systems
     # system
+    comma
     curl
     openssh
+    pciutils
     wget
     xorg.xrandr
     yubico-pam
