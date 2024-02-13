@@ -75,7 +75,7 @@
     noisetorch
     pfetch
     piper
-    rofi-wayland
+    rofi
     syncthing
     qbittorrent
     qpwgraph
