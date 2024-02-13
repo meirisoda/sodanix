@@ -10,9 +10,7 @@
       ritwickdey.liveserver
       jnoortheen.nix-ide
       # LaurentTreguier.simple-icons
-      yzane.markdown-pdf
       aaron-bond.better-comments
-      ziyasal.vscode-open-in-github
       bbenoist.nix
     ];
   }) 
