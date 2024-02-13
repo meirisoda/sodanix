@@ -5,7 +5,7 @@
   (vscode-with-extensions.override {
     vscodeExtensions = with vscode-extensions; [
       mhutchie.git-graph
-      donjayamanne.git-history
+      donjayamanne.githistory
       eamodio.gitlens
       ritwickdey.liveserver
       jnoortheen.nix-ide
