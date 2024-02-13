@@ -2,9 +2,11 @@
 
 {
   boot = {
-    initrd.kernelModules = [ ];
-    initrd.availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" "nvidia_drm" ];
-    kernelModules = if hostname == "sodaROG" then [ "kvm-amd" ] else []; 
+    initrd = {
+      kernelModules = if hostname == "sodaROG" then [ "amdgpu" "nvidia" ] else [ "kvm-intel" ];
+      availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" "nvidia_drm" ];
+    };
+    kernelModules = [ ]; 
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
