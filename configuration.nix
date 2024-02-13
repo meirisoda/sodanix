@@ -56,6 +56,7 @@
         "tln32asus.student.cwru.edu:V8MCTN/ox+Y5GxqFsjAml4IfcUvTacLFIqw48A9Ic/o="
         "sodaxps.student.cwru.edu:VG/8OKl4U7k5mFs1j6rkfTJdnVsRQcyZlzyVrpT6sW0=%"
       ];
+      trusted-users = [ "soda" ];
       "max-jobs" = 8;
       "builders" = ''ssh://soda@sodaxps.student.cwru.edu?ssh-key=/home/soda/.ssh/id_ed25519 i686_linux,x86_64-linux - 8 5 kvm - c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUlRTG5ES2FKUVBudi9iWE1HemM0OGpoMnU3Wm9OaExQTk4vUXllRDZyYUogcm9vdEBzb2RhWFBTCg=='';
     };
