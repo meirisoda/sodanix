@@ -32,8 +32,4 @@
     };
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
-  
-  boot = {
-    extraModulePackages = [ config.boot.kernelPackages.nvidiaPackages.stable ];
-  };
 }
