@@ -54,7 +54,7 @@
       ];
       trusted-public-keys = [
         "tln32asus.student.cwru.edu:V8MCTN/ox+Y5GxqFsjAml4IfcUvTacLFIqw48A9Ic/o="
-        "sodaxps.student.cwru.edu:VG/8OKl4U7k5mFs1j6rkfTJdnVsRQcyZlzyVrpT6sW0=%"
+        "sodaxps.student.cwru.edu:VG/8OKl4U7k5mFs1j6rkfTJdnVsRQcyZlzyVrpT6sW0="
       ];
       trusted-users = [ "soda" ];
       "max-jobs" = 8;
