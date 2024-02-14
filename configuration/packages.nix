@@ -64,11 +64,14 @@
     
     # utilities
     barrier
+    bat
     btop
     gparted
+    fd
     ffmpeg
     flameshot
     kime
+    lsd
     lshw
     mpv
     mullvad

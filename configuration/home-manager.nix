@@ -64,6 +64,9 @@
           }
         ];
         shellAliases = {
+          ls = "lsd";
+          rofi = "rofi -show run";
+          ca = "bat";
           sodanix = "cd /home/soda/Documents/nix/sodanix";
           cdnixos = "cd /etc/nixos";
           out = "..";
