@@ -68,7 +68,10 @@
     };
   };
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation = {
+    libvirtd.enable = true;
+    waydroid.enable = true; 
+  };
   
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 

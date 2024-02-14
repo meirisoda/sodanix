@@ -10,7 +10,7 @@
     # utilities
     android-tools
     asusctl
-    nvtop-nvidia
+    nvtop
     supergfxctl
     # "${watershot}"
 
