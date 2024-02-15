@@ -6,7 +6,7 @@
       inherit (config.lib.formats.rasi) mkLiteral;
       rofi-theme = {
         "*" = {
-          background-color = mkLiteral "#00ff00";
+          background-color = mkLiteral "#ebebeb";
         };
       };
     in {
