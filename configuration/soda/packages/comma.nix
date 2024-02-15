@@ -1,4 +1,4 @@
-{ pkgs, config, username, nix-index-database,...}:
+{ pkgs, config, username, attrs, ...}:
 
 {
   programs.command-not-found.enable = pkgs.lib.mkForce false;
@@ -6,13 +6,13 @@
   home-manager.users.${username} = {
       home = {
         packages = with pkgs; [
-            nix-index-database.comma-with-db
+            attrs.nix-index-database.comma-with-db
         ];
       };
       programs = {
         nix-index = {
           enable = true;
-          package = nix-index-database.nix-index-with-db;
+          package = attrs.nix-index-database.nix-index-with-db;
           enableBashIntegration = true;
           enableZshIntegration = true;
           enableFishIntegration = true;
