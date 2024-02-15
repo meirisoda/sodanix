@@ -12,6 +12,10 @@
     nixpkgs-stable = {
       url = github:NixOS/nixpkgs/nixos-23.11;
     };
+    nix-index-database = {
+      url = "github:Mic92/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     sodasddm = {
       url = github:meirisoda/kde-plasma-sodasddm;
       flake = false;
@@ -21,7 +25,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, sodasddm, watershot,... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm, watershot,... }@attrs: let 
     config = { 
       allowUnfree = true; 
       cudaSupport = true;

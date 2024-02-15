@@ -3,8 +3,10 @@
 {
   imports =
     [ 
-      ./packages/vscode.nix
+      ./package/comma.nix
       # ./packages/hyprland.nix
       # ./packages/plasma.nix
+      ./package/rofi.nix
+      ./packages/vscode.nix
     ];
 }
