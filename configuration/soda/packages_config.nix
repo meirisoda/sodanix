@@ -3,10 +3,10 @@
 {
   imports =
     [ 
-      ./packages/comma.nix
+      (pkgs.callPackage ./packages/comma.nix {inherit username;})
       # ./packages/hyprland.nix
       # ./packages/plasma.nix
-      # ./packages/rofi.nix
+      (pkgs.callPackage ./packages/rofi.nix {inherit username;})
       ./packages/vscode.nix
     ];
 }
