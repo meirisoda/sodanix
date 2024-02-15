@@ -7,6 +7,6 @@ allConfig@{ config, pkgs, username, stablepkgs, attrs, ...}:
       # ./packages/hyprland.nix
       # ./packages/plasma.nix
       # (pkgs.callPackage ./packages/rofi.nix allConfig)
-      ./packages/vscode.nix
+      # ./packages/vscode.nix
     ];
 }
