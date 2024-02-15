@@ -1,4 +1,4 @@
-allconfig@{ attrs, config, pkgs, hostname, nixpkgs, ... }:
+allconfig@{ attrs, config, pkgs, hostname, nixpkgs, stablepkgs,  ... }:
 
 let
   username = "soda";
@@ -7,7 +7,7 @@ in
   imports =
   [
     ((import ./home-manager.nix) (allconfig // { inherit username; }))
-    ./soda/packages_config.nix
+    ((import ./soda/packages_config.nix)  (allconfig // { inherit username; }))
   ];
 
   users.defaultUserShell = pkgs.zsh;

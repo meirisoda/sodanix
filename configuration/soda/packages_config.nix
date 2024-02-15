@@ -1,9 +1,9 @@
-all@{ config, pkgs, username, stablepkgs, attrs, ...}:
+allConfig@{ config, pkgs, username, stablepkgs, attrs, ...}:
 
 {
   imports =
     [ 
-      (pkgs.callPackage ./packages/comma.nix all)
+      (import ./packages/comma.nix (allConfig // {inherit username;}))
       # ./packages/hyprland.nix
       # ./packages/plasma.nix
       # (pkgs.callPackage ./packages/rofi.nix allConfig)
