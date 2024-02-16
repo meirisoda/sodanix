@@ -106,5 +106,8 @@
     kdeconnect = {
       enable = true;
     };
+    adb = {
+      enable = true; 
+    };
   };
 }

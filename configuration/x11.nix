@@ -10,13 +10,6 @@
         plasma5.enable = true; 
       };
       displayManager = {
-        # lightdm = {
-          # enable = true;
-          # greeters = {
-            # slick.enable = true; 
-            # gtk.enable = false;
-          # };
-        # };
         sddm = {
           enable = true;
           wayland.enable = true;
