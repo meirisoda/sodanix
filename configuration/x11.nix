@@ -44,7 +44,7 @@
     # LIBVA_DRIVER_NAME = "nvidia";
     GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
     # LIBSEAT_BACKEND = "logind"; 
-    WLR_NO_HARDWARE_CURSORS = "1";
+    # WLR_NO_HARDWARE_CURSORS = "1";
   };
 # TODO hardware opengl
   hardware.opengl = with pkgs; {
