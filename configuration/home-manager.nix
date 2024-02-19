@@ -66,6 +66,7 @@
         shellAliases = {
           ls = "lsd";
           rofi = "rofi -show run";
+          gfx = "supergfxctl";
           ca = "bat";
           sodanix = "cd /home/soda/Documents/nix/sodanix";
           cdnixos = "cd /etc/nixos";
