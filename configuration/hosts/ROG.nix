@@ -12,7 +12,12 @@
       enable = true; 
       enableUserService = true; 
     };
+    supergfxd = {
+      enable = true;
+    };
   };
+
+  systemd.services.supergfxd.path = [ pkgs.pciutils ];
 
   hardware.nvidia = {
     modesetting.enable = true;

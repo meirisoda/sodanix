@@ -9,9 +9,7 @@
     
     # utilities
     android-tools
-    asusctl
     nvtop
-    supergfxctl
     # "${watershot}"
 
     # virtualisation
