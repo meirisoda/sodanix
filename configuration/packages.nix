@@ -68,6 +68,7 @@
     fd
     ffmpeg
     flameshot
+    graphviz
     kime
     lsd
     lshw
