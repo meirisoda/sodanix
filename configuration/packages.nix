@@ -89,7 +89,6 @@
     bitwarden
     calibre
     discord
-    google-chrome
     kitty
     localsend
     obsidian
