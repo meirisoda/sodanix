@@ -89,6 +89,7 @@
     bitwarden
     calibre
     discord
+    element-desktop
     kitty
     localsend
     obsidian
