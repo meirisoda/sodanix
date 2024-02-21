@@ -13,8 +13,9 @@
     # "${watershot}"
 
     # virtualisation
-    virt-manager
     qemu
+    virt-manager
+    wineWowPackages.stable
 
     # programs
     ani-cli
