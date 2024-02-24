@@ -84,7 +84,6 @@
     syncthing
     qbittorrent
     qpwgraph
-    wineWowPackages.stable
 
     # program
     bitwarden
