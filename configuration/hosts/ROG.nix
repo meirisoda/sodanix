@@ -1,10 +1,6 @@
 { config, pkgs, stablepkgs, ...}:
 
-{
-  imports = [
-    inputs.nixos-hardware.nixosModules.common-gpu-amd
-  ];
-  
+{  
   services = {
     xserver = {
       videoDrivers = [
