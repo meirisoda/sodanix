@@ -1,6 +1,10 @@
 { config, pkgs, stablepkgs, ...}:
 
 {
+  imports = [
+    inputs.nixos-hardware.nixosModules.common-gpu-amd
+  ];
+  
   services = {
     xserver = {
       videoDrivers = [
@@ -12,6 +16,11 @@
       enable = true; 
       enableUserService = true; 
     };
+  };
+
+  hardware.amdgpu = {
+    amdvlk = true;
+    opencl = true;
   };
 
   hardware.nvidia = {
@@ -29,7 +38,7 @@
       # };
       offload = {
         # enable =  true;
-        enableOffloadCmd = true; # Provides `nvidia-offload` command.
+        enableOffloadCmd = true;
       };
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:65:0:0";
