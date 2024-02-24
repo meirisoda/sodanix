@@ -73,6 +73,7 @@
     kime
     lsd
     lshw
+    man-pages
     mpv
     mullvad
     mullvad-vpn
