@@ -69,6 +69,7 @@
     fd
     ffmpeg
     flameshot
+    freefilesync
     graphviz
     kime
     lsd
