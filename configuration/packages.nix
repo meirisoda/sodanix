@@ -34,7 +34,7 @@
     pdfsam-basic
     puredata
     sonic-pi
-    (pkgs.callPackage ./packages/programs/sunvox.nix {})
+    (pkgs.callPackage ./soda/packages/programs/sunvox.nix {})
     zoom-us
 
     # games
