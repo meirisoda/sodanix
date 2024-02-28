@@ -16,16 +16,18 @@
       url = "github:Mic92/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    plasma-manager = {
+      url = "https://github.com/pjones/plasma-manager";
+    };
     sodasddm = {
-      url = github:meirisoda/kde-plasma-sodasddm;
-      flake = false;
+      url = "https://github.com/meirisoda/kde-plasma-sodasddm";
     };
     watershot = {
       url = github:Kirottu/watershot; # RUST_BACKTRACE=1 also not working, current open issue on repo
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm, watershot,... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, plasma-manager, sodasddm, watershot,... }@attrs: let 
     config = { 
       allowUnfree = true; 
       cudaSupport = true;
@@ -36,11 +38,13 @@
     rogmodules = [
       nixos-hardware.nixosModules.asus-zephyrus-ga402
       home-manager.nixosModules.default
+      plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
     xpsmodules = [
       nixos-hardware.nixosModules.dell-xps-13-9380
       home-manager.nixosModules.default
+      plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
     allConfig = {
