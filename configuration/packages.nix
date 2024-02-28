@@ -21,13 +21,8 @@
     ani-cli
     audacity
     blender
-    calibre
-    cbonsai
-    figma-linux
     gimp
-    github-desktop
     inkscape
-    komikku
     krita
     libreoffice
     obs-studio
@@ -39,10 +34,8 @@
 
     # games
     lutris
-    ppsspp-sdl-wayland
     prismlauncher
     steam
-    yuzu-mainline
     
   ] else [
     
@@ -63,12 +56,11 @@
     
     # utilities
     barrier
-    bat
+    bat 
     btop
     gparted
     fd
     ffmpeg
-    flameshot
     freefilesync
     graphviz
     kime
@@ -80,14 +72,13 @@
     mullvad-vpn
     neofetch
     noisetorch
-    pfetch
     piper
     rofi
     syncthing
     qbittorrent
     qpwgraph
 
-    # program
+    # programs
     bitwarden
     calibre
     discord
