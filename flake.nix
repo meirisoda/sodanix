@@ -38,13 +38,11 @@
     rogmodules = [
       nixos-hardware.nixosModules.asus-zephyrus-ga402
       home-manager.nixosModules.default
-      plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
     xpsmodules = [
       nixos-hardware.nixosModules.dell-xps-13-9380
       home-manager.nixosModules.default
-      plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
     allConfig = {

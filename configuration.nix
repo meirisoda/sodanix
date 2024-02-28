@@ -9,6 +9,7 @@
       ./configuration/hosts.nix
       ./configuration/packages.nix
       ./configuration/soda.nix
+      plasma-manager.homeManagerModules.plasma-manager
     ];
 
   time.timeZone = "America/New_York";
