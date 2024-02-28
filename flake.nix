@@ -17,10 +17,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     plasma-manager = {
-      url = "https://github.com/pjones/plasma-manager";
+      url = github:jones/plasma-manager;
     };
     sodasddm = {
-      url = "https://github.com/meirisoda/kde-plasma-sodasddm";
+      url = github:meirisoda/kde-plasma-sodasddm;
     };
     watershot = {
       url = github:Kirottu/watershot; # RUST_BACKTRACE=1 also not working, current open issue on repo
