@@ -51,6 +51,7 @@
 
     # development
     cmake
+    docker
     zsh
     zsh-powerlevel10k
     
