@@ -53,6 +53,7 @@
     driSupport32Bit = true;
     extraPackages = [
       vaapiVdpau
+      libvdpau-va-gl
     ];
   };
 
