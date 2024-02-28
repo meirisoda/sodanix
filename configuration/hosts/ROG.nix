@@ -41,4 +41,9 @@
     };
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
+
+  powerManagement = {
+    enable = true;
+    powertop.enable = true;
+  };
 }
