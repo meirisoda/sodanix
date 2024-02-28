@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, sodasddm, ... }:
+{ config, pkgs, stablepkgs, sodasddm, hostname, ... }:
 
 {
   services = {
@@ -37,7 +37,7 @@
 # TODO env vars
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";
-    KWIN_DRM_DEVICES = "/dev/dri/by-path/pci-0000\\:65\\:00.0-card" ;
+    KWIN_DRM_DEVICES = if hostname == "sodaROG" then ["/dev/dri/by-path/pci-0000\\:65\\:00.0-card"] else [];
     # GBM_BACKEND = "nvidia-drm";
     # __GLX_VENDOR_LIBRARY_NAME = "nvidia";
     ENABLE_VKBASALT = "1";
