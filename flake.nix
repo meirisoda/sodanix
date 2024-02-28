@@ -17,7 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     plasma-manager = {
-      url = github:jones/plasma-manager;
+      url = github:pjones/plasma-manager;
     };
     sodasddm = {
       url = github:meirisoda/kde-plasma-sodasddm;
