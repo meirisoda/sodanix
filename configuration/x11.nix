@@ -37,7 +37,6 @@
 # TODO env vars
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";
-    KWIN_DRM_DEVICES = if hostname == "sodaROG" then ["/dev/dri/by-path/pci-0000\\:65\\:00.0-card"] else [];
     # GBM_BACKEND = "nvidia-drm";
     # __GLX_VENDOR_LIBRARY_NAME = "nvidia";
     ENABLE_VKBASALT = "1";
@@ -45,7 +44,10 @@
     GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
     # LIBSEAT_BACKEND = "logind"; 
     # WLR_NO_HARDWARE_CURSORS = "1";
-  };
+  } // (if hostname == "sodaROG" then {
+      KWIN_DRM_DEVICES = "/dev/dri/by-path/pci-0000\\:65\\:00.0-card";
+    } else {});
+
 # TODO hardware opengl
   hardware.opengl = with pkgs; {
     enable = true;
