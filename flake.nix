@@ -21,6 +21,7 @@
     # };
     sodasddm = {
       url = "github:meirisoda/kde-plasma-sodasddm";
+      flake = false;
     };
     watershot = {
       url = github:Kirottu/watershot; # RUST_BACKTRACE=1 also not working, current open issue on repo
