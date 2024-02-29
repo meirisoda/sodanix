@@ -35,13 +35,13 @@
     hyprland.enable = true;
   };
 # TODO env vars
-  # environment.variables = {
-  #   KWIN_DRM_USE_MODIFIERS = "0";
-  #   ENABLE_VKBASALT = "1";
-  #   GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
-  # } // (if hostname == "sodaROG" then {
-  #     KWIN_DRM_DEVICES = "/dev/dri/by-path/pci-0000\\:65\\:00.0-card";
-  #   } else {});
+  environment.variables = {
+    KWIN_DRM_USE_MODIFIERS = "0";
+    ENABLE_VKBASALT = "1";
+    GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
+  } // (if hostname == "sodaROG" then {
+      KWIN_DRM_DEVICES = "/dev/dri/by-path/pci-0000\\:65\\:00.0-card";
+    } else {});
 
 # TODO hardware opengl
   hardware.opengl = with pkgs; {
