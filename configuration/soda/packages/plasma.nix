@@ -1,10 +1,10 @@
-{ config, pkgs, stablepkgs, username, plasma-manager, ... }:
+{ config, pkgs, stablepkgs, username, ... }:
 
 {
-  imports = [
-    plasma-manager.homeManagerModules.plasma-manager
-  ];
-  
+  # imports = [
+  #   plasma-manager.homeManagerModules.plasma-manager
+  # ];
+
   home-manager.users.${username} = {
     programs.plasma = {
       workspace = {

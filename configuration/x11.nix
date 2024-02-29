@@ -7,8 +7,8 @@
     xserver = {
       enable = true;
       desktopManager = {
-        plasma5.enable = true; 
-        # plasma6.enable = true;
+        # plasma5.enable = true; 
+        plasma6.enable = true;
       };
       displayManager = {
         sddm = {

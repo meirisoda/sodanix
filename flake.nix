@@ -16,9 +16,9 @@
       url = "github:Mic92/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    plasma-manager = {
-      url = github:pjones/plasma-manager;
-    };
+    # plasma-manager = {
+    #   url = github:pjones/plasma-manager;
+    # };
     sodasddm = {
       url = github:meirisoda/kde-plasma-sodasddm;
     };
@@ -27,7 +27,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, plasma-manager, sodasddm, watershot,... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm, watershot,... }@attrs: let 
     config = { 
       allowUnfree = true; 
       cudaSupport = true;
