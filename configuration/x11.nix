@@ -7,7 +7,7 @@
     xserver = {
       enable = true;
       desktopManager = {
-        # plasma5.enable = true; 
+        # plasma5.enable = true;
         plasma6.enable = true;
       };
       displayManager = {
@@ -39,10 +39,9 @@
     KWIN_DRM_USE_MODIFIERS = "0";
     ENABLE_VKBASALT = "1";
     GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
-  }; 
-  # // (if hostname == "sodaROG" then {
-  #     KWIN_DRM_DEVICES = "/dev/dri/by-path/pci-0000\\:65\\:00.0-card";
-  #   } else {});
+  } // (if hostname == "sodaROG" then {
+      KWIN_DRM_DEVICES = "/dev/dri/by-path/pci-0000\\:01\\:00.0-card"; # Nvidia
+    } else {});
 
 # TODO hardware opengl
   hardware.opengl = with pkgs; {
@@ -51,7 +50,7 @@
     driSupport32Bit = true;
     extraPackages = [
       vaapiVdpau
-      # libvdpau-va-gl
+      libvdpau-va-gl
     ];
   };
 
