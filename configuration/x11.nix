@@ -14,7 +14,7 @@
         sddm = {
           enable = true;
           wayland.enable = true;
-          # theme = "${sodasddm}";
+          theme = "${sodasddm}";
         };
       };
       libinput = { 
