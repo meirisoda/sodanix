@@ -32,8 +32,8 @@
         # enable =  true;
         enableOffloadCmd = true;
       };
-      nvidiaBusId = lib.mkForce "PCI:1:0:0";
-      amdgpuBusId = lib.mkForce "PCI:65:0:0";
+      nvidiaBusId = "PCI:1:0:0";
+      amdgpuBusId = "PCI:65:0:0";
     };
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
@@ -42,4 +42,10 @@
     enable = true;
     # powertop.enable = true;
   };
+
+  boot.kernelParams = [
+    "amdgpu.gpu_recovery=1"
+    "amdgpu.sg_display=0"
+    "amdgpu.dcdebugmask=0x10"
+  ];
 }
