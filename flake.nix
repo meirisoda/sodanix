@@ -37,7 +37,7 @@
       ];
     };
     rogmodules = [
-      nixos-hardware.nixosModules.asus-zephyrus-ga402
+      nixos-hardware.nixosModules.asus-zephyrus-ga402x
       home-manager.nixosModules.default
       nix-index-database.nixosModules.nix-index
       # plasma-manager.homeManagerModules.plasma-manager

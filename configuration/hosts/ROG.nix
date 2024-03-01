@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, ...}:
+{ config, pkgs, stablepkgs, lib, ...}:
 
 {  
   services = {
@@ -15,16 +15,12 @@
   };
 
   hardware.amdgpu = {
+    loadInInitrd = true;
     amdvlk = true;
-    opencl = true;
   };
 
   hardware.nvidia = {
     modesetting.enable = true;
-    powerManagement = {
-      enable = false; 
-      finegrained = true;
-    };
     nvidiaSettings = true;
     open = false;
     prime = {
@@ -36,8 +32,8 @@
         # enable =  true;
         enableOffloadCmd = true;
       };
-      nvidiaBusId = "PCI:1:0:0";
-      amdgpuBusId = "PCI:65:0:0";
+      nvidiaBusId = lib.mkForce "PCI:1:0:0";
+      amdgpuBusId = lib.mkForce "PCI:65:0:0";
     };
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
