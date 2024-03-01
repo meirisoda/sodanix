@@ -30,6 +30,7 @@
     puredata
     sonic-pi
     (pkgs.callPackage ./soda/packages/programs/sunvox.nix {})
+    tagger
     zoom-us
 
     # games
