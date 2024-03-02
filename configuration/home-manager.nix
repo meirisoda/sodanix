@@ -75,6 +75,7 @@
           gp = "git push";
           gpl = "git pull";
           nvo = "nvidia-offload";
+          jf = "jellyfinmediaplayer";
           xps = "ssh soda@sodaxps.student.cwru.edu";
           rog = "ssh soda@sodarog.student.cwru.edu";
         };
