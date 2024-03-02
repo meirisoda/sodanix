@@ -12,6 +12,7 @@
       enable = true; 
       enableUserService = true; 
     };
+  };
 
   hardware.amdgpu = {
     loadInInitrd = true;
