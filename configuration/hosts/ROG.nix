@@ -12,9 +12,9 @@
       enable = true; 
       enableUserService = true; 
     };
-    tlp = {
-      enable = true;
-    };
+    # tlp = {
+    #   enable = true;
+    # };
   };
 
   hardware.amdgpu = {
@@ -47,7 +47,7 @@
     "amdgpu.dcdebugmask=0x10"
   ];
 
-  # powerManagement = {
-  #   enable = true;
-  # };
+  powerManagement = {
+    enable = true;
+  };
 }
