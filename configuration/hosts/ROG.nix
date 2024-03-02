@@ -38,11 +38,6 @@
     package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
 
-  powerManagement = {
-    enable = true;
-    # powertop.enable = true;
-  };
-
   boot.kernelParams = [
     "amdgpu.gpu_recovery=1"
     "amdgpu.sg_display=0"
