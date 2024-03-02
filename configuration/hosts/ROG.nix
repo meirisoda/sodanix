@@ -12,6 +12,17 @@
       enable = true; 
       enableUserService = true; 
     };
+    tlp = {
+      enable = true;
+      settings = {
+        CPU_MIN_PERF_ON_AC = 0;
+        CPU_MAX_PERF_ON_AC = 100;
+        CPU_MIN_PERF_ON_BAT = 0;
+        CPU_MAX_PERF_ON_BAT = 80;
+
+        USB_AUTOSUSPEND=0
+      };
+    };
   };
 
   hardware.amdgpu = {
