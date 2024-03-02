@@ -23,8 +23,6 @@
     blender
     gimp
     inkscape
-    jellycli
-    jellyfin-media-player
     krita
     libreoffice
     obs-studio
@@ -66,6 +64,8 @@
     ffmpeg
     freefilesync
     graphviz
+    jellycli
+    jellyfin-media-player
     kime
     lsd
     lshw
