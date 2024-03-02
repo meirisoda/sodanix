@@ -24,6 +24,7 @@
     gimp
     inkscape
     jellycli
+    jellyfin-media-player
     krita
     libreoffice
     obs-studio
