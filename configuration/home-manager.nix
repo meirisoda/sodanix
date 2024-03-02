@@ -79,6 +79,7 @@
           jf = "jellyfinmediaplayer";
           xps = "ssh soda@sodaxps.student.cwru.edu";
           rog = "ssh soda@sodarog.student.cwru.edu";
+          tln32asus = "ssh soda@tln32asus.student.cwru.edu";
         };
       };
       kitty = {
