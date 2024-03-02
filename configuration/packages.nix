@@ -23,6 +23,7 @@
     blender
     gimp
     inkscape
+    jellycli
     krita
     libreoffice
     obs-studio
