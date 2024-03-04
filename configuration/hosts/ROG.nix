@@ -26,6 +26,10 @@
     modesetting.enable = true;
     nvidiaSettings = true;
     open = false;
+    powerManagement = {
+      enable = true; 
+      finegrained = true;
+    };
     prime = {
       reverseSync.enable = true; 
       # sync = {
