@@ -64,19 +64,22 @@
           }
         ];
         shellAliases = {
+          ca = "bat";
+          clip = "xclip -selection clipboard -r";
+          nvo = "nvidia-offload";
+          jf = "jellyfinmediaplayer";
+          # move
           ls = "lsd";
           la = "ls -al";
-          rofi = "rofi -show run";
-          ca = "bat";
+          out = "..";
           sodanix = "cd /home/soda/Documents/nix/sodanix";
           cdnixos = "cd /etc/nixos";
-          out = "..";
+          # git
           ga = "git add *";
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
-          nvo = "nvidia-offload";
-          jf = "jellyfinmediaplayer";
+          # ssh
           xps = "ssh soda@sodaxps.student.cwru.edu";
           rog = "ssh soda@sodarog.student.cwru.edu";
           tln32asus = "ssh soda@tln32asus.student.cwru.edu";
