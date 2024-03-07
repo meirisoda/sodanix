@@ -13,11 +13,11 @@
       enableUserService = true; 
     };
     # power 
-    power-profiles-daemon.enable = false;
-    thermald.enable = true;
+    power-profiles-daemon.enable = true;
     tlp = {
       enable = true;
       settings = {
+        USB_AUTOSUSPEND=0;
         CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
         CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
 
