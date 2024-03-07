@@ -1,6 +1,17 @@
 { config, pkgs, stablepkgs, lib, ...}:
 
 {  
+  specialisation = {
+    soda.configuration = {
+      hardware.nvidia.prime = {
+        reverseSync.enable = true;
+        offload = {
+          enableOffloadCmd = true;
+        };
+      };     
+    }; 
+  };
+
   services = {
     xserver = {
       videoDrivers = [
@@ -12,8 +23,7 @@
       enable = true; 
       enableUserService = true; 
     };
-    # power 
-    power-profiles-daemon.enable = true;
+    power-profiles-daemon.enable = true; # plasma
   };
 
   hardware.nvidia = {
