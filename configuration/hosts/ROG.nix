@@ -14,16 +14,16 @@
     };
     # power 
     power-profiles-daemon.enable = true;
-    tlp = {
-      enable = true;
-      settings = {
-        USB_AUTOSUSPEND=0;
-        CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
-        CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
-
-        STOP_CHARGE_THRESH_BAT0 = 95;
-      };
-    };
+    # tlp = {
+      # enable = true;
+      # settings = {
+        # USB_AUTOSUSPEND=0;
+        # CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+        # CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+# 
+        # STOP_CHARGE_THRESH_BAT0 = 95;
+      # };
+    # };
   };
 
   hardware.amdgpu = {
@@ -60,7 +60,7 @@
     "amdgpu.dcdebugmask=0x10"
   ];
 
-  powerManagement = {
-    enable = true;
-  };
+#   powerManagement = {
+#     enable = true;
+  # };
 }
