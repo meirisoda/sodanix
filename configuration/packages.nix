@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [
     # system
+    mesa-demos
 
     # development
     cudatoolkit

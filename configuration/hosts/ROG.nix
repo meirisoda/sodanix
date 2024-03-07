@@ -61,6 +61,8 @@
     "nouveau.config=NvGspRm=1"
   ];
 
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
 #   powerManagement = {
 #     enable = true;
   # };
