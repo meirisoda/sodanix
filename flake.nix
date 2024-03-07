@@ -25,7 +25,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm, plasma-manager, watershot,... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm, plasma-manager, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       cudaSupport = true;
