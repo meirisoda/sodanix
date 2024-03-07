@@ -58,7 +58,6 @@
     # utilities
     barrier
     bat 
-    brave
     btop
     gparted
     fd

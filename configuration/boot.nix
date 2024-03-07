@@ -7,6 +7,7 @@
       availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" "usb_storage" "sd_mod" "rtsx_pci_sdmmc"];
     };
     kernelModules = [ ]; 
+    kernelParams = if hostname == "sodaROG" then [ "nouveau.config=NvGspRm=1" ] else []; 
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
