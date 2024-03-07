@@ -16,10 +16,10 @@
     power-profiles-daemon.enable = true;
   };
 
-  # hardware.amdgpu = {
-  #   loadInInitrd = true;
-  #   amdvlk = true;
-  # };
+  hardware.amdgpu = {
+    loadInInitrd = true;
+    amdvlk = true;
+  };
 
   hardware.nvidia = {
     modesetting.enable = true;
@@ -53,7 +53,7 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-#   powerManagement = {
-#     enable = true;
-  # };
+  powerManagement = {
+    enable = true;
+  };
 }

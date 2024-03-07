@@ -23,9 +23,6 @@
       url = "github:meirisoda/kde-plasma-sodasddm";
       flake = false;
     };
-    watershot = {
-      url = github:Kirottu/watershot; # RUST_BACKTRACE=1 also not working, current open issue on repo
-    };
   }; 
 
   outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm, plasma-manager, watershot,... }@attrs: let 
@@ -33,7 +30,7 @@
       allowUnfree = true; 
       cudaSupport = true;
       permittedInsecurePackages = [ 
-        "electron-25.9.0"
+        "electron-25.9.0" # obsidian
       ];
     };
     rogmodules = [

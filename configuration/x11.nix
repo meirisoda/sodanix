@@ -7,7 +7,6 @@
     xserver = {
       enable = true;
       desktopManager = {
-        # plasma5.enable = true;
         plasma6.enable = true;
       };
       displayManager = {
@@ -29,11 +28,13 @@
       };
     };  
   };
+
 # TODO programs
   programs = {
     xwayland.enable = true; 
     hyprland.enable = true;
   };
+
 # TODO env vars
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";

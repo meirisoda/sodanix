@@ -2,11 +2,7 @@
 
 {
   imports = [
-    ./hardware/bluetooth.nix
-    ./hardware/network.nix
-    ./hardware/printing.nix
-    ./hardware/sound.nix
-    ./hardware/yubikey.nix
+    ./hardware/default.nix
   ];
 
   fileSystems."/" =
