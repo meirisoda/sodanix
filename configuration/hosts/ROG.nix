@@ -16,11 +16,6 @@
     power-profiles-daemon.enable = true;
   };
 
-  # hardware.amdgpu = {
-  #   loadInInitrd = true;
-  #   amdvlk = true;
-  # };
-
   hardware.nvidia = {
     modesetting.enable = true;
     nvidiaSettings = true;
@@ -35,7 +30,7 @@
       #  enable = true;
       # };
       offload = {
-        enable =  true;
+        enable =  true; 
         enableOffloadCmd = true;
       };
       nvidiaBusId = "PCI:1:0:0";
