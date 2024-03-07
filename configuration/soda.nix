@@ -18,7 +18,7 @@ in
     extraGroups = [ "networkmanager" "wheel" "libvirtd" "adbusers" "docker"];
     shell = pkgs.zsh;
     packages = with pkgs; [
-      firefox
+      # firefox
       vscodium
     ];
   };
