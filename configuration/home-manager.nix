@@ -68,18 +68,15 @@
           clip = "xclip -selection clipboard -r";
           nvo = "nvidia-offload";
           jf = "jellyfinmediaplayer";
-          # move
           ls = "lsd";
           la = "ls -al";
           out = "..";
           sodanix = "cd /home/soda/Documents/nix/sodanix";
           cdnixos = "cd /etc/nixos";
-          # git
           ga = "git add *";
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
-          # ssh
           xps = "ssh soda@sodaxps.student.cwru.edu";
           rog = "ssh soda@sodarog.student.cwru.edu";
           tln32asus = "ssh soda@tln32asus.student.cwru.edu";
@@ -122,22 +119,5 @@
         enableBashIntegration = true;
       };
     };
-    
-    # services = {
-    #   dunst = {
-    #     enable = true;
-    #     settings = {
-    #       global = {
-    #         origin = "bottom-right";
-    #         font = "Droid Sans 9";
-    #       };
-    #       urgency_normal = {
-    #         background = "#A0B9D5";
-    #         foreground = "#000000";
-    #         timeout = 5;
-    #       };
-    #     };
-    #   };
-    # };
   };
 }

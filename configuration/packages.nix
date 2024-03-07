@@ -3,15 +3,12 @@
 {
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [
     # system
-    mesa-demos
 
     # development
     cudatoolkit
     
     # utilities
-    android-tools
     nvtop
-    # "${watershot}"
 
     # virtualisation
     qemu
@@ -52,7 +49,6 @@
 
     # development
     cmake
-    docker
     zsh
     zsh-powerlevel10k
     
@@ -77,7 +73,6 @@
     neofetch
     noisetorch
     piper
-    rofi
     syncthing
     qbittorrent
     qpwgraph
@@ -101,9 +96,6 @@
     virt-manager.enable = true;
     kdeconnect = {
       enable = true;
-    };
-    adb = {
-      enable = true; 
     };
   };
 }

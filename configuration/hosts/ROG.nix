@@ -1,17 +1,6 @@
 { config, pkgs, stablepkgs, lib, ...}:
 
 {  
-  specialisation = {
-    soda.configuration = {
-      hardware.nvidia.prime = {
-        reverseSync.enable = true;
-        offload = {
-          enableOffloadCmd = true;
-        };
-      };     
-    }; 
-  };
-
   services = {
     xserver = {
       videoDrivers = [
@@ -25,15 +14,18 @@
     };
     power-profiles-daemon.enable = true; # plasma
   };
+  
+  powerManagement = {
+    enable = true;
 
   hardware.nvidia = {
     modesetting.enable = true;
     nvidiaSettings = true;
     open = false;
-    # powerManagement = {
-      # enable = true;
-      # finegrained = true; 
-    # };
+    powerManagement = {
+      enable = false;
+      finegrained = false; 
+    };
     prime = {
       # reverseSync.enable = true; 
       # sync = {
@@ -58,7 +50,16 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  powerManagement = {
-    enable = true;
+  
+  specialisation = {
+    soda.configuration = {
+      hardware.nvidia.prime = {
+        reverseSync.enable = true;
+        offload = {
+          enableOffloadCmd = true;
+        };
+      };     
+    }; 
+  };
   };
 }
