@@ -26,12 +26,12 @@ in {
       finegrained = false; 
     };
     prime = {
-      reverseSync.enable = mkDefault false; 
+      reverseSync.enable = lib.mkDefault false; 
       # sync = {
       #  enable = true;
       # };
       offload = {
-        enable =  mkDefault true; 
+        enable =  lib.mkDefault true; 
         enableOffloadCmd = true;
       };
       nvidiaBusId = "PCI:1:0:0";
