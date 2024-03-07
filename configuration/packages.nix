@@ -9,6 +9,7 @@
     
     # utilities
     android-tools
+    gwe
     nvtop
     # "${watershot}"
 
