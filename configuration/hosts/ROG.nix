@@ -1,6 +1,8 @@
 { config, pkgs, stablepkgs, lib, ...}:
 
-{  
+let 
+  inherit (lib) mkDefault mkEnableOption mkIf mkMerge; 
+in {  
   services = {
     xserver = {
       videoDrivers = [
