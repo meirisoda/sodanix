@@ -1,8 +1,6 @@
 { config, pkgs, stablepkgs, lib, ...}:
 
-let 
-  inherit (lib) mkDefault mkEnableOption mkIf mkMerge; 
-in {  
+{  
   services = {
     xserver = {
       videoDrivers = [
@@ -26,12 +24,12 @@ in {
       finegrained = false; 
     };
     prime = {
-      reverseSync.enable = lib.mkDefault false; 
+      reverseSync.enable = false; 
       # sync = {
       #  enable = true;
       # };
       offload = {
-        enable =  lib.mkDefault true; 
+        enable =  true; 
         enableOffloadCmd = true;
       };
       nvidiaBusId = "PCI:1:0:0";
