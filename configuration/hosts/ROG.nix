@@ -16,26 +16,26 @@
     power-profiles-daemon.enable = true;
   };
 
-  hardware.amdgpu = {
-    loadInInitrd = true;
-    amdvlk = true;
-  };
+  # hardware.amdgpu = {
+  #   loadInInitrd = true;
+  #   amdvlk = true;
+  # };
 
   hardware.nvidia = {
     modesetting.enable = true;
     nvidiaSettings = true;
     open = false;
-    powerManagement = {
-      enable = true;
-      finegrained = true; 
-    };
+    # powerManagement = {
+      # enable = true;
+      # finegrained = true; 
+    # };
     prime = {
-      reverseSync.enable = true; 
+      # reverseSync.enable = true; 
       # sync = {
       #  enable = true;
       # };
       offload = {
-        # enable =  true;
+        enable =  true;
         enableOffloadCmd = true;
       };
       nvidiaBusId = "PCI:1:0:0";
