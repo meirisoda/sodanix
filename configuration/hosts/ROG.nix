@@ -24,12 +24,12 @@
       finegrained = false; 
     };
     prime = {
-      reverseSync.enable = false; 
+      reverseSync.enable = lib.mkDefault false; 
       # sync = {
       #  enable = true;
       # };
       offload = {
-        enable =  true; 
+        enable = lib.mkDefault true; 
         enableOffloadCmd = true;
       };
       nvidiaBusId = "PCI:1:0:0";
@@ -54,9 +54,9 @@
   specialisation = {
     soda.configuration = {
       hardware.nvidia.prime = {
-        reverseSync.enable = true;
+        reverseSync.enable = lib.mkForce true;
         offload = {
-          enable = false;
+          enable = lib.mkForce false;
           enableOffloadCmd = true;
         };
       };     
