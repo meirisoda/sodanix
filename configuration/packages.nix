@@ -8,8 +8,6 @@
     cudatoolkit
     
     # utilities
-    clamav
-    clamtk
     nvtop
 
     # virtualisation
