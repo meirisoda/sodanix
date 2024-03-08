@@ -29,7 +29,7 @@
       #  enable = true;
       # };
       offload = {
-        enable = lib.mkDefault true; 
+        enable = lib.mkForce true; 
         enableOffloadCmd = true;
       };
       nvidiaBusId = "PCI:1:0:0";
