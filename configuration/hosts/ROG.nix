@@ -52,9 +52,6 @@
   };
   
   specialisation = {
-    mobile.configuration = {
-      inheritParentConfig = true;
-    };
     soda.configuration = {
       hardware.nvidia.prime = {
         reverseSync.enable = lib.mkForce true;
