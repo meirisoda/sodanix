@@ -50,6 +50,11 @@
   powerManagement = {
     enable = true;
   };
+
+  # temp
+  services.clamav = {
+    scanner.enable = true;
+  };
   
   # specialisation = {
   #   soda.configuration = {
