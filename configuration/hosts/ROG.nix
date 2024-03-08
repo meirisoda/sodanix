@@ -56,7 +56,6 @@
       hardware.nvidia.prime = {
         reverseSync.enable = lib.mkForce true;
         offload = {
-          enable = lib.mkForce false;
           enableOffloadCmd = true;
         };
       };     
