@@ -80,6 +80,8 @@
           xps = "ssh soda@sodaxps.student.cwru.edu";
           rog = "ssh soda@sodarog.student.cwru.edu";
           tln32asus = "ssh soda@tln32asus.student.cwru.edu";
+          sodasw = "sudo /run/current-system/specialisation/soda/bin/switch-to-configuration switch";
+          mobilesw = "sudo /run/current-system/specialisation/mobile/bin/switch-to-configuration switch";
         };
       };
       kitty = {
