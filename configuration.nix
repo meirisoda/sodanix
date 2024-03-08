@@ -77,7 +77,7 @@
 
   # temp
   services.clamav = {
-    enable = true;
+    daemon.enable = true;
     scanner.enable = true;
   };
 
