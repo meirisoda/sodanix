@@ -9,6 +9,7 @@
     
     # utilities
     clamav
+    clamtk
     nvtop
 
     # virtualisation
