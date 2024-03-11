@@ -19,9 +19,6 @@
         START_CHARGE_THRESH_BAT0 = 15;
         STOP_CHARGE_THRESH_BAT0 = 95;
 
-        CPU_ENERGY_PERF_POLICY_ON_AC = default;
-        CPU_ENERGY_PERF_POLICY_ON_BAT = balance_power;
-
         PLATFORM_PROFILE_ON_AC = balanced;
         PLATFORM_PROFILE_ON_BAT = low-power;
 
