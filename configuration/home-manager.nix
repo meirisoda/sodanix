@@ -45,7 +45,7 @@
       };
       zsh = {
         enable = true;
-        enableAutosuggestions = true;
+        autosuggestion = true;
         syntaxHighlighting.enable = true;
         autocd = true;
         oh-my-zsh = {
