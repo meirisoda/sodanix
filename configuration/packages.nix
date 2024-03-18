@@ -21,7 +21,7 @@
     blender
     gimp
     inkscape
-    krita
+    # krita
     libreoffice
     obs-studio
     pdfsam-basic
