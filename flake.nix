@@ -41,7 +41,7 @@
       nixos-hardware.nixosModules.asus-zephyrus-ga402
       home-manager.nixosModules.default
       nix-index-database.nixosModules.nix-index
-      auto-cpufreq.nixosModules.default
+      # auto-cpufreq.nixosModules.default
       # plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
