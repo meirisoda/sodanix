@@ -52,7 +52,8 @@
   #   enable = true;
   # };
 
-  programs.auto-cpufreq = {
+  programs.auto-cpufreq.enable = true;
+  services.auto-cpufreq = {
     enable = true;
     settings = {
       charger = {
