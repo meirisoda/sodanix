@@ -23,9 +23,13 @@
       url = "github:meirisoda/kde-plasma-sodasddm";
       flake = false;
     };
+    auto-cpufreq = {
+      url = "github:AdnanHodzic/auto-cpufreq";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm, plasma-manager, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm, plasma-manager, auto-cpufreq, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       cudaSupport = true;
@@ -37,6 +41,7 @@
       nixos-hardware.nixosModules.asus-zephyrus-ga402
       home-manager.nixosModules.default
       nix-index-database.nixosModules.nix-index
+      auto-cpufreq.nixosModules.default
       # plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];

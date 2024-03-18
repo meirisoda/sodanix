@@ -6,6 +6,7 @@
 
     # development
     cudatoolkit
+    github-desktop
     
     # utilities
     nvtop
