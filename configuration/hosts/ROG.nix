@@ -48,9 +48,9 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  powerManagement = {
-    enable = true;
-  };
+  # powerManagement = {
+  #   enable = true;
+  # };
 
   services.auto-cpufreq = {
     enable = true;
