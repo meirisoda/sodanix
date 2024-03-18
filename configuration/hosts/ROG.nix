@@ -52,7 +52,7 @@
   #   enable = true;
   # };
 
-  services.auto-cpufreq = {
+  programs.auto-cpufreq = {
     enable = true;
     settings = {
       charger = {
@@ -65,6 +65,8 @@
         scaling_min_freq = 400000;
         scaling_max_freq = 2800000;
         turbo = "never";
+        enable_thresholds = true;
+        stop_threshold = 95;
       };
     };
   };
