@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, username, ... }:
+{ config, pkgs, stablepkgs, username, hostname, ... }:
 
 {
   home-manager.users.${username} = {
@@ -78,7 +78,7 @@
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
-          upg = "sudo bash -c \"cd /etc/nixos; git stash; git stash clear; git pull; nixos-rebuild switch --flake \\\".#${host-name}\\\"\"";
+          upg = "sudo bash -c \"cd /etc/nixos; git stash; git stash clear; git pull; nixos-rebuild switch --flake \\\".#${hostname}\\\"\"";
           xps = "ssh soda@sodaxps.student.cwru.edu";
           rog = "ssh soda@sodarog.student.cwru.edu";
           tln32asus = "ssh soda@tln32asus.student.cwru.edu";
