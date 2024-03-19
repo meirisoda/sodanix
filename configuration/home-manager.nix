@@ -71,12 +71,14 @@
           ls = "lsd";
           la = "ls -al";
           out = "..";
+          c = "codium .";
           sodanix = "cd /home/soda/Documents/nix/sodanix";
           cdnixos = "cd /etc/nixos";
           ga = "git add *";
           gac = "git commit -am";
           gp = "git push";
           gpl = "git pull";
+          upg = "sudo bash -c \"cd /etc/nixos; git stash; git stash clear; git pull; nixos-rebuild switch --flake \\\".#${host-name}\\\"\"";
           xps = "ssh soda@sodaxps.student.cwru.edu";
           rog = "ssh soda@sodarog.student.cwru.edu";
           tln32asus = "ssh soda@tln32asus.student.cwru.edu";
