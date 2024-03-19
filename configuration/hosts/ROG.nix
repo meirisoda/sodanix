@@ -17,7 +17,7 @@
       enable = true; 
       enableUserService = true; 
     };
-    power-profiles-daemon.enable = true; # plasma
+    # power-profiles-daemon.enable = true; # plasma
   };
 
   hardware.nvidia = {
@@ -63,7 +63,7 @@
       battery = {
         governor = "powersave";
         scaling_min_freq = 400000;
-        scaling_max_freq = 2800000;
+        scaling_max_freq = 2000000;
         turbo = "never";
         enable_thresholds = true;
         stop_threshold = 95;
