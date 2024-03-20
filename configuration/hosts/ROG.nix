@@ -17,7 +17,7 @@
       enable = true; 
       enableUserService = true; 
     };
-    # power-profiles-daemon.enable = true; # plasma
+    power-profiles-daemon.enable = false; # plasma
   };
 
   hardware.nvidia = {
