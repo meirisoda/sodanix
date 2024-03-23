@@ -9,7 +9,7 @@
       eamodio.gitlens
       ritwickdey.liveserver
       jnoortheen.nix-ide
-      LaurentTreguier.simple-icons
+      laurenttreguier.simple-icons
       aaron-bond.better-comments
       bbenoist.nix
     ];
