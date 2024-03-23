@@ -9,8 +9,8 @@
       eamodio.gitlens
       ritwickdey.liveserver
       jnoortheen.nix-ide
-      shaneliesegang.vscode-simple-icons-rev
-      aaron-bond.better-comments
+      # shaneliesegang.vscode-simple-icons-rev
+      # aaron-bond.better-comments
       bbenoist.nix
     ];
   }) 
