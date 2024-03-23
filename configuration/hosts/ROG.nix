@@ -48,9 +48,10 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  # powerManagement = {
-  #   enable = true;
-  # };
+  powerManagement = {
+    powertop.enable = true;
+    enable = true;
+  };
 
   programs.auto-cpufreq = {
     enable = true;
@@ -69,6 +70,13 @@
         stop_threshold = 95;
       };
     };
+  };
+
+  services = {
+    thermald.enable = true;
+    # tlp = {
+    #   enable = true;
+    # };
   };
 
 }
