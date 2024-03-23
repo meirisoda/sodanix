@@ -49,7 +49,7 @@
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   powerManagement = {
-    # powertop.enable = true;
+    powertop.enable = true;
     enable = true;
   };
 
