@@ -19,7 +19,7 @@
     # programs
     ani-cli
     audacity
-    blender
+    # blender
     # gimp
     inkscape
     # krita
