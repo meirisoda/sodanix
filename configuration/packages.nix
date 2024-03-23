@@ -10,6 +10,7 @@
     
     # utilities
     nvtopPackages.full
+    powertop
 
     # virtualisation
     qemu
