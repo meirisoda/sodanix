@@ -9,7 +9,7 @@
     github-desktop
     
     # utilities
-    nvtop
+    nvtopPackages.full
 
     # virtualisation
     qemu
@@ -20,14 +20,14 @@
     ani-cli
     audacity
     blender
-    gimp
+    # gimp
     inkscape
     # krita
     libreoffice
     obs-studio
     pdfsam-basic
     puredata
-    sonic-pi
+    # sonic-pi
     (pkgs.callPackage ./soda/packages/programs/sunvox.nix {})
     zoom-us
 
@@ -59,7 +59,7 @@
     btop
     gparted
     fd
-    ffmpeg
+    # ffmpeg
     freefilesync
     graphviz
     jellycli
