@@ -58,7 +58,7 @@
       ];
       trusted-users = [ "soda" ];
       "max-jobs" = 8;
-      "builders" = ''ssh://soda@sodaxps.student.cwru.edu?ssh-key=/home/soda/.ssh/id_ed25519 i686_linux,x86_64-linux - 8 5 kvm - c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUlRTG5ES2FKUVBudi9iWE1HemM0OGpoMnU3Wm9OaExQTk4vUXllRDZyYUogcm9vdEBzb2RhWFBTCg=='';
+      "builders" = ''ssh://soda@sodaxps.student.cwru.edu?ssh-key=/home/soda/.ssh/id_ed25519 i686_linux,x86_64-linux - 8 5 kvm - c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUlRTG5ES2FKUVBudi9iWE1HemM0OGpoMnU3Wm9OaExQTk4vUXllRDZyYUogcm9vdEBzb2RhWFBTCg== ; ssh://soda@pigsgomoo.com:2200?ssh-key=/home/soda/.ssh/id_ed25519 i686_linux,x86_64-linux - 8 5 kvm - c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUExd1hDelZSTkt5VHlLUENVYUZBV0xwaFRRdmt1citpUDZMWEszYWRWY0sgcm9vdEBBU1VTCg''; 
     };
     distributedBuilds = true;
     gc = {
