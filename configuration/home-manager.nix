@@ -28,13 +28,18 @@
           user = "${username}";
           port = 22;
         in {
-          "sodarog" = {
+          "rog" = {
             hostname = "sodarog.student.cwru.edu";
             inherit user port identityFile;
           };
-          "sodaxps" = {
+          "xps" = {
             hostname = "sodaxps.student.cwru.edu";
             inherit user port identityFile;
+          };
+          "tln" = {
+            hostname = "pigsgomoo.com";
+            port = 2200;
+            inherit user identityFile;
           };
           "nfs" = {
             hostname = "meirisoda_meirisoda@ssh.nyc1.nearlyfreespeech.net";
