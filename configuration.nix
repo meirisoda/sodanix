@@ -72,6 +72,8 @@
     libvirtd.enable = true;
   };
   
+  services.tailscale.enable = true;
+
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   system.stateVersion = "23.11"; #nixos-rebuild list-generations to see what version I'm on
 
