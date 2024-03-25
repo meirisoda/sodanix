@@ -21,9 +21,9 @@
     ani-cli
     audacity
     # blender
-    # gimp
+    gimp
     inkscape
-    # krita
+    krita
     libreoffice
     obs-studio
     pdfsam-basic
