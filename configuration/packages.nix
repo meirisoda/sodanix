@@ -9,6 +9,7 @@
     github-desktop
     
     # utilities
+    android-tools
     nvtopPackages.full
     powertop
 
@@ -21,13 +22,14 @@
     ani-cli
     audacity
     # blender
-    gimp
+    # gimp
     inkscape
-    krita
+    # krita
     libreoffice
     obs-studio
     pdfsam-basic
     puredata
+    scrcpy
     # sonic-pi
     (pkgs.callPackage ./soda/packages/programs/sunvox.nix {})
     zoom-us
@@ -93,11 +95,12 @@
   ];
 
   programs = {
-    zsh.enable = true;
-    noisetorch.enable = true; 
-    virt-manager.enable = true;
+    adb.enable = true;
     kdeconnect = {
       enable = true;
     };
+    noisetorch.enable = true; 
+    virt-manager.enable = true;
+    zsh.enable = true;
   };
 }
