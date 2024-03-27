@@ -12,7 +12,7 @@
     android-tools
     nvtopPackages.full
     powertop
-    unviersal-android-debloater
+    universal-android-debloater
 
     # virtualisation
     qemu
