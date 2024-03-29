@@ -24,8 +24,8 @@
     nvidiaSettings = true;
     open = false;
     powerManagement = {
-      enable = true;
-      finegrained = true; 
+      enable = false;
+      finegrained = false; 
     };
     prime = {
       reverseSync.enable = true;
@@ -73,6 +73,7 @@
 
   services = {
     thermald.enable = true;
+    supergfxd.enable = true;
     # tlp = {
     #   enable = true;
     # };
