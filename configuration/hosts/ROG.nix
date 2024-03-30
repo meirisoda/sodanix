@@ -17,6 +17,24 @@
       enable = true; 
       enableUserService = true; 
     };
+    # Battery
+    power-profiles-daemon.enable = true;
+    thermald.enable = true;
+    supergfxd = {
+      enable = true;
+      settings = {
+        supergfxctl-mode = "Integrated";
+        gfx-vfio-enable = true;
+      };  # Power Profiles
+    };
+  };
+
+  systemd.services = {
+    supergfxd.path = [ pkgs.pciutils ];
+    power-profiles-daemon = {
+      enable = true;
+      wantedBy = [ "multi-user.target" ];
+    };
   };
 
   hardware.nvidia = {
@@ -69,14 +87,6 @@
         stop_threshold = 95;
       };
     };
-  };
-
-  services = {
-    thermald.enable = true;
-    supergfxd.enable = true;
-    # tlp = {
-    #   enable = true;
-    # };
   };
 
 }
