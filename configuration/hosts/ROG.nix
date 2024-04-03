@@ -65,10 +65,10 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  powerManagement = {
-    # powertop.enable = true;
-    enable = true;
-  };
+  # powerManagement = {
+  #   # powertop.enable = true;
+  #   enable = true;
+  # };
 
   programs.auto-cpufreq = {
     enable = true;
