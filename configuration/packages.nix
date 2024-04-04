@@ -5,18 +5,17 @@
     # system
 
     # development
-    cudatoolkit
+    # cudatoolkit
     github-desktop
     
     # utilities
     android-tools
     nvtopPackages.full
     powertop
-    universal-android-debloater
 
     # virtualisation
-    qemu
-    virt-manager
+    # qemu
+    # virt-manager
     wineWowPackages.stable
 
     # programs
@@ -64,9 +63,7 @@
     gparted
     fd
     # ffmpeg
-    freefilesync
     graphviz
-    jellycli
     jellyfin-media-player
     kime
     lsd
@@ -104,4 +101,6 @@
     virt-manager.enable = true;
     zsh.enable = true;
   };
+
+  services.tailscale.enable = true;
 }
