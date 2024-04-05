@@ -6,12 +6,12 @@
 
     # development
     # cudatoolkit
-    github-desktop
+    # github-desktop
     
     # utilities
     android-tools
     nvtopPackages.full
-    powertop
+    # powertop
 
     # virtualisation
     # qemu
@@ -25,7 +25,7 @@
     # gimp
     inkscape
     # krita
-    libreoffice
+    # libreoffice
     obs-studio
     pdfsam-basic
     puredata

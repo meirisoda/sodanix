@@ -17,9 +17,27 @@
       enable = true; 
       enableUserService = true; 
     };
+    power-profiles-daemon.enable = true;
+    thermald.enable = true;
+    auto-cpufreq = {
+      enable = true;
+      settings = {
+        charger = {
+          governor = "performance";
+          scaling_max_freq = 3300000; 
+          turbo = "never";
+        };
+        battery = {
+          governor = "powersave";
+          scaling_min_freq = 400000;
+          scaling_max_freq = 2000000;
+          turbo = "never";
+          enable_thresholds = true;
+          stop_threshold = 95;
+        };
+      };
+    };
     # Battery
-    # power-profiles-daemon.enable = true;
-    # thermald.enable = true;
     # supergfxd = {
     #   enable = true;
     #   settings = {
@@ -28,6 +46,11 @@
     #   };  # Power Profiles
     # };
   };
+
+  # powerManagement = {
+  #   # powertop.enable = true;
+  #   enable = true;
+  # };
 
   systemd.services = {
     supergfxd.path = [ pkgs.pciutils ];
@@ -64,29 +87,5 @@
   ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  # powerManagement = {
-  #   # powertop.enable = true;
-  #   enable = true;
-  # };
-
-  programs.auto-cpufreq = {
-    enable = true;
-    settings = {
-      charger = {
-        governor = "performance";
-        scaling_max_freq = 3300000; 
-        turbo = "never";
-      };
-      battery = {
-        governor = "powersave";
-        scaling_min_freq = 400000;
-        scaling_max_freq = 2000000;
-        turbo = "never";
-        enable_thresholds = true;
-        stop_threshold = 95;
-      };
-    };
-  };
 
 }
