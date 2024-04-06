@@ -19,6 +19,22 @@
     };
     power-profiles-daemon.enable = true;
     thermald.enable = true;
+    # Battery
+    # supergfxd = {
+    #   enable = true;
+    #   settings = {
+    #     supergfxctl-mode = "Integrated";
+    #     gfx-vfio-enable = true;
+    #   };  # Power Profiles
+    # };
+  };
+
+  # powerManagement = {
+  #   # powertop.enable = true;
+  #   enable = true;
+  # };
+
+  programs = {
     auto-cpufreq = {
       enable = true;
       settings = {
@@ -37,23 +53,10 @@
         };
       };
     };
-    # Battery
-    # supergfxd = {
-    #   enable = true;
-    #   settings = {
-    #     supergfxctl-mode = "Integrated";
-    #     gfx-vfio-enable = true;
-    #   };  # Power Profiles
-    # };
   };
 
-  # powerManagement = {
-  #   # powertop.enable = true;
-  #   enable = true;
-  # };
-
   systemd.services = {
-    supergfxd.path = [ pkgs.pciutils ];
+    # supergfxd.path = [ pkgs.pciutils ];
     power-profiles-daemon = {
       enable = true;
       wantedBy = [ "multi-user.target" ];
