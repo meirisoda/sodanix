@@ -31,7 +31,7 @@
     puredata
     scrcpy
     # sonic-pi
-    (pkgs.callPackage ./soda/packages/programs/sunvox.nix {})
+    (pkgs.callPackage ./soda/config/programs/sunvox.nix {})
     zoom-us
 
     # games

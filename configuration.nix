@@ -51,10 +51,12 @@
       trusted-substituters = [
         "https://tln32asus.student.cwru.edu:5000/"
         "https://sodaxps.student.cwru.edu:5000/"
+        "https://hyprland.cachix.org"
       ];
       trusted-public-keys = [
         "tln32asus.student.cwru.edu:V8MCTN/ox+Y5GxqFsjAml4IfcUvTacLFIqw48A9Ic/o="
         "sodaxps.student.cwru.edu:VG/8OKl4U7k5mFs1j6rkfTJdnVsRQcyZlzyVrpT6sW0="
+        "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
       ];
       trusted-users = [ "soda" ];
       "max-jobs" = 8;

@@ -131,7 +131,7 @@
 
     xdg.configFile = {
       "plasma-org.kde.plasma.desktop-appletsrc" = { 
-        text = import ./soda/packages/plasma/plasmaappletsrc.nix {};
+        text = import ./soda/config/plasma/plasmaappletsrc.nix {};
       };
     };
   };
