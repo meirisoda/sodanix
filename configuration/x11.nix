@@ -34,7 +34,6 @@
     xwayland.enable = true; 
     hyprland = {
       enable = true;
-      programs = inputs.hyprland.packages."${pkgs.system}".hyprland;
     };
   };
 
