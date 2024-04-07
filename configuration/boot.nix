@@ -11,6 +11,6 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = pkgs.linuxPackages_zen; # manually update kernel // run uname -a to see current version
+    kernelPackages = pkgs.linuxPackages_6_9; # manually update kernel // run uname -a to see current version
   };
 }

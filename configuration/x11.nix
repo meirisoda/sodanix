@@ -32,7 +32,10 @@
 # TODO programs
   programs = {
     xwayland.enable = true; 
-    hyprland.enable = true;
+    hyprland = {
+      enable = true;
+      programs = inputs.hyprland.packages."${pkgs.system}".hyprland;
+    };
   };
 
 # TODO env vars
@@ -40,6 +43,7 @@
     KWIN_DRM_USE_MODIFIERS = "0";
     ENABLE_VKBASALT = "1";
     GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
+    WLR_NO_HARDWARE_CURSORS = "1";
   }; 
   # // (if hostname == "sodaROG" then {
       # KWIN_DRM_DEVICES = "/dev/dri/by-path/pci-0000\\:01\\:00.0-card"; 
