@@ -9,8 +9,8 @@
         settings = {
           general = {
             border_size = 1;
-            gaps_in = 5;
-            gaps_out = 8;
+            gaps_in = 3;
+            gaps_out = 3;
             gaps_workspaces = 0;
 
             cursor_inactive_timeout = 10;
@@ -23,7 +23,7 @@
             allow_tearing = false;
           };
           decoration = {
-            rounding = 8;
+            rounding = 5;
             active_opacity = 1.0;
             inactive_opacity = 1.0;
             fullscreen_opacity = 1.0;

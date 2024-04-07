@@ -14,8 +14,6 @@
     # powertop
 
     # virtualisation
-    # qemu
-    # virt-manager
     wineWowPackages.stable
 
     # programs
@@ -30,7 +28,6 @@
     pdfsam-basic
     puredata
     scrcpy
-    # sonic-pi
     (pkgs.callPackage ./soda/config/programs/sunvox.nix {})
     zoom-us
 
@@ -89,6 +86,7 @@
     obsidian
     spotify
     tidal-hifi
+    trilium-desktop
     vscodium
   ];
 
