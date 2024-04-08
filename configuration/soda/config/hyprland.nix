@@ -8,7 +8,7 @@
         plugins = [];
         settings = {
           monitor = [
-            "eDP-1, 2560x1600@120, 0x0,1.5"
+            "eDP-1, 2560x1600@120, 0x0,1.6"
             "HDMI-A-1,2560x1440@120,2560x0,1"
           ];
           exec-once = [
