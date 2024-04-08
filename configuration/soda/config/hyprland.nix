@@ -48,6 +48,7 @@
             "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
             "SUPER_CTRL, P, resizeactive, 100% 100%"
+            "SUPER_CTRL, P, moveactive, 0 0"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
