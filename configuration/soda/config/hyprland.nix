@@ -39,6 +39,7 @@
             "ALT, J, exec, jellyfin-desktop"
             "ALT, W, killactive"
             "ALT, Q, togglefloating"
+            "ALT, Tab, cyclewindows"
             "ALT, Tab, bringactivetotop"
             "SUPER_CTRL, P, fullscreen"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"

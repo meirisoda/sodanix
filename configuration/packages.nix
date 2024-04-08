@@ -42,6 +42,7 @@
     # system
     comma
     curl
+    jq
     openssh
     pciutils
     rofi
