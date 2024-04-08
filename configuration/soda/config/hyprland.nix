@@ -47,8 +47,7 @@
             "ALT, Q, togglefloating"
             "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
-            "SUPER_CTRL, P, resizeactive, exact 100% 100%"
-            "SUPER_CTRL, P, moveactive, exact 0 0"
+            "SUPER_CTRL, P, fullscreen, 1"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
@@ -64,7 +63,7 @@
             "maximize, class:^(firefox)$"
             "maximize, class:^(obsidian)$"
             "maximize, class:^(element-desktop)$"
-            "maximize, class:^(vscodium)$"
+            "maximize, class:^(codium)$"
             "maximize, class:^(jellyfin-desktop)$"
           ];
           general = {
@@ -117,6 +116,11 @@
             enabled = true;
             first_launch_animation = true;
           };
+          animation = [
+            "workspaces,1,1,default"
+            "windows,1,1,default"
+            "fade,0"
+          ];
           input = {
             kb_layout = "us";
             numlock_by_default = false;
