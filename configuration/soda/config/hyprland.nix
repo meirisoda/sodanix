@@ -14,7 +14,7 @@
           exec-once = [
             "dunst"
             "hyprpaper"
-            "exec-once=nm-applet --indicator & disown"
+            "nm-applet --indicator"
             "waybar"
           ];
           bind = [
