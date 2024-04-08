@@ -6,15 +6,15 @@
         enable = true;
         xwayland.enable = true;
         plugins = [];
-        monitor = [
-          "eDP-1, 2560x1600@120, 0x0,1"
-          "HDMI-A-1,2560x1440@120,2560x0,1"
-        ];
-        exec-once = [
-          "dunst"
-          "hyprpaper"
-        ];
         settings = {
+          monitor = [
+            "eDP-1, 2560x1600@120, 0x0,1"
+            "HDMI-A-1,2560x1440@120,2560x0,1"
+          ];
+          exec-once = [
+            "dunst"
+            "hyprpaper"
+          ];
           bind = [
             "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right"
             "SUPER_CTRL, left, exec, sh ${./hyprland/workspace2d.sh} left"
