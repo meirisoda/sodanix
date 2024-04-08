@@ -45,10 +45,10 @@
             "ALT, M, exec, element-desktop"
             "ALT, J, exec, jellyfin-desktop"
             "ALT, W, killactive"
-            "ALT, Q, togglefloating"
             "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
             "SUPER_CTRL, P, fullscreen, 2"
+            "ALT, P, togglefloating"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
