@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, username, ... }:
+{ config, pkgs, stablepkgs, username, plasma-manager, ... }:
 
 {
   imports = [
