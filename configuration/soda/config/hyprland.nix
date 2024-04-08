@@ -41,6 +41,8 @@
             "ALT, Q, togglefloating"
             "ALT, Tab, bringactivetotop"
             "SUPER_CTRL, P, fullscreen"
+            "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
+
           ];
           bindm = [
             "SUPER, mouse:272, movewindow"
@@ -48,6 +50,11 @@
           ];
           windowrulev2 = [
             "float, class:.*"
+            "fullscreen, ^(firefox)$"
+            "fullscreen, ^(obsidian)$"
+            "fullscreen, ^(element-desktop)$"
+            "fullscreen, ^(VSCodium)$"
+            "fullscreen, ^(jellyfin-desktop)$"
           ];
           general = {
             border_size = 1;
@@ -97,7 +104,7 @@
           };
           animations = {
             enabled = true;
-            first_launch_anumation = true;
+            first_launch_animation = true;
           };
           input = {
             kb_layout = "us";
