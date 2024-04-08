@@ -31,7 +31,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm, plasma-manager, auto-cpufreq, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm,  auto-cpufreq, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       cudaSupport = true;
@@ -44,7 +44,7 @@
       home-manager.nixosModules.default
       nix-index-database.nixosModules.nix-index
       auto-cpufreq.nixosModules.default
-      plasma-manager.homeManagerModules.plasma-manager
+      # plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
     xpsmodules = [
