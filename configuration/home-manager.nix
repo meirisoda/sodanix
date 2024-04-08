@@ -137,7 +137,7 @@
         text = import ./soda/config/hyprland/hyprpaper.nix {};
       };
       "waybar/config-jsonc" = {
-        text = import ./soda/config/hyprland/waybar.nix {};
+        text = import ./soda/config/hyprland/waybar.nix {inherit pkgs};
       };
     };
   };
