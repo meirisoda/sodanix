@@ -48,7 +48,7 @@
             "ALT, Q, togglefloating"
             "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
-            "SUPER_CTRL, P, fullscreen, 0"
+            "SUPER_CTRL, P, fullscreen, 2"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
