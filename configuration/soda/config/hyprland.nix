@@ -34,6 +34,7 @@
             "SUPER_CTRL_SHIFT_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_up"
             "SUPER_CTRL_SHIFT, 2, exec, sh ${./hyprland/workspace2d.sh} down"
             "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down"
+
             "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
             "SUPER_SHIFT, S, exec, ${pkgs.grimblast}/bin/grimblast copy area"
             "CTRL_ALT, T, exec, kitty"
@@ -47,7 +48,7 @@
             "ALT, Q, togglefloating"
             "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
-            "SUPER_CTRL, P, fullscreen, 1"
+            "SUPER_CTRL, P, fullscreen, 0"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
