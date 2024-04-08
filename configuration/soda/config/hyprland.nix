@@ -22,6 +22,10 @@
             "SUPER_CTRL, left, exec, sh ${./hyprland/workspace2d.sh} left"
             "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up"
             "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down"
+            "SUPER_CTRL_ALT, right, exec, sh ${./hyprland/workspace2d.sh} move_right"
+            "SUPER_CTRL_ALT, left, exec, sh ${./hyprland/workspace2d.sh} move_left"
+            "SUPER_CTRL_ALT, up, exec, sh ${./hyprland/workspace2d.sh} move_up"
+            "SUPER_CTRL_ALT, down, exec, sh ${./hyprland/workspace2d.sh} move_down"
             "SUPER_CTRL, 1, exec, sh ${./hyprland/workspace2d.sh} right"
             "SUPER_CTRL_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_right"
             "SUPER_CTRL, 2, exec, sh ${./hyprland/workspace2d.sh} left"
@@ -43,7 +47,7 @@
             "ALT, Q, togglefloating"
             "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
-            "SUPER_CTRL, P, fullscreen, 2"
+            "SUPER_CTRL, P, fullscreen, 1"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
@@ -59,7 +63,7 @@
             "maximize, class:^(firefox)$"
             "maximize, class:^(obsidian)$"
             "maximize, class:^(element-desktop)$"
-            "maximize, class:^(VSCodium)$"
+            "maximize, class:^(codium)$"
             "maximize, class:^(jellyfin-desktop)$"
           ];
           general = {
