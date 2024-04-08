@@ -141,7 +141,7 @@
       };
       "xplr/init.lua" = {
         text = import ./soda/config/hyprland/xplr.nix {};
-      }
+      };
     };
   };
 }
