@@ -133,6 +133,9 @@
       "plasma-org.kde.plasma.desktop-appletsrc" = { 
         text = import ./soda/config/plasma/plasmaappletsrc.nix {};
       };
+      "hypr/hyprpaper.conf" = {
+        text = import ./soda/config/hyprland/hyprpaper.nix {};
+      };
     };
   };
 }

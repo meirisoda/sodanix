@@ -44,6 +44,7 @@
     curl
     openssh
     pciutils
+    rofi
     wget
     xorg.xrandr
     yubico-pam

@@ -16,9 +16,6 @@
       url = "github:Mic92/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland = {
-      url = "github:hyprwm/Hyprland";
-    };
     plasma-manager = {
       url = "github:pjones/plasma-manager";
     };

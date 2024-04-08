@@ -6,7 +6,49 @@
         enable = true;
         xwayland.enable = true;
         plugins = [];
+        monitor = [
+          "eDP-1, 2560x1600@120, 0x0,1"
+          "HDMI-A-1,2560x1440@120,2560x0,1"
+        ];
+        exec-once = [
+          "dunst"
+          "hyprpaper"
+        ];
         settings = {
+          bind = [
+            "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right"
+            "SUPER_CTRL, left, exec, sh ${./hyprland/workspace2d.sh} left"
+            "SUPER_CTRL_SHIFT, up, exec, sh ${./hyprland/workspace2d.sh} up"
+            "SUPER_CTRL_SHIFT, down, exec, sh ${./hyprland/workspace2d.sh} down"
+            "SUPER_CTRL, 1, exec, sh ${./hyprland/workspace2d.sh} right"
+            "SUPER_CTRL_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_right"
+            "SUPER_CTRL, 2, exec, sh ${./hyprland/workspace2d.sh} left"
+            "SUPER_CTRL_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_left"
+            "SUPER_CTRL_SHIFT, 1, exec, sh ${./hyprland/workspace2d.sh} up"
+            "SUPER_CTRL_SHIFT_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_up"
+            "SUPER_CTRL_SHIFT, 2, exec, sh ${./hyprland/workspace2d.sh} down"
+            "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down"
+            "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
+            "SUPER_SHIFT, S, exec, ${pkgs.grimblast}/bin/grimblast copy area"
+            "CTRL_ALT, T, exec, kitty"
+            "ALT, E, exec, dolphin"
+            "ALT, F, exec, firefox"
+            "ALT, O, exec, obsidian"
+            "ALT, V, exec, codium"
+            "ALT, M, exec, element-desktop"
+            "ALT, J, exec, jellyfin-desktop"
+            "ALT, W, killactive"
+            "ALT, Q, togglefloating"
+            "ALT, Tab, bringactivetotop"
+            "SUPER_CTRL, P, fullscreen"
+          ];
+          bindm = [
+            "SUPER, mouse:272, movewindow"
+            "SUPER, mouse:273, resizewindow"
+          ];
+          windowrulev2 = [
+            "float, class:.*"
+          ];
           general = {
             border_size = 1;
             gaps_in = 3;
