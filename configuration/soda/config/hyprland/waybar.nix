@@ -28,23 +28,7 @@ builtins.toJSON {
         "clock"
         "tray"
     ];
-    # Modules configuration
-    # "sway/workspaces" = {
-    #     "disable-scroll" = true;
-    #     "all-outputs" = true;
-    #     "warp-on-scroll" = false;
-    #     "format" = "{name} = {icon}";
-    #     "format-icons" = {
-    #         "1" = "";
-    #         "2" = "";
-    #         "3" = "";
-    #         "4" = "";
-    #         "5" = "";
-    #         "urgent" = "";
-    #         "focused" = "";
-    #         "default" = "";
-    #     }
-    # };
+
     "keyboard-state" = {
         "numlock" = true;
         "capslock" = true;
@@ -92,10 +76,11 @@ builtins.toJSON {
         "spacing" = 10;
     };
     "clock" = {
-        # "timezone" = "America/New_York";
+        "timezone" = "America/New_York";
         "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-        "format" = "";
+        "format" = "{:%T}";
         "format-alt" = "{:%Y-%m-%d}";
+        "interval" = "0.5";
     };
     "cpu" = {
         "format" = "{usage}% ";
