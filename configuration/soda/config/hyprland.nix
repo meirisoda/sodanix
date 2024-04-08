@@ -39,9 +39,9 @@
             "ALT, J, exec, jellyfin-desktop"
             "ALT, W, killactive"
             "ALT, Q, togglefloating"
-            "ALT, Tab, cyclewindows"
+            "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
-            "SUPER_CTRL, P, fakefullscreen"
+            "SUPER_CTRL, P, fullscreen, 2"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
@@ -51,11 +51,11 @@
           ];
           windowrulev2 = [
             "float, class:.*"
-            "fakefullscreen, class:^(firefox)$"
-            "fakefullscreen, class:^(obsidian)$"
-            "fakefullscreen, class:^(element-desktop)$"
-            "fakefullscreen, class:^(VSCodium)$"
-            "fakefullscreen, class:^(jellyfin-desktop)$"
+            "maximize, class:^(firefox)$"
+            "maximize, class:^(obsidian)$"
+            "maximize, class:^(element-desktop)$"
+            "maximize, class:^(VSCodium)$"
+            "maximize, class:^(jellyfin-desktop)$"
           ];
           general = {
             border_size = 1;
