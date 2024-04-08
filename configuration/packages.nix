@@ -47,6 +47,7 @@
     openssh
     pciutils
     rofi
+    waybar
     wget
     xorg.xrandr
     yubico-pam

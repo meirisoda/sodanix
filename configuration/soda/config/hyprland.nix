@@ -8,12 +8,14 @@
         plugins = [];
         settings = {
           monitor = [
-            "eDP-1, 2560x1600@120, 0x0,1.25"
+            "eDP-1, 2560x1600@120, 0x0,1.15"
             "HDMI-A-1,2560x1440@120,2560x0,1"
           ];
           exec-once = [
             "dunst"
             "hyprpaper"
+            "exec-once=nm-applet --indicator & disown"
+            "waybar"
           ];
           bind = [
             "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right"
@@ -45,6 +47,9 @@
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
+          binds = {
+            movefocus_cycles_fullscreen = false;
+          };
           bindm = [
             "SUPER, mouse:272, movewindow"
             "SUPER, mouse:273, resizewindow"
@@ -167,6 +172,7 @@
           };
           misc = {
             disable_hyprland_logo = true;
+            focus_on_activate = true;
           };
         };
       };
