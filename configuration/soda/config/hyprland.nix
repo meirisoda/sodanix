@@ -60,7 +60,7 @@
             "SUPER, mouse:273, resizewindow"
           ];
           windowrulev2 = [
-            "float, class:.*"
+            # "float, class:.*"
             "maximize, class:^(firefox)$"
             "maximize, class:^(obsidian)$"
             "maximize, class:^(element-desktop)$"
