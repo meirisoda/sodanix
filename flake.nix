@@ -51,7 +51,7 @@
       nixos-hardware.nixosModules.dell-xps-13-9380
       home-manager.nixosModules.default
       nix-index-database.nixosModules.nix-index
-      plasma-manager.homeManagerModules.plasma-manager
+      # plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
     allConfig = {
