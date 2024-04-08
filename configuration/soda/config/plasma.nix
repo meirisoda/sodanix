@@ -7,7 +7,7 @@
         clickItemTo = "select";
         theme = "breeze-twilight";
         colorScheme = "BreezeLight";
-        wallpaper = ./plasma/blue.png;
+        wallpaper = ./plasma/wallpaper/grey.jpg;
       };
       spectacle.shortcuts = {
         captureRectangularRegion = "Meta+Shift+S";

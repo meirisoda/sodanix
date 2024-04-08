@@ -70,4 +70,9 @@
     ];
     enableDefaultPackages = true;
   };
+
+  environment.plasma6.excludePackages = with pkgs; [
+    libsForQt5.konsole
+    kdePackages.konsole
+  ];
 }
