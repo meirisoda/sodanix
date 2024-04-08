@@ -50,11 +50,11 @@
           ];
           windowrulev2 = [
             "float, class:.*"
-            "fullscreen, ^(firefox)$"
-            "fullscreen, ^(obsidian)$"
-            "fullscreen, ^(element-desktop)$"
-            "fullscreen, ^(VSCodium)$"
-            "fullscreen, ^(jellyfin-desktop)$"
+            "fullscreen, class:^(firefox)$"
+            "fullscreen, class:^(obsidian)$"
+            "fullscreen, class:^(element-desktop)$"
+            "fullscreen, class:^(VSCodium)$"
+            "fullscreen, class:^(jellyfin-desktop)$"
           ];
           general = {
             border_size = 1;
