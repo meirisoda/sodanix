@@ -49,6 +49,7 @@
     yubico-pam
 
     # hyprland
+    dunst
     hyprpaper
     jq
     networkmanagerapplet
