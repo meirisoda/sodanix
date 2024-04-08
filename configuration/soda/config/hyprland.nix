@@ -47,7 +47,7 @@
             "ALT, Q, togglefloating"
             "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
-            "SUPER_CTRL, P, fullscreen, 1"
+            "SUPER_CTRL, P, resizeactive, 100% 100%"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
@@ -63,7 +63,7 @@
             "maximize, class:^(firefox)$"
             "maximize, class:^(obsidian)$"
             "maximize, class:^(element-desktop)$"
-            "maximize, class:^(codium)$"
+            "maximize, class:^(vscodium)$"
             "maximize, class:^(jellyfin-desktop)$"
           ];
           general = {
