@@ -42,6 +42,7 @@
     # system
     comma
     curl
+    hyprpaper
     jq
     openssh
     pciutils
