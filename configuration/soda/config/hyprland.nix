@@ -8,7 +8,7 @@
         plugins = [];
         settings = {
           monitor = [
-            "eDP-1, 2560x1600@120, 0x0,1"
+            "eDP-1, 2560x1600@120, 0x0,1.5"
             "HDMI-A-1,2560x1440@120,2560x0,1"
           ];
           exec-once = [
@@ -41,7 +41,7 @@
             "ALT, Q, togglefloating"
             "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
-            "SUPER_CTRL, P, fullscreen, 2"
+            "SUPER_CTRL, P, fullscreen, 1"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
           ];
