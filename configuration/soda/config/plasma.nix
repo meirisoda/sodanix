@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, username, plasma-manager, ... }:
+{ config, pkgs, stablepkgs, username, ... }:
 
 {
   home-manager.users.${username} = {
