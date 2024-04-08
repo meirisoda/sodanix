@@ -56,6 +56,7 @@
     rofi
     tofi
     waybar
+    xplr
 
     # development
     cmake

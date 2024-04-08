@@ -139,6 +139,9 @@
       "waybar/config-jsonc" = {
         text = import ./soda/config/hyprland/waybar.nix {inherit pkgs;};
       };
+      "xplr/init.lua" = {
+        text = import ./soda/config/hyprland/xplr.nix {};
+      }
     };
   };
 }

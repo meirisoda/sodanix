@@ -7,7 +7,7 @@ in
   imports =
   [
     ((import ./home-manager.nix) (allconfig // { inherit username; }))
-    ((import ./soda/packages_config.nix)  (allconfig // { inherit username; }))
+    ((import ./soda/default.nix)  (allconfig // { inherit username; }))
   ];
 
   users.defaultUserShell = pkgs.zsh;

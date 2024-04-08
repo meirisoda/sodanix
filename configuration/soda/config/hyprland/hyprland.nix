@@ -187,5 +187,22 @@
         };
       };
     };
+
+    programs.xplr = {
+      enable = true;
+
+      # Optional params:
+      plugins = {
+        tree-view = fetchFromGitHub {
+          owner = "sayanarijit";
+          repo = "tree-view.xplr";
+        };
+        local-plugin = "/home/user/.config/xplr/plugins/local-plugin";
+      };
+      extraConfig = ''
+        require("tree-view").setup()
+        require("local-plugin").setup()
+      '';
+    };
   };
 }
