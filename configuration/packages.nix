@@ -42,15 +42,19 @@
     # system
     comma
     curl
-    hyprpaper
-    jq
     openssh
     pciutils
-    rofi
-    waybar
     wget
     xorg.xrandr
     yubico-pam
+
+    # hyprland
+    hyprpaper
+    jq
+    networkmanagerapplet
+    rofi
+    tofi
+    waybar
 
     # development
     cmake
