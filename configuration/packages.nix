@@ -94,6 +94,7 @@
     kitty
     localsend
     obsidian
+    signal-desktop
     spotify
     tidal-hifi
     trilium-desktop
