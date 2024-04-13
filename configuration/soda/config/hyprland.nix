@@ -1,6 +1,20 @@
 { config, pkgs, stablepkgs, username, ... }:
 {
   home-manager.users.${username} = {
+    xdg.configFile = {
+      "plasma-org.kde.plasma.desktop-appletsrc" = { 
+        text = import ./soda/config/plasma/plasmaappletsrc.nix {};
+      };
+      "hypr/hyprpaper.conf" = {
+        text = import ./soda/config/hyprland/hyprpaper.nix {};
+      };
+      "waybar/config-jsonc" = {
+        text = import ./soda/config/hyprland/waybar.nix {inherit pkgs;};
+      };
+      # "xplr/init.lua" = {
+      #   text = import ./soda/config/hyprland/xplr.nix {};
+      # };
+    };
     wayland.windowManager = {
       hyprland = {
         enable = true;
@@ -50,7 +64,6 @@
             "SUPER_CTRL, P, fullscreen, 2"
             "ALT, P, togglefloating"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
-
           ];
           binds = {
             movefocus_cycles_fullscreen = false;
