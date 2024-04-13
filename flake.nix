@@ -34,7 +34,7 @@
   outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm,  auto-cpufreq, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
-      cudaSupport = true;
+      # cudaSupport = true;
       permittedInsecurePackages = [ 
         "electron-25.9.0" # obsidian
       ];

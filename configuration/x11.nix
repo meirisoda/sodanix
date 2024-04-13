@@ -7,14 +7,14 @@
     desktopManager = {
       plasma6.enable = true;
     };
+    displayManager = {
+      sddm = {
+        enable = true;
+        # theme = "${sodasddm}";
+      };
+    };
     xserver = {
       enable = true;
-      displayManager = {
-        sddm = {
-          enable = true;
-          # theme = "${sodasddm}";
-        };
-      };
       libinput = { 
         enable = true;
         mouse = {
