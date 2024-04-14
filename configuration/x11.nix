@@ -10,7 +10,7 @@
     displayManager = {
       sddm = {
         enable = true;
-        # theme = "${sodasddm}";
+        theme = "${sodasddm}";
       };
     };
     xserver = {
@@ -74,5 +74,7 @@
   environment.plasma6.excludePackages = with pkgs; [
     libsForQt5.konsole
     kdePackages.konsole
+    libsForQt5.knotification
+    kdePackages.knotification
   ];
 }
