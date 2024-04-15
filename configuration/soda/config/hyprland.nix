@@ -218,11 +218,11 @@
             first_launch_animation = true;
           };
           animation = [
-            "workspaces,1,1,fade"
+            "workspaces,1,1,default"
             "windows,1,1,default"
             "fade,0"
           ];
-
+          
           env = if hostname != "sodaROG" then [
             "LIBVA_DRIVER_NAME,nvidia"
             "XDG_SESSION_TYPE,wayland"
@@ -230,7 +230,7 @@
             "__GLX_VENDOR_LIBRARY_NAME,nvidia"
             "WLR_NO_HARDWARE_CURSORS,1"
           ] else [];
-
+          
           input = {
             # kb_model = "pc104";
             kb_layout = "us";
