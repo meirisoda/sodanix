@@ -124,8 +124,8 @@
             "workspace 11, obsidian"
             "workspace 81, jellyfin"
             "workspace 81, tidal-hifi"
-            "float,class:^(org.gnome.nautilus)$"
-            "float,class:^(org.kde.gwenview)$"
+            "float,class:^(org.gnome.Nautilus)$"
+            "float,class:^(org.kde.Gwenview)$"
           ];
           windowrulev2 = [
             # "float, class:.*"
