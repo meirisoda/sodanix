@@ -106,7 +106,6 @@
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
             "SUPER, Space, exec, ${pkgs.toybox}/bin/killall -SIGUSR1 waybar"
-
           ];
           binds = {
             movefocus_cycles_fullscreen = false;
@@ -121,13 +120,7 @@
             ", XF86MonBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d $(${pkgs.brightnessctl}/bin/brightnessctl -l -c backlight -m | cut -f 1 -d\",\") s 5%-"
             ", XF86MonBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d $(${pkgs.brightnessctl}/bin/brightnessctl -l -c backlight -m | cut -f 1 -d\",\") s 5%+"
           ];
-          env = if hostname != "sodaROG" then [
-            "LIBVA_DRIVER_NAME,nvidia"
-            "XDG_SESSION_TYPE,wayland"
-            "GBM_BACKEND,nvidia-drm"
-            "__GLX_VENDOR_LIBRARY_NAME,nvidia"
-            "WLR_NO_HARDWARE_CURSORS,1"
-          ] else [];
+
 
           workspace = [
             #laptop
@@ -225,10 +218,19 @@
             first_launch_animation = true;
           };
           animation = [
-            "workspaces,1,1,default"
+            "workspaces,1,1,fade"
             "windows,1,1,default"
             "fade,0"
           ];
+
+          env = if hostname != "sodaROG" then [
+            "LIBVA_DRIVER_NAME,nvidia"
+            "XDG_SESSION_TYPE,wayland"
+            "GBM_BACKEND,nvidia-drm"
+            "__GLX_VENDOR_LIBRARY_NAME,nvidia"
+            "WLR_NO_HARDWARE_CURSORS,1"
+          ] else [];
+
           input = {
             # kb_model = "pc104";
             kb_layout = "us";
