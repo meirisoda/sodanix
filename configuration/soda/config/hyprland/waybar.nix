@@ -107,7 +107,7 @@ builtins.toJSON {
     "clock" = {
       # "timezone" = "America/New_York";
       "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-      "format" = "{:%m/%d %T}";
+      "format" = "{:%m/%d %a %T}";
       "interval" = 1;
       "format-alt" = "{:%b %a %T}";
     };
