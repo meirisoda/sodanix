@@ -59,7 +59,7 @@
     networkmanagerapplet
     pavucontrol
     rofi
-    thunar
+    xfce.thunar
     tofi
     waybar
     wireplumber
