@@ -251,6 +251,9 @@
               enabled = true;
               font_family = "monospace"; 
               height = 14;
+              text_color = "#000";
+              col.active = "#fff";
+              col.inactive = "#acacac";
             };
           };
           misc = {
