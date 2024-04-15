@@ -122,7 +122,6 @@
             "workspace 21, codium"
             "workspace 31, element"
             "workspace 11, obsidian"
-            "workspace 81, class:^(org\.jellyfin\.)$"
             "workspace 81, tidal-hifi"
           ];
           windowrulev2 = [
