@@ -12,8 +12,8 @@ background {
 label {
     monitor =
     text = $USER
-    color = rgba(200, 200, 200, 1.0)
-    font_size = 18e
+    color = rgba(119, 119, 119, 1.0)
+    font_size = 18
     font_family = monospace
 
     position = 0, 80
@@ -23,14 +23,14 @@ label {
 input-field {
     monitor =
     size = 200, 50
-    outline_thickness = 3
+    outline_thickness = 1
     dots_size = 0.2
     dots_spacing = 0.15
     dots_center = false
-    dots_rounding = -1
-    outer_color = rgb(151515)
-    inner_color = rgb(200, 200, 200)
-    font_color = rgb(70,70,70)
+    dots_rounding = -0.2
+    outer_color = rgb(119, 119, 119)
+    inner_color = rgb(255, 255, 255)
+    font_color = rgb(119,119,119)
     fade_on_empty = true
     fade_timeout = 1000
     placeholder_text = <i>Input Password...</i>

@@ -21,7 +21,7 @@ input-background = #fff
 default-result-background = #fff
 
 selection-color = #fff
-selection-background = #464646
+selection-background = #464646 
 
 selection-match-color = #bdc6d3
 
