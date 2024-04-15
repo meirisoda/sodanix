@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-matrix_size=5
+matrix_size=3
 matrix_max=$(($matrix_size ** 2))
 max_screens=10
 direction=$1
