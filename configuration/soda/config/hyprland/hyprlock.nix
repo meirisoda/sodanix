@@ -7,7 +7,6 @@ background {
     monitor =
     path = ${wallpaper}
     rgba(200, 200, 200, 0.5)
-    noise = 0.0117.0
     vibrancy_darkness = 0.0
 }
 label {
