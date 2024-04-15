@@ -19,11 +19,10 @@
           global = {
             width = 300;
             height = 300;
-            offset = "30x30";
+            offset = "10x10";
             origin = "top-right";
             transparency = 10;
-            font = "monospace";
-            font_height = "12";
+            font = "monospace 8";
 
             frame_width = "1";
             frame_color = "#464646";
