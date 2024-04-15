@@ -17,14 +17,13 @@
         enable = true;
         settings = {
           global = {
-            font = "monospace";
             width = 300;
             height = 300;
             offset = "30x30";
             origin = "top-right";
             transparency = 10;
             frame_color = "#eceff1";
-            font = "Droid Sans 9";
+            font = "monospace";
           };
           urgency_normal = {
             frame_color = "#464646";
