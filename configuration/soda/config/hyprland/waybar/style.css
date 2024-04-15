@@ -23,7 +23,7 @@ window#waybar {
 }
 #workspaces button.active {
     color: #fff;
-    background-color: solid #000;
+    background-color: #000;
 }
 
 #mode {
