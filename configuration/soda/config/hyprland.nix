@@ -48,33 +48,28 @@
             "${pkgs.wl-clipboard}/bin/wl-paste --type image --watch ${pkgs.cliphist}/bin/cliphist store"
             # "for i in {8..1}; do hyprctl dispatch workspace $i; done;"
           ];
+
           bind = [
-            # "SUPER_CTRL, right, workspace, m+1"
-            # "SUPER_CTRL, left, workspace, m-1"
-            # "SUPER_CTRL, 1, exec, workspace, m+1"
-            # "SUPER_CTRL, 2, exec, workspace, m-1"
-
-            # "SUPER_CTRL_ALT, right, movetoworkspace, m+1"
-            # "SUPER_CTRL_ALT, left, movetoworkspace, m-1"
-            # "SUPER_CTRL_ALT, 1, movetoworkspace, m+1"
-            # "SUPER_CTRL_ALT, 2, movetoworkspace, m-1"
-
             "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right all"
             "SUPER_CTRL, left, exec, sh ${./hyprland/workspace2d.sh} left all"
             "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all"
             "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down all"
+            
+            "SUPER_CTRL, 1, exec, sh ${./hyprland/workspace2d.sh} right all"
+            "SUPER_CTRL, 2, exec, sh ${./hyprland/workspace2d.sh} left all"
+            "SUPER_CTRL_SHIFT, 1, exec, sh ${./hyprland/workspace2d.sh} up all"
+            "SUPER_CTRL_SHIFT, 2, exec, sh ${./hyprland/workspace2d.sh} down all"
+
             "SUPER_CTRL_ALT, right, exec, sh ${./hyprland/workspace2d.sh} move_right all"
             "SUPER_CTRL_ALT, left, exec, sh ${./hyprland/workspace2d.sh} move_left all"
             "SUPER_CTRL_ALT, up, exec, sh ${./hyprland/workspace2d.sh} move_up all"
             "SUPER_CTRL_ALT, down, exec, sh ${./hyprland/workspace2d.sh} move_down all"
-            "SUPER_CTRL, 1, exec, sh ${./hyprland/workspace2d.sh} right all"
+
             "SUPER_CTRL_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_right all"
-            "SUPER_CTRL, 2, exec, sh ${./hyprland/workspace2d.sh} left all"
             "SUPER_CTRL_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_left all"
-            "SUPER_CTRL_SHIFT, 1, exec, sh ${./hyprland/workspace2d.sh} up all"
             "SUPER_CTRL_SHIFT_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_up all"
-            "SUPER_CTRL_SHIFT, 2, exec, sh ${./hyprland/workspace2d.sh} down all"
             "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down allppli"
+
 
             "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
             "SUPER_SHIFT, S, exec, ${pkgs.grimblast}/bin/grimblast copy area"
@@ -97,15 +92,15 @@
             "SUPER_SHIFT, Tab, changegroupactive, b"
             "ALT, Tab, bringactivetotop"
             "CTRL_ALT_SHIFT, right, pin"
+            "SUPER, Space, exec, ${pkgs.toybox}/bin/killall -SIGUSR1 waybar"
 
             "SUPER_CTRL, P, fullscreen, 2"
             "SUPER, G, togglegroup"
             "SUPER_SHIFT, G, moveoutofgroup"
             "ALT, P, togglefloating"
+
             "SUPER, L, exec, pidof hyprlock || ${pkgs.hyprlock}/bin/hyprlock"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
-
-            "SUPER, Space, exec, ${pkgs.toybox}/bin/killall -SIGUSR1 waybar"
           ];
           binds = {
             movefocus_cycles_fullscreen = false;
@@ -164,9 +159,11 @@
             "float, class:^(org\.kde\.Gwenview)$"
             "size 1080 720, class:^(org\.gnome\.Nautilus)$"
           ];
+
           layerrule = [
             "blur, launcher"
           ];
+
           general = {
             border_size = 0;
             gaps_in = 2;
@@ -230,7 +227,7 @@
             "__GLX_VENDOR_LIBRARY_NAME,nvidia"
             "WLR_NO_HARDWARE_CURSORS,1"
           ] else [];
-          
+
           input = {
             # kb_model = "pc104";
             kb_layout = "us";
