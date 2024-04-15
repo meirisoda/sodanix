@@ -126,11 +126,6 @@
             "WLR_NO_HARDWARE_CURSORS,1"
           ] else [];
 
-          wsbind= [
-            "1, 2, 3, 4, DP-1"
-            "1a, 2a, 3a, 4a, HDMI-A-1"
-          ];
-
           workspace = [
             "1, monitor:DP-1, default:true, persistent:true"
             "1a, monitor:HDMI-A-1, persistent: true"
