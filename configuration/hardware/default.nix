@@ -6,6 +6,7 @@
     enable = true;
     # settings = {}; 
   };
+  services.blueman.enable = true;
 
   # Printing
   services.printing = {
