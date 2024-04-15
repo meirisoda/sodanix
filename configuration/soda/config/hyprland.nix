@@ -23,9 +23,9 @@
       "tofi/config" = {
         source = ./hyprland/tofi/config;
       };
-      # "xplr/init.lua" = {
-      #   text = import ./hyprland/xplr.nix {};
-      # };
+      "xplr/init.lua" = {
+        source = ./hyprland/init.lua;
+      };
     };
     wayland.windowManager = {
       hyprland = {
@@ -122,7 +122,7 @@
             "workspace 21, codium"
             "workspace 31, element"
             "workspace 11, obsidian"
-            "workspace 81, jellyfin"
+            "workspace 81, class:^(org\.jellyfin\.)$"
             "workspace 81, tidal-hifi"
           ];
           windowrulev2 = [
