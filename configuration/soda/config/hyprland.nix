@@ -131,6 +131,7 @@
             "float, class:^(pavucontrol)$"
             "float, class:^(org\.gnome\.Nautilus)$"
             "float, class:^(org\.kde\.Gwenview)$"
+            "size, class:^(org\.gnome\.Nautilus)$, 1080,720"
           ];
           layerrule = [
             "blur, launcher"
