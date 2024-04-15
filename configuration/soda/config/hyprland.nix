@@ -77,6 +77,8 @@
 
             "ALT, W, killactive"
             "ALT, Tab, cyclenext"
+            "SUPER, Tab, changegroupactive, f"
+            "SUPER_SHIFT, Tab, changegroupactive, b"
             "ALT, Tab, bringactivetotop"
             "CTRL_ALT_SHIFT, right, pin"
 
@@ -86,6 +88,8 @@
             "ALT, P, togglefloating"
             "SUPER, L, exec, pidof hyprlock || ${pkgs.hyprlock}/bin/hyprlock"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
+
+            ", XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle"
           ];
           binds = {
             movefocus_cycles_fullscreen = false;
@@ -97,8 +101,8 @@
           binde = [
             ", XF86AudioLowerVolume, exec, ${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 3%-"
             ", XF86AudioRaiseVolume, exec, ${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 3%+"
-            ", XF86MonBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d nvidia_wmi_ec_backlight s 3%-"
-            ", XF86MonBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d nvidia_wmi_ec_backlight s 3%+"
+            ", XF86MonBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d nvidia_wmi_ec_backlight s 5%-"
+            ", XF86MonBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d nvidia_wmi_ec_backlight s 5%+"
           ];
           env = if hostname != "sodaROG" then [
             "LIBVA_DRIVER_NAME,nvidia"
