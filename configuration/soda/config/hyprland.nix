@@ -126,16 +126,21 @@
             "WLR_NO_HARDWARE_CURSORS,1"
           ] else [];
 
-          # workspace = [
-          #   "1, monitor:DP-1, default:true, persistent:true"
-          #   "1a, monitor:HDMI-A-1, persistent: true"
-          #   "2, monitor:DP-1, persistent:true"
-          #   "2a, monitor:HDMI-A-1, persistent:true"
-          #   "3, monitor:DP-1, persistent:true"
-          #   "3a, monitor:HDMI-A-1, persistent:true"
-          #   "4, monitor:DP-1, persistent:true"
-          #   "4a, monitor:HDMI-A-1, persistent:true"
-          # ];
+          wsbind= [
+            "1, 2, 3, 4, DP-1"
+            "1a, 2a, 3a, 4a, HDMI-A-1"
+          ];
+
+          workspace = [
+            "1, monitor:DP-1, default:true, persistent:true"
+            "1a, monitor:HDMI-A-1, persistent: true"
+            "2, monitor:DP-1, persistent:true"
+            "2a, monitor:HDMI-A-1, persistent:true"
+            "3, monitor:DP-1, persistent:true"
+            "3a, monitor:HDMI-A-1, persistent:true"
+            "4, monitor:DP-1, persistent:true"
+            "4a, monitor:HDMI-A-1, persistent:true"
+          ];
 
           # windowrule = [
           #   "workspace 1, firefox"
