@@ -48,15 +48,15 @@
             "${pkgs.wl-clipboard}/bin/wl-paste --type image --watch ${pkgs.cliphist}/bin/cliphist store"
           ];
           bind = [
-            "SUPER_CTRL, right, workspace +1"
-            "SUPER_CTRL, left, workspace -1"
-            "SUPER_CTRL, 1, exec, workspace +1"
-            "SUPER_CTRL, 2, exec, workspace -1"
+            "SUPER_CTRL, right, workspace, +1"
+            "SUPER_CTRL, left, workspace, -1"
+            "SUPER_CTRL, 1, exec, workspace, +1"
+            "SUPER_CTRL, 2, exec, workspace, -1"
 
-            "SUPER_CTRL_ALT, right, movetoworkspace +1"
-            "SUPER_CTRL_ALT, left, movetoworkspace -1"
-            "SUPER_CTRL_ALT, 1, movetoworkspace +1"
-            "SUPER_CTRL_ALT, 2, movetoworkspace -1"
+            "SUPER_CTRL_ALT, right, movetoworkspace, +1"
+            "SUPER_CTRL_ALT, left, movetoworkspace, -1"
+            "SUPER_CTRL_ALT, 1, movetoworkspace, +1"
+            "SUPER_CTRL_ALT, 2, movetoworkspace, -1"
             # "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all"
             # "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down all"
             # "SUPER_CTRL_ALT, right, exec, sh ${./hyprland/workspace2d.sh} move_right all"
