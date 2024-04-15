@@ -46,7 +46,7 @@
             "${pkgs.blueman}/bin/blueman-applet"
             "${pkgs.wl-clipboard}/bin/wl-paste --type text --watch ${pkgs.cliphist}/bin/cliphist store"
             "${pkgs.wl-clipboard}/bin/wl-paste --type image --watch ${pkgs.cliphist}/bin/cliphist store"
-            "for i in {8..1}; do hyprctl dispatch workspace $i; done;"
+            # "for i in {8..1}; do hyprctl dispatch workspace $i; done;"
           ];
           bind = [
             # "SUPER_CTRL, right, workspace, m+1"
@@ -127,16 +127,16 @@
             "WLR_NO_HARDWARE_CURSORS,1"
           ] else [];
 
-          workspace = [
-            "1, monitor:eDP-1, default:true, persistent:true"
-            "2, monitor:eDP-1, persistent:true"
-            "3, monitor:eDP-1, persistent:true"
-            "4, monitor:eDP-1, persistent:true"
-            "5, monitor:HDMI-A-1, defaultName:1a, persistent:true, default:true"
-            "6, monitor:HDMI-A-1, defaultName:2a, persistent:true"
-            "7, monitor:HDMI-A-1, defaultName:3a, persistent:true"
-            "8, monitor:HDMI-A-1, defaultName:4a, persistent:true"
-          ];
+          # workspace = [
+          #   "1, monitor:eDP-1, default:true, persistent:true"
+          #   "2, monitor:eDP-1, persistent:true"
+          #   "3, monitor:eDP-1, persistent:true"
+          #   "4, monitor:eDP-1, persistent:true"
+          #   "5, monitor:HDMI-A-1, defaultName:1a, persistent:true, default:true"
+          #   "6, monitor:HDMI-A-1, defaultName:2a, persistent:true"
+          #   "7, monitor:HDMI-A-1, defaultName:3a, persistent:true"
+          #   "8, monitor:HDMI-A-1, defaultName:4a, persistent:true"
+          # ];
 
           # windowrule = [
           #   "workspace 1, firefox"
