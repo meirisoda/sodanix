@@ -78,6 +78,7 @@
             "ALT, M, exec, element-desktop"
             "ALT, J, exec, jellyfin-desktop"
             "ALT, T, exec, tidal-hifi"
+            ", XF86Launch1, exec, asusctl"
 
             "ALT, W, killactive"
             "ALT, Tab, cyclenext"
@@ -129,6 +130,9 @@
             "float,class:^(kitty)$"
             "float,class:^(pavucontrol)$"
             "float,class:^(thunar)$"
+          ];
+          layerrule = [
+            "blur, launcher"
           ];
           general = {
             border_size = 0;
