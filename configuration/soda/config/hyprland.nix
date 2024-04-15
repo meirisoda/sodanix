@@ -71,7 +71,7 @@
             "SHIFT, XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
             
             "CTRL_ALT, T, exec, kitty"
-            "ALT, E, exec, thunar"
+            "ALT, E, exec, nautilus"
             "ALT, F, exec, firefox"
             "ALT, O, exec, obsidian"
             "ALT, V, exec, codium"
@@ -129,8 +129,8 @@
             # "float, class:.*"
             "float,class:^(kitty)$"
             "float,class:^(pavucontrol)$"
-            "float,class:^(thunar)$"
-            "float,class:^(gwenview)$"
+            "float,class:^(nautilus)$"
+            "float,class:^(Gwenview)$"
           ];
           layerrule = [
             "blur, launcher"
