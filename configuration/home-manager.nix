@@ -17,6 +17,7 @@
         enable = true;
         settings = {
           global = {
+            font = "monospace";
             width = 300;
             height = 300;
             offset = "30x30";
@@ -26,8 +27,9 @@
             font = "Droid Sans 9";
           };
           urgency_normal = {
-            background = "#37474f";
-            foreground = "#eceff1";
+            frame_color = "#464646";
+            background = "#fff";
+            foreground = "#464646";
             timeout = 10;
           };
         };
