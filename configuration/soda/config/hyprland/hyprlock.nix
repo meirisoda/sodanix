@@ -35,7 +35,7 @@ input-field {
     fade_timeout = 1000
     placeholder_text = <i>Input Password...</i>
     hide_input = false
-    rounding = -0.3
+    rounding = 0
     check_color = rgb(204, 136, 34)
     fail_color = rgb(204, 34, 34)
     fail_text = <i>$FAIL <b>($ATTEMPTS)</b></i>
