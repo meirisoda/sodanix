@@ -17,6 +17,9 @@
       "hypr/hypridle.conf" = {
         text = import ./hyprland/hypridle.nix { inherit pkgs; };
       };
+      "waybar/style.css" = {
+        source = ./hyprland/waybar/style.css;
+      };
       # "xplr/init.lua" = {
       #   text = import ./hyprland/xplr.nix {};
       # };
@@ -89,13 +92,13 @@
           };
           bindm = [
             "SUPER, mouse:272, movewindow"
-            "SUPER, mouse:273, resizewindow"
+            "SUPER, mouse:274, resizewindow"
           ];
           binde = [
             ", XF86AudioLowerVolume, exec, ${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 3%-"
             ", XF86AudioRaiseVolume, exec, ${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 3%+"
-            ", XF86MonBrightnessDown, exec"
-            ", XF86MonBrightnessUp, exec"
+            ", XF86MonBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d nvidia_wmi_ec_backlight s 3%-"
+            ", XF86MonBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d nvidia_wmi_ec_backlight s 3%+"
           ];
           env = if hostname != "sodaROG" then [
             "LIBVA_DRIVER_NAME,nvidia"
@@ -116,9 +119,9 @@
             "maximize, class:^(jellyfin-desktop)$"
           ];
           general = {
-            border_size = 1;
-            gaps_in = 3;
-            gaps_out = 3;
+            border_size = 0;
+            gaps_in = 2;
+            gaps_out = 0;
             gaps_workspaces = 0;
 
             cursor_inactive_timeout = 10;

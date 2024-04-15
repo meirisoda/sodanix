@@ -50,6 +50,7 @@
 
     # hyprland
     blueman
+    brightnessctl
     dunst
     grimblast
     hypridle
