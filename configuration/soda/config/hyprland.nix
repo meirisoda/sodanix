@@ -124,13 +124,13 @@
             "workspace 11, obsidian"
             "workspace 81, jellyfin"
             "workspace 81, tidal-hifi"
+            "float,class:^(org.gnome.nautilus)$"
+            "float,class:^(org.kde.gwenview)$"
           ];
           windowrulev2 = [
             # "float, class:.*"
             "float,class:^(kitty)$"
             "float,class:^(pavucontrol)$"
-            "float,title:^(org.gnome.nautilus)(.*)$"
-            "float,title:^(org.kde.gwenview)(.*)$"
           ];
           layerrule = [
             "blur, launcher"
