@@ -252,8 +252,8 @@
               font_family = "monospace"; 
               height = 14;
               "text_color" = "0xff000000";
-              "col.active" = "0xff000000";
-              "col.inactive" = "0x55000000";
+              "col.active" = "0x50000000";
+              "col.inactive" = "0x20000000";
             };
           };
           misc = {
