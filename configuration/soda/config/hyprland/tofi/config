@@ -6,7 +6,7 @@ width = 20%
 height = 15%
 
 background-color = #fff
-border-width = 1
+border-width = 0
 border-color = #000000
 corner-radius = 3
 
