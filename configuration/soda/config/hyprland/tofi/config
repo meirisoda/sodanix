@@ -1,12 +1,12 @@
 font = "monospace"
-font-size = 14
+font-size = 12
 text-color = #000000
 
 width = 20%
 height = 15%
 
 background-color = #fff
-outline-width = 1
+outline-width = 0
 outline-color = #000
 border-width = 0
 border-color = #000000
