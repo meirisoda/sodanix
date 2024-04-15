@@ -76,7 +76,7 @@
             "ALT, O, exec, obsidian"
             "ALT, V, exec, codium"
             "ALT, M, exec, element-desktop"
-            "ALT, J, exec, jellyfin-desktop"
+            "ALT, J, exec, jellyfin"
             "ALT, T, exec, tidal-hifi"
             ", XF86Launch1, exec, rog-control-center"
 
