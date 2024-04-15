@@ -120,7 +120,7 @@
           windowrule = [
             "workspace 1, firefox"
             "workspace 21, codium"
-            "workspace 31, element-desktop"
+            "workspace 31, element"
             "workspace 11, obsidian"
             "workspace 81, jellyfin"
             "workspace 81, tidal-hifi"
@@ -248,7 +248,7 @@
             insert_after_current = true;
             focus_removed_window = true;
             groupbar = {
-              enabled = false;
+              enabled = true;
               font_family = "monospace"; 
               height = 14;
             };
