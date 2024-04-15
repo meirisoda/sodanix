@@ -57,7 +57,7 @@
             "SUPER_CTRL_SHIFT, 1, exec, sh ${./hyprland/workspace2d.sh} up all"
             "SUPER_CTRL_SHIFT_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_up all"
             "SUPER_CTRL_SHIFT, 2, exec, sh ${./hyprland/workspace2d.sh} down all"
-            "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down all"
+            "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down allppli"
 
             "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
             "SUPER_SHIFT, S, exec, ${pkgs.grimblast}/bin/grimblast copy area"
@@ -97,7 +97,7 @@
             ", XF86MonBrightnessDown, exec"
             ", XF86MonBrightnessUp, exec"
           ];
-          env = if host-name != "sodaROG" then [
+          env = if hostname != "sodaROG" then [
             "LIBVA_DRIVER_NAME,nvidia"
             "XDG_SESSION_TYPE,wayland"
             "GBM_BACKEND,nvidia-drm"
