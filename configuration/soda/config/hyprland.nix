@@ -46,14 +46,7 @@
             "${pkgs.blueman}/bin/blueman-applet"
             "${pkgs.wl-clipboard}/bin/wl-paste --type text --watch ${pkgs.cliphist}/bin/cliphist store"
             "${pkgs.wl-clipboard}/bin/wl-paste --type image --watch ${pkgs.cliphist}/bin/cliphist store"
-            "hyprctl dispatch workspace 1"
-            "hyprctl dispatch workspace 2"
-            "hyprctl dispatch workspace 3"
-            "hyprctl dispatch workspace 4"
-            "hyprctl dispatch workspace 5"
-            "hyprctl dispatch workspace 6"
-            "hyprctl dispatch workspace 7"
-            "hyprctl dispatch workspace 8"
+            "for i in {1..8}; do hyprctl dispatch workspace $i; done;"
           ];
           bind = [
             "SUPER_CTRL, right, workspace, m+1"
@@ -137,11 +130,15 @@
           workspace = [
             "r[1-4], monitor: eDP-1"
             "r[5-8], monitor: HDMI-A-1"
-            "1, default:true"
-            "5, defaultName:1a, default:true"
-            "6, defaultName:2a"
-            "7, defaultName:3a"
-            "8, defaultName:4a"
+            "1, default:true, persistent:true"
+            "2, persistent:true"
+            "3, persistent:true"
+            "4, persistent:true"
+
+            "5, defaultName:1a, default:true, persistent:true"
+            "6, defaultName:2a, persistent:true"
+            "7, defaultName:3a, persistent:true"
+            "8, defaultName:4a, persistent:true"
           ];
 
           # windowrule = [
