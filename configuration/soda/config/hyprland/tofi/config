@@ -1,15 +1,15 @@
 font = "monospace"
 font-size = 12
-text-color = #000
+text-color = #464646
 
 width = 20%
 height = 15%
 
 background-color = #fff
-outline-width = 1
-outline-color = #000
+outline-width = 0
+outline-color = #464646
 border-width = 0
-border-color = #000000
+border-color = #464646
 corner-radius = 3
 
 prompt-background = #fff
@@ -21,9 +21,9 @@ input-background = #fff
 default-result-background = #fff
 
 selection-color = #fff
-selection-background = #000
+selection-background = #464646
 
-selection-match-color = #000
+selection-match-color = #bdc6d3
 
 text-cursor-style = block
 text-cursor-corner-radius = 0

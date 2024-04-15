@@ -78,7 +78,7 @@
             "ALT, M, exec, element-desktop"
             "ALT, J, exec, jellyfin-desktop"
             "ALT, T, exec, tidal-hifi"
-            ", XF86Launch1, exec, asusctl"
+            ", XF86Launch1, exec, rog-control-center"
 
             "ALT, W, killactive"
             "ALT, Tab, cyclenext"
