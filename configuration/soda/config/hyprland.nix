@@ -20,6 +20,9 @@
       "waybar/style.css" = {
         source = ./hyprland/waybar/style.css;
       };
+      "tofi/config" = {
+        source = ./hyprland/tofi/config;
+      };
       # "xplr/init.lua" = {
       #   text = import ./hyprland/xplr.nix {};
       # };
