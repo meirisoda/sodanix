@@ -129,7 +129,7 @@
             # "float, class:.*"
             "float,class:^(kitty)$"
             "float,class:^(pavucontrol)$"
-            "float,class:^(nautilus)$"
+            "float,class:^(Nautilus)$"
             "float,class:^(Gwenview)$"
           ];
           layerrule = [
