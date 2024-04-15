@@ -58,6 +58,7 @@
     hyprlock
     hyprpaper
     jq
+    nautilus
     networkmanagerapplet
     pavucontrol
     rofi
