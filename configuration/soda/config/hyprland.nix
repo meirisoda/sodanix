@@ -89,7 +89,6 @@
             "SUPER, L, exec, pidof hyprlock || ${pkgs.hyprlock}/bin/hyprlock"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
-            ", XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle"
           ];
           binds = {
             movefocus_cycles_fullscreen = false;
