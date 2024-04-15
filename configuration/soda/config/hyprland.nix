@@ -90,6 +90,8 @@
             "SUPER, L, exec, pidof hyprlock || ${pkgs.hyprlock}/bin/hyprlock"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
 
+            "SUPER, Space, exec, ${pkgs.toybox}/bin/killall -SIGUSR1 waybar"
+
           ];
           binds = {
             movefocus_cycles_fullscreen = false;
