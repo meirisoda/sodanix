@@ -18,7 +18,7 @@ builtins.toJSON {
       "tray"
     ];
     "modules-left" = [
-      "wlr/workspaces"
+      "hyprland/workspaces"
     ];
     "keyboard-state" = {
       "numlock" = true;
