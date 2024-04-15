@@ -230,7 +230,7 @@
             focus_removed_window = true;
             groupbar = {
               enabled = false;
-              font-family = "monospace"; 
+              font_family = "monospace"; 
               height = 14;
             };
           };
