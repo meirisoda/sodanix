@@ -118,12 +118,7 @@
             # "float, class:.*"
             "float,class:^(kitty)$"
             "float,class:^(pavucontrol)$"
-            "float,class:^(dolphin)$"
-            "maximize, class:^(firefox)$"
-            "maximize, class:^(obsidian)$"
-            "maximize, class:^(element-desktop)$"
-            "maximize, class:^(codium)$"
-            "maximize, class:^(jellyfin-desktop)$"
+            "float,class:^(thunar)$"
           ];
           general = {
             border_size = 0;
