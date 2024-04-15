@@ -9,6 +9,21 @@ background {
     rgba(200, 200, 200, 0.5)
     vibrancy_darkness = 0.0
 }
+image {
+    monitor =
+    path = /home/soda/Pictures/Profile\ Pictures/pfp.png
+    size = 150 # lesser side if not 1:1 ratio
+    rounding = -1 # negative values mean circle
+    border_size = 1
+    border_color = rgb(119, 119, 119)
+    rotate = 0 # degrees, counter-clockwise
+    reload_time = -1 # seconds between reloading, 0 to reload with SIGUSR2
+    reload_cmd =  # command to get new path. if empty, old path will be used. don't run "follow" commands like tail -F
+
+    position = 0, 100
+    halign = center
+    valign = center
+}
 label {
     monitor =
     text = $USER
