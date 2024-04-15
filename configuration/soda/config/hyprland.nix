@@ -46,17 +46,25 @@
             "${pkgs.blueman}/bin/blueman-applet"
             "${pkgs.wl-clipboard}/bin/wl-paste --type text --watch ${pkgs.cliphist}/bin/cliphist store"
             "${pkgs.wl-clipboard}/bin/wl-paste --type image --watch ${pkgs.cliphist}/bin/cliphist store"
+            "hyprctl dispatch workspace 1"
+            "hyprctl dispatch workspace 2"
+            "hyprctl dispatch workspace 3"
+            "hyprctl dispatch workspace 4"
+            "hyprctl dispatch workspace 5"
+            "hyprctl dispatch workspace 6"
+            "hyprctl dispatch workspace 7"
+            "hyprctl dispatch workspace 8"
           ];
           bind = [
-            "SUPER_CTRL, right, workspace, +1"
-            "SUPER_CTRL, left, workspace, -1"
-            "SUPER_CTRL, 1, exec, workspace, +1"
-            "SUPER_CTRL, 2, exec, workspace, -1"
+            "SUPER_CTRL, right, workspace, m+1"
+            "SUPER_CTRL, left, workspace, m-1"
+            "SUPER_CTRL, 1, exec, workspace, m+1"
+            "SUPER_CTRL, 2, exec, workspace, m-1"
 
-            "SUPER_CTRL_ALT, right, movetoworkspace, +1"
-            "SUPER_CTRL_ALT, left, movetoworkspace, -1"
-            "SUPER_CTRL_ALT, 1, movetoworkspace, +1"
-            "SUPER_CTRL_ALT, 2, movetoworkspace, -1"
+            "SUPER_CTRL_ALT, right, movetoworkspace, m+1"
+            "SUPER_CTRL_ALT, left, movetoworkspace, m-1"
+            "SUPER_CTRL_ALT, 1, movetoworkspace, m+1"
+            "SUPER_CTRL_ALT, 2, movetoworkspace, m-1"
 
             # "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all"
             # "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down all"
@@ -127,14 +135,13 @@
           ] else [];
 
           workspace = [
-            "1, monitor:eDP-1, default:true, persistent:true"
-            "1a, monitor:HDMI-A-1, persistent: true"
-            "2, monitor:eDP-1, persistent:true"
-            "2a, monitor:HDMI-A-1, persistent:true"
-            "3, monitor:eDP-1, persistent:true"
-            "3a, monitor:HDMI-A-1, persistent:true"
-            "4, monitor:eDP-1, persistent:true"
-            "4a, monitor:HDMI-A-1, persistent:true"
+            "r[1-4], monitor: eDP-1"
+            "r[5-8], monitor: HDMI-A-1"
+            "1, default:true"
+            "5, defaultName:1a, default:true"
+            "6, defaultName:2a"
+            "7, defaultName:3a"
+            "8, defaultName:4a"
           ];
 
           # windowrule = [
