@@ -58,7 +58,7 @@
     hyprlock
     hyprpaper
     jq
-    nautilus
+    gnome.nautilus
     networkmanagerapplet
     pavucontrol
     rofi
