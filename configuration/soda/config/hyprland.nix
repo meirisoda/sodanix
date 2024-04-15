@@ -128,17 +128,14 @@
           ] else [];
 
           workspace = [
-            "r[1-4], monitor: eDP-1"
-            "r[5-8], monitor: HDMI-A-1"
-            "1, default:true, persistent:true"
-            "2, persistent:true"
-            "3, persistent:true"
-            "4, persistent:true"
-
-            "5, defaultName:1a, default:true, persistent:true"
+            "r[1-4], monitor: eDP-1, persistent: true"
+            "r[5-8], monitor: HDMI-A-1, persistent: true"
+            "1, monitor: eDP-1, default:true, persistent:true"
+            "5, monitor: HDMI-A-1, defaultName:1a, default:true"
             "6, defaultName:2a, persistent:true"
             "7, defaultName:3a, persistent:true"
             "8, defaultName:4a, persistent:true"
+
           ];
 
           # windowrule = [
