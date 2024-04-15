@@ -5,22 +5,22 @@ text-color = #000
 width = 20%
 height = 15%
 
-background-color = #fffA
+background-color = #fff
 outline-width = 1
 outline-color = #000
 border-width = 0
 border-color = #000000
 corner-radius = 3
 
-prompt-background = #fffA
+prompt-background = #fff
 prompt-background-padding = 0
 prompt-background-corner-radius = 3
 
-input-background = #fffA
+input-background = #fff
 
-default-result-background = #fffA
+default-result-background = #fff
 
-selection-color = #fffA
+selection-color = #fff
 selection-background = #000
 
 selection-match-color = #000
