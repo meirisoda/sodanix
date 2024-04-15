@@ -140,13 +140,13 @@
           #   "8, monitor:HDMI-A-1, defaultName:4a, persistent:true"
           # ];
 
-          # windowrule = [
-          #   "workspace 1, firefox"
-          #   "workspace 21, codium"
-          #   "workspace 31, element"
-          #   "workspace 11, obsidian"
-          #   "workspace 81, tidal-hifi"
-          # ];
+          windowrule = [
+            "workspace 1, firefox"
+            "workspace 21, codium"
+            "workspace 31, element"
+            "workspace 11, obsidian"
+            "workspace 81, tidal-hifi"
+          ];
           windowrulev2 = [
             "float, class:^(kitty)$"
             "float, class:^(pavucontrol)$"
