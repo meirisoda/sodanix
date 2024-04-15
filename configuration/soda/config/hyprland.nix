@@ -130,6 +130,7 @@
             "float,class:^(kitty)$"
             "float,class:^(pavucontrol)$"
             "float,class:^(thunar)$"
+            "float,class:^(gwenview)$"
           ];
           layerrule = [
             "blur, launcher"

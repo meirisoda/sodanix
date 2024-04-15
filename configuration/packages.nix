@@ -79,6 +79,7 @@
     btop
     gparted
     fd
+    file
     # ffmpeg
     graphviz
     jellyfin-media-player
