@@ -129,8 +129,8 @@
             # "float, class:.*"
             "float,class:^(kitty)$"
             "float,class:^(pavucontrol)$"
-            "float,class:^(org.gnome.nautilus)$"
-            "float,class:^(org.kde.gwenview)$"
+            "float,title:^(org.gnome.nautilus)(.*)$"
+            "float,title:^(org.kde.gwenview)(.*)$"
           ];
           layerrule = [
             "blur, launcher"
