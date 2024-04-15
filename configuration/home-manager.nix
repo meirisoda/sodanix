@@ -112,7 +112,7 @@
           tln32asus = "ssh soda@tln32asus.student.cwru.edu";
           sodasw = "sudo /run/current-system/specialisation/soda/bin/switch-to-configuration switch";
           mobilesw = "sudo /run/current-system/specialisation/mobile/bin/switch-to-configuration switch";
-          watch = "watch -n 0.1 hyprctl activewindow"
+          watch = "watch -n 0.1 hyprctl activewindow";
         };
       };
       kitty = {
