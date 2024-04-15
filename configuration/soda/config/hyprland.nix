@@ -113,6 +113,11 @@
           ] else [];
           windowrule = [
             "workspace 1, firefox"
+            "workspace 21, codium"
+            "workspace 31, element-desktop"
+            "workspace 11, obsidian"
+            "workspace 81, jellyfin"
+            "workspace 81, tidal-hifi"
           ];
           windowrulev2 = [
             # "float, class:.*"
