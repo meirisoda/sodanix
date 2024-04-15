@@ -6,6 +6,8 @@ width = 20%
 height = 15%
 
 background-color = #fff
+outline-width = 1
+outline-color = #000
 border-width = 0
 border-color = #000000
 corner-radius = 3
