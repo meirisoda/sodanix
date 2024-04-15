@@ -48,22 +48,29 @@
             "${pkgs.wl-clipboard}/bin/wl-paste --type image --watch ${pkgs.cliphist}/bin/cliphist store"
           ];
           bind = [
-            "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right all"
-            "SUPER_CTRL, left, exec, sh ${./hyprland/workspace2d.sh} left all"
-            "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all"
-            "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down all"
-            "SUPER_CTRL_ALT, right, exec, sh ${./hyprland/workspace2d.sh} move_right all"
-            "SUPER_CTRL_ALT, left, exec, sh ${./hyprland/workspace2d.sh} move_left all"
-            "SUPER_CTRL_ALT, up, exec, sh ${./hyprland/workspace2d.sh} move_up all"
-            "SUPER_CTRL_ALT, down, exec, sh ${./hyprland/workspace2d.sh} move_down all"
-            "SUPER_CTRL, 1, exec, sh ${./hyprland/workspace2d.sh} right all"
-            "SUPER_CTRL_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_right all"
-            "SUPER_CTRL, 2, exec, sh ${./hyprland/workspace2d.sh} left all"
-            "SUPER_CTRL_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_left all"
-            "SUPER_CTRL_SHIFT, 1, exec, sh ${./hyprland/workspace2d.sh} up all"
-            "SUPER_CTRL_SHIFT_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_up all"
-            "SUPER_CTRL_SHIFT, 2, exec, sh ${./hyprland/workspace2d.sh} down all"
-            "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down allppli"
+            "SUPER_CTRL, right, workspace +1"
+            "SUPER_CTRL, left, workspace -1"
+            "SUPER_CTRL, 1, exec, workspace +1"
+            "SUPER_CTRL, 2, exec, workspace -1"
+
+            "SUPER_CTRL_ALT, right, movetoworkspace +1"
+            "SUPER_CTRL_ALT, left, movetoworkspace -1"
+            "SUPER_CTRL_ALT, 1, movetoworkspace +1"
+            "SUPER_CTRL_ALT, 2, movetoworkspace -1"
+            # "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all"
+            # "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down all"
+            # "SUPER_CTRL_ALT, right, exec, sh ${./hyprland/workspace2d.sh} move_right all"
+            # "SUPER_CTRL_ALT, left, exec, sh ${./hyprland/workspace2d.sh} move_left all"
+            # "SUPER_CTRL_ALT, up, exec, sh ${./hyprland/workspace2d.sh} move_up all"
+            # "SUPER_CTRL_ALT, down, exec, sh ${./hyprland/workspace2d.sh} move_down all"
+            # "SUPER_CTRL, 1, exec, sh ${./hyprland/workspace2d.sh} right all"
+            # "SUPER_CTRL_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_right all"
+            # "SUPER_CTRL, 2, exec, sh ${./hyprland/workspace2d.sh} left all"
+            # "SUPER_CTRL_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_left all"
+            # "SUPER_CTRL_SHIFT, 1, exec, sh ${./hyprland/workspace2d.sh} up all"
+            # "SUPER_CTRL_SHIFT_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_up all"
+            # "SUPER_CTRL_SHIFT, 2, exec, sh ${./hyprland/workspace2d.sh} down all"
+            # "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down allppli"
 
             "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
             "SUPER_SHIFT, S, exec, ${pkgs.grimblast}/bin/grimblast copy area"
@@ -117,6 +124,18 @@
             "__GLX_VENDOR_LIBRARY_NAME,nvidia"
             "WLR_NO_HARDWARE_CURSORS,1"
           ] else [];
+
+          workspace = [
+            "1, monitor:DP-1, default:true, persistent:true"
+            "1a, monitor:HDMI-A-1, persistent: true"
+            "2, monitor:DP-1, persistent:true"
+            "2a, monitor:HDMI-A-1, persistent:true"
+            "3, monitor:DP-1, persistent:true"
+            "3a, monitor:HDMI-A-1, persistent:true"
+            "4, monitor:DP-1, persistent:true"
+            "4a, monitor:HDMI-A-1, persistent:true"
+          ];
+
           # windowrule = [
           #   "workspace 1, firefox"
           #   "workspace 21, codium"
@@ -125,7 +144,6 @@
           #   "workspace 81, tidal-hifi"
           # ];
           windowrulev2 = [
-            # "float, class:.*"
             "float, class:^(kitty)$"
             "float, class:^(pavucontrol)$"
             "float, class:^(org\.gnome\.Nautilus)$"
