@@ -1,6 +1,6 @@
 { hostname, ... }:
 let
-  wallpaper = ./wallpaper/grey.jpg;
+  wallpaper = ./wallpaper/etcetera.png;
 in
 ''
 background {
@@ -13,7 +13,7 @@ label {
     monitor =
     text = $USER
     color = rgba(200, 200, 200, 1.0)
-    font_size = 18
+    font_size = 18e
     font_family = monospace
 
     position = 0, 80
