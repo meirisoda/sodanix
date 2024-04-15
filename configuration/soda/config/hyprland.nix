@@ -127,13 +127,13 @@
           ] else [];
 
           workspace = [
-            "1, monitor:DP-1, default:true, persistent:true"
+            "1, monitor:eDP-1, default:true, persistent:true"
             "1a, monitor:HDMI-A-1, persistent: true"
-            "2, monitor:DP-1, persistent:true"
+            "2, monitor:eDP-1, persistent:true"
             "2a, monitor:HDMI-A-1, persistent:true"
-            "3, monitor:DP-1, persistent:true"
+            "3, monitor:eDP-1, persistent:true"
             "3a, monitor:HDMI-A-1, persistent:true"
-            "4, monitor:DP-1, persistent:true"
+            "4, monitor:eDP-1, persistent:true"
             "4a, monitor:HDMI-A-1, persistent:true"
           ];
 
