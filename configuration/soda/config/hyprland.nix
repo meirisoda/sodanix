@@ -3,19 +3,19 @@
   home-manager.users.${username} = {
     xdg.configFile = {
       "plasma-org.kde.plasma.desktop-appletsrc" = { 
-        text = import ./soda/config/plasma/plasmaappletsrc.nix {};
+        text = import ./config/plasma/plasmaappletsrc.nix {};
       };
       "hypr/hyprpaper.conf" = {
-        text = import ./soda/config/hyprland/hyprpaper.nix {};
+        text = import ./config/hyprland/hyprpaper.nix {};
       };
       "waybar/config-jsonc" = {
-        text = import ./soda/config/hyprland/waybar.nix {inherit pkgs;};
+        text = import ./config/hyprland/waybar.nix {inherit pkgs;};
       };
       "hypr/hyprlock.conf" = {
-        text = import ./soda/config/hyprland/hyprlock.nix { inherit hostname; };
+        text = import ./config/hyprland/hyprlock.nix { inherit hostname; };
       };
       "hypr/hypridle.conf" = {
-        text = import ./hyprland/hypridle.nix { inherit pkgs; };
+        text = import ./config/hyprland/hypridle.nix { inherit pkgs; };
       };
       # "xplr/init.lua" = {
       #   text = import ./soda/config/hyprland/xplr.nix {};
