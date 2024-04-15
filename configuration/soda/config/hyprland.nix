@@ -64,7 +64,7 @@
 
             "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
             "SUPER_SHIFT, S, exec, ${pkgs.grimblast}/bin/grimblast copy area"
-            # ", XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle"
+            ", XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle"
             
             "CTRL_ALT, T, exec, kitty"
             "ALT, E, exec, thunar"
@@ -112,7 +112,7 @@
             "WLR_NO_HARDWARE_CURSORS,1"
           ] else [];
           windowrule = [
-            "windowrule = workspace 1, google-chrome-stable"
+            "workspace 1, firefox"
           ];
           windowrulev2 = [
             # "float, class:.*"
