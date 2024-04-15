@@ -6,7 +6,7 @@ in
 background {
     monitor =
     path = ${wallpaper}
-    color = rgba(25, 20, 20, 1.0)
+    rgba(200, 200, 200, 0.5)
     blur_passes = 5
     blur_size = 7
     noise = 0.0117
@@ -30,13 +30,13 @@ input-field {
     monitor =
     size = 200, 50
     outline_thickness = 3
-    dots_size = 0.33
+    dots_size = 0.2
     dots_spacing = 0.15
     dots_center = false
     dots_rounding = -1
     outer_color = rgb(151515)
     inner_color = rgb(200, 200, 200)
-    font_color = rgb(10, 10, 10)
+    font_color = rgb(70,70,70)
     fade_on_empty = true
     fade_timeout = 1000
     placeholder_text = <i>Input Password...</i>
