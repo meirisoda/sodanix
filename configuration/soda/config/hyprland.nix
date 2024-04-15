@@ -57,6 +57,7 @@
             "SUPER_CTRL_ALT, left, movetoworkspace, -1"
             "SUPER_CTRL_ALT, 1, movetoworkspace, +1"
             "SUPER_CTRL_ALT, 2, movetoworkspace, -1"
+
             # "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all"
             # "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down all"
             # "SUPER_CTRL_ALT, right, exec, sh ${./hyprland/workspace2d.sh} move_right all"
@@ -125,16 +126,16 @@
             "WLR_NO_HARDWARE_CURSORS,1"
           ] else [];
 
-          workspace = [
-            "1, monitor:DP-1, default:true, persistent:true"
-            "1a, monitor:HDMI-A-1, persistent: true"
-            "2, monitor:DP-1, persistent:true"
-            "2a, monitor:HDMI-A-1, persistent:true"
-            "3, monitor:DP-1, persistent:true"
-            "3a, monitor:HDMI-A-1, persistent:true"
-            "4, monitor:DP-1, persistent:true"
-            "4a, monitor:HDMI-A-1, persistent:true"
-          ];
+          # workspace = [
+          #   "1, monitor:DP-1, default:true, persistent:true"
+          #   "1a, monitor:HDMI-A-1, persistent: true"
+          #   "2, monitor:DP-1, persistent:true"
+          #   "2a, monitor:HDMI-A-1, persistent:true"
+          #   "3, monitor:DP-1, persistent:true"
+          #   "3a, monitor:HDMI-A-1, persistent:true"
+          #   "4, monitor:DP-1, persistent:true"
+          #   "4a, monitor:HDMI-A-1, persistent:true"
+          # ];
 
           # windowrule = [
           #   "workspace 1, firefox"
