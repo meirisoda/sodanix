@@ -64,7 +64,7 @@
 
             "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
             "SUPER_SHIFT, S, exec, ${pkgs.grimblast}/bin/grimblast copy area"
-            ", XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle"
+            # ", XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle"
             
             "CTRL_ALT, T, exec, kitty"
             "ALT, E, exec, thunar"
@@ -111,6 +111,9 @@
             "__GLX_VENDOR_LIBRARY_NAME,nvidia"
             "WLR_NO_HARDWARE_CURSORS,1"
           ] else [];
+          windowrule = [
+            "windowrule = workspace 1, google-chrome-stable"
+          ];
           windowrulev2 = [
             # "float, class:.*"
             "float,class:^(kitty)$"

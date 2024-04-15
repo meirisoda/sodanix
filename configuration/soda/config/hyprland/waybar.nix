@@ -8,12 +8,11 @@ builtins.toJSON {
     "modules-right" = [
       "mpris"
       "privacy"
+      "hyprland/workspaces"
       "idle_inhibitor"
       "pulseaudio"
       "network"
       "power-profiles-daemon"
-      "cpu"
-      "memory"
       "temperature"
       "backlight"
       "keyboard-state"
@@ -21,9 +20,6 @@ builtins.toJSON {
       "battery"
       "clock"
       "tray"
-    ];
-    "modules-left" = [
-      "hyprland/workspaces"
     ];
     "keyboard-state" = {
       "numlock" = true;
