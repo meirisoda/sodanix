@@ -11,8 +11,8 @@ background {
     blur_size = 7
     noise = 0.0117
     contrast = 0.8916
-    brightness = 0.8172
-    vibrancy = 0.1696
+    brightness = 1.0
+    vibrancy = 1.0
     vibrancy_darkness = 0.0
 }
 label {
@@ -41,7 +41,7 @@ input-field {
     fade_timeout = 1000
     placeholder_text = <i>Input Password...</i>
     hide_input = false
-    rounding = -1
+    rounding = -0.3
     check_color = rgb(204, 136, 34)
     fail_color = rgb(204, 34, 34)
     fail_text = <i>$FAIL <b>($ATTEMPTS)</b></i>
