@@ -8,7 +8,7 @@
 
 window#waybar {
     background: transparent;
-    color: white;
+    color: black;
 }
 
 #window {
@@ -24,7 +24,7 @@ window#waybar {
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: white;
+    color: black;
     border-top: 2px solid transparent;
 }
 
@@ -65,7 +65,7 @@ window#waybar {
 }
 
 #battery.warning:not(.charging) {
-    color: white;
+    color: black;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
