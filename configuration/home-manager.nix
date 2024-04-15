@@ -22,10 +22,10 @@
             offset = "30x30";
             origin = "top-right";
             transparency = 10;
-            frame_color = "#eceff1";
             font = "monospace";
-          };
-          urgency_normal = {
+            font_height = "12";
+
+            frame_width = "1";
             frame_color = "#464646";
             background = "#fff";
             foreground = "#464646";
