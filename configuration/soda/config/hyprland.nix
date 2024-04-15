@@ -59,6 +59,8 @@
             # "SUPER_CTRL_ALT, 1, movetoworkspace, m+1"
             # "SUPER_CTRL_ALT, 2, movetoworkspace, m-1"
 
+            "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right all"
+            "SUPER_CTRL, left, exec, sh ${./hyprland/workspace2d.sh} left all"
             "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all"
             "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down all"
             "SUPER_CTRL_ALT, right, exec, sh ${./hyprland/workspace2d.sh} move_right all"
