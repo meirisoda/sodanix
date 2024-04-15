@@ -18,7 +18,7 @@
         text = import ./config/hyprland/hypridle.nix { inherit pkgs; };
       };
       # "xplr/init.lua" = {
-      #   text = import ./soda/config/hyprland/xplr.nix {};
+      #   text = import ./config/hyprland/xplr.nix {};
       # };
     };
     wayland.windowManager = {
