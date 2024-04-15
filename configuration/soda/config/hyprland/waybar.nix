@@ -3,122 +3,154 @@ builtins.toJSON {
     "layer" = "top"; # Waybar at top layer
     # "position" = "bottom"; # Waybar position (top|bottom|left|right)
     "height" = 30; # Waybar height (to be removed for auto height)
-    # "width" = 1280; # Waybar width
     "spacing" = 4; # Gaps between modules (4px)
-    # Choose the order of the modules
-    "modules-left" = [
-        "custom/media"
-    ];
-    "modules-center" = [
-    ];
+    "start_hidden" = true;
     "modules-right" = [
-        "mpd"
-        "idle_inhibitor"
-        "pulseaudio"
-        "network"
-        "power-profiles-daemon"
-        "cpu"
-        "memory"
-        "temperature"
-        "backlight"
-        "keyboard-state"
-        "sway/language"
-        "battery"
-        "battery#bat2"
-        "clock"
-        "tray"
+      "mpris"
+      "privacy"
+      "idle_inhibitor"
+      "pulseaudio"
+      "network"
+      "power-profiles-daemon"
+      "cpu"
+      "memory"
+      "temperature"
+      "backlight"
+      "keyboard-state"
+      "sway/language"
+      "battery"
+      "clock"
+      "tray"
     ];
-
+    "modules-left" = [
+      "hyprland/workspaces"
+    ];
     "keyboard-state" = {
-        "numlock" = true;
-        "capslock" = true;
-        "format" = "{name} {icon}";
-        "format-icons" = {
-            "locked" = "";
-            "unlocked" = "";
-        };
+      "numlock" = true;
+      "capslock" = true;
+      "format" = "{name} {icon}";
+      "format-icons" = {
+        "locked" = "";
+        "unlocked" = "";
+      };
     };
     "mpd" = {
-        "format" = "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ";
-        "format-disconnected" = "Disconnected ";
-        "format-stopped" = "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ";
-        "unknown-tag" = "N/A";
-        "interval" = 5;
-        "consume-icons" = {
-            "on" = " ";
-        };
-        "random-icons" = {
-            "off" = "<span color=\"#f53c3c\"></span> ";
-            "on" = " ";
-        };
-        "repeat-icons" = {
-            "on" = " ";
-        };
-        "single-icons" = {
-            "on" = "1 ";
-        };
-        "state-icons" = {
-            "paused" = "";
-            "playing" = "";
-        };
-        "tooltip-format" = "MPD (connected)";
-        "tooltip-format-disconnected" = "MPD (disconnected)";
+      "format" = "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ";
+      "format-disconnected" = "Disconnected ";
+      "format-stopped" = "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ";
+      "unknown-tag" = "N/A";
+      "interval" = 5;
+      "consume-icons" = {
+        "on" = " ";
+      };
+      "random-icons" = {
+        "off" = "<span color=\"#f53c3c\"></span> ";
+        "on" = " ";
+      };
+      "repeat-icons" = {
+        "on" = " ";
+      };
+      "single-icons" = {
+        "on" = "1 ";
+      };
+      "state-icons" = {
+        "paused" = "";
+        "playing" = "";
+      };
+      "tooltip-format" = "MPD (connected)";
+      "tooltip-format-disconnected" = "MPD (disconnected)";
+    };
+    "mpris" = {
+      "player" = "${pkgs.playerctl}/bin/playerctl";
+      "format" = "{player_icon} {dynamic}";
+      "format-paused" = "{status_icon} <i>{dynamic}</i>";
+      "player-icons" = {
+        "default" = "▶";
+        "mpv" = "🎵";
+      };
+      "status-icons" = {
+        "paused" = "⏸";
+      };
+      # "ignored-players": ["firefox"]
+    };
+    "privacy" = {
+      "icon-spacing" = 4;
+      "icon-size" = 18;
+      "transition-duration" = 250;
+      "modules" = [
+        {
+          "type" = "screenshare";
+          "tooltip" = true;
+          "tooltip-icon-size" = 24;
+        }
+        {
+          "type" = "audio-out";
+          "tooltip" = true;
+          "tooltip-icon-size" = 24;
+        }
+        {
+          "type" = "audio-in";
+          "tooltip" = true;
+          "tooltip-icon-size" = 24;
+        }
+      ];
+    };
+    "hyprland/workspaces" = {
+      "format" = "{name}";
     };
     "idle_inhibitor" = {
-        "format" = "{icon}";
-        "format-icons" = {
-            "activated" = "";
-            "deactivated" = "";
-        };
+      "format" = "{icon}";
+      "format-icons" = {
+        "activated" = "";
+        "deactivated" = "";
+      };
     };
     "tray" = {
-        # "icon-size" = 21;
-        "spacing" = 10;
+      # "icon-size" = 21;
+      "spacing" = 10;
     };
     "clock" = {
-        "timezone" = "America/New_York";
-        "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-        "format" = "{:%T}";
-        "format-alt" = "{:%Y-%m-%d}";
-        "interval" = "0.5";
+      # "timezone" = "America/New_York";
+      "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+      "format" = "{:%Y-%m-%dT%T%Ez}";
+      "interval" = 1;
+      "format-alt" = "{:%b %a %T}";
     };
     "cpu" = {
-        "format" = "{usage}% ";
-        "tooltip" = false;
+      "interval" = 1;
+      "format" = "{usage}% ";
+      "tooltip" = false;
     };
     "memory" = {
         "format" = "{}% ";
     };
     "temperature" = {
-        # "thermal-zone" = 2;
-        # "hwmon-path" = "/sys/class/hwmon/hwmon2/temp1_input";
-        "critical-threshold" = 80;
-        # "format-critical" = "{temperatureC}°C {icon}";
-        "format" = "{temperatureC}°C {icon}";
-        "format-icons" = ["" "" ""];
+      "interval" = 1;
+      # "thermal-zone" = 2;
+      # "hwmon-path" = "/sys/class/hwmon/hwmon2/temp1_input";
+      "critical-threshold" = 80;
+      # "format-critical" = "{temperatureC}°C {icon}";
+      "format" = "{temperatureC}°C {icon}";
+      "format-icons" = ["" "" ""];
     };
     "backlight" = {
-        # "device" = "acpi_video1";
-        "format" = "{percent}% {icon}";
-        "format-icons" = ["" "" "" "" "" "" "" "" ""];
+      "format" = "{percent}% {icon}";
+      "format-icons" = ["" "" "" "" "" "" "" "" ""];
     };
     "battery" = {
-        "states" = {
-            # "good" = 95;
-            "warning" = 30;
-            "critical" = 15;
-        };
-        "format" = "{capacity}% {icon}";
-        "format-full" = "{capacity}% {icon}";
-        "format-charging" = "{capacity}% ";
-        "format-plugged" = "{capacity}% ";
-        "format-alt" = "{time} {icon}";
-        # "format-good" = ""; # An empty format will hide the module
-        # "format-full" = "";
-        "format-icons" = ["" "" "" "" ""];
-    };
-    "battery#bat2" = {
-        "bat" = "BAT2";
+      "states" = {
+        # "good" = 95;
+        "warning" = 30;
+        "critical" = 15;
+      };
+      "format" = "{capacity}% {icon}";
+      "format-full" = "{capacity}% {icon}";
+      "format-charging" = "{capacity}% ⚡";
+      "format-plugged" = "{capacity}% ";
+      "format-alt" = "{time} {icon}";
+      # "format-good" = ""; # An empty format will hide the module
+      # "format-full" = "";
+      "format-icons" = ["" "" "" "" ""];
     };
     "power-profiles-daemon" = {
       "format" = "{icon}";
@@ -132,31 +164,34 @@ builtins.toJSON {
       };
     };
     "network" = {
-        # "interface" = "wlp2*"; # (Optional) To force the use of this interface
-        "format-wifi" = "{essid} ({signalStrength}%) ";
-        "format-ethernet" = "{ipaddr}/{cidr} 󰈀";
-        "tooltip-format" = "{ifname} via {gwaddr} ";
-        "format-linked" = "{ifname} (No IP) ";
-        "format-disconnected" = "Disconnected ⚠";
-        "format-alt" = "{ifname} = {ipaddr}/{cidr}";
+      # "interface" = "wlp2*"; # (Optional) To force the use of this interface
+      "format-wifi" = "{essid} ({signalStrength}%) ";
+      "format-ethernet" = "{ipaddr}/{cidr} 󰈀";
+      "tooltip-format" = "{ifname} via {gwaddr} ";
+      "format-linked" = "{ifname} (No IP) ";
+      "format-disconnected" = "Disconnected ⚠";
+      "format-alt" = "{ifname} = {ipaddr}/{cidr}";
     };
     "pulseaudio" = {
-        # "scroll-step" = 1; # %; can be a float
-        "format" = "{volume}% {icon} {format_source}";
-        "format-bluetooth" = "{volume}% {icon} {format_source}";
-        "format-bluetooth-muted" = " {icon} {format_source}";
-        "format-muted" = " {format_source}";
-        "format-source" = "{volume}% ";
-        "format-source-muted" = "";
-        "format-icons" = {
-            "headphone" = "";
-            "hands-free" = "";
-            "headset" = "";
-            "phone" = "";
-            "portable" = "";
-            "car" = "";
-            "default" = ["" "" ""];
-        };
-        "on-click" = "${pkgs.pavucontrol}/bin/pavucontrol";
+      # "scroll-step" = 1; # %; can be a float
+      "format" = "{volume}% {icon} {format_source}";
+      "format-bluetooth" = "{volume}% {icon} {format_source}";
+      "format-bluetooth-muted" = " {icon} {format_source}";
+      "format-muted" = " {format_source}";
+      "format-source" = "{volume}% ";
+      "format-source-muted" = "";
+      "format-icons" = {
+        "headphone" = "";
+        "hands-free" = "";
+        "headset" = "";
+        "phone" = "";
+        "portable" = "";
+        "car" = "";
+        "default" = ["" "" ""];
+      };
+      "on-click" = "${pkgs.pavucontrol}/bin/pavucontrol";
+      "on-click-right" = "${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle";
+      "on-scroll-up" = "${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+";
+      "on-scroll-down" = "${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%-";
     };
 }

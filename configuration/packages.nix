@@ -49,13 +49,21 @@
     yubico-pam
 
     # hyprland
+    blueman
     dunst
+    grimblast
+    hypridle
+    hyprlock
     hyprpaper
     jq
     networkmanagerapplet
+    pavucontrol
     rofi
+    thunar
     tofi
     waybar
+    wireplumber
+    wl-clipboard
     xplr
 
     # development

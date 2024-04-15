@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, username, ... }:
+{ config, pkgs, stablepkgs, username, hostname, ... }@args :
 {
   home-manager.users.${username} = {
     xdg.configFile = {
@@ -10,6 +10,12 @@
       };
       "waybar/config-jsonc" = {
         text = import ./soda/config/hyprland/waybar.nix {inherit pkgs;};
+      };
+      "hypr/hyprlock.conf" = {
+        text = import ./soda/config/hyprland/hyprlock.nix { inherit hostname; };
+      };
+      "hypr/hypridle.conf" = {
+        text = import ./hyprland/hypridle.nix { inherit pkgs; };
       };
       # "xplr/init.lua" = {
       #   text = import ./soda/config/hyprland/xplr.nix {};
@@ -26,10 +32,14 @@
             "HDMI-A-1,2560x1440@120,2560x0,1"
           ];
           exec-once = [
-            "dunst"
-            "hyprpaper"
-            "nm-applet --indicator"
-            "waybar"
+            "${pkgs.dunst}/bin/dunst"
+            "${pkgs.hypridle}/bin/hypridle"
+            "${pkgs.hyprpaper}/bin/hyprpaper"
+            "${pkgs.networkmanagerapplet}/bin/nm-applet --indicatior"
+            "${pkgs.waybar}/bin/waybar"
+            "${pkgs.blueman}/bin/blueman-applet"
+            "${pkgs.wl-clipboard}/bin/wl-paste --type text --watch ${pkgs.cliphist}/bin/cliphist store"
+            "${pkgs.wl-clipboard}/bin/wl-paste --type image --watch ${pkgs.cliphist}/bin/cliphist store"
           ];
           bind = [
             "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right"
@@ -51,18 +61,27 @@
 
             "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
             "SUPER_SHIFT, S, exec, ${pkgs.grimblast}/bin/grimblast copy area"
+            ", XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle"
+            
             "CTRL_ALT, T, exec, kitty"
-            "ALT, E, exec, dolphin"
+            "ALT, E, exec, thunar"
             "ALT, F, exec, firefox"
             "ALT, O, exec, obsidian"
             "ALT, V, exec, codium"
             "ALT, M, exec, element-desktop"
             "ALT, J, exec, jellyfin-desktop"
+            "ALT, T, exec, tidal-hifi"
+
             "ALT, W, killactive"
             "ALT, Tab, cyclenext"
             "ALT, Tab, bringactivetotop"
+            "CTRL_ALT_SHIFT, right, pin"
+
             "SUPER_CTRL, P, fullscreen, 2"
+            "SUPER, G, togglegroup"
+            "SUPER_SHIFT, G, moveoutofgroup"
             "ALT, P, togglefloating"
+            "SUPER, L, exec, pidof hyprlock || ${pkgs.hyprlock}/bin/hyprlock"
             "SUPER_SHIFT, L, exec, hyprctl dispatch exit"
           ];
           binds = {
@@ -72,8 +91,24 @@
             "SUPER, mouse:272, movewindow"
             "SUPER, mouse:273, resizewindow"
           ];
+          binde = [
+            ", XF86AudioLowerVolume, exec, ${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 3%-"
+            ", XF86AudioRaiseVolume, exec, ${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 3%+"
+            ", XF86MonBrightnessDown, exec"
+            ", XF86MonBrightnessUp, exec"
+          ];
+          env = if host-name != "sodaROG" then [
+            "LIBVA_DRIVER_NAME,nvidia"
+            "XDG_SESSION_TYPE,wayland"
+            "GBM_BACKEND,nvidia-drm"
+            "__GLX_VENDOR_LIBRARY_NAME,nvidia"
+            "WLR_NO_HARDWARE_CURSORS,1"
+          ] else [];
           windowrulev2 = [
             # "float, class:.*"
+            "float,class:^(kitty)$"
+            "float,class:^(pavucontrol)$"
+            "float,class:^(dolphin)$"
             "maximize, class:^(firefox)$"
             "maximize, class:^(obsidian)$"
             "maximize, class:^(element-desktop)$"
@@ -136,7 +171,10 @@
             "fade,0"
           ];
           input = {
+            # kb_model = "pc104";
             kb_layout = "us";
+            # kb_variant = "qwerty";
+            kb_options = "compose:ralt";
             numlock_by_default = false;
             repeat_rate = 25;
             repeat_delay = 500;
@@ -144,9 +182,10 @@
             accel_profile = "flat";
             force_no_accel = false;
             left_handed = false;
-            scroll_method = "2fg";
-            scroll_button = 0;
-            scroll_button_lock = true;
+            # scroll_method = "2fg";
+            scroll_method = "on_button_down";
+            scroll_button = 273;
+            scroll_button_lock = false;
             natural_scroll = false;
             follow_mouse = 2;
             mouse_refocus = true;
@@ -191,6 +230,8 @@
             focus_removed_window = true;
             groupbar = {
               enabled = false;
+              font-family = "monospace"; 
+              height = 14;
             };
           };
           misc = {
