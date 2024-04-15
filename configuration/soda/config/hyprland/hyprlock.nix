@@ -1,6 +1,7 @@
 { hostname, ... }:
 let
   wallpaper = ./wallpaper/etcetera.png;
+  pfp = ./wallpaper/pfp.png;
 in
 ''
 background {
@@ -11,7 +12,7 @@ background {
 }
 image {
     monitor =
-    path = /home/soda/Pictures/Profile\ Pictures/pfp.png
+    path = ${pfp}
     size = 150 # lesser side if not 1:1 ratio
     rounding = -1 # negative values mean circle
     border_size = 1
