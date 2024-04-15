@@ -3,22 +3,22 @@
   home-manager.users.${username} = {
     xdg.configFile = {
       "plasma-org.kde.plasma.desktop-appletsrc" = { 
-        text = import ./config/plasma/plasmaappletsrc.nix {};
+        text = import ./plasma/plasmaappletsrc.nix {};
       };
       "hypr/hyprpaper.conf" = {
-        text = import ./config/hyprland/hyprpaper.nix {};
+        text = import ./hyprland/hyprpaper.nix {};
       };
       "waybar/config-jsonc" = {
-        text = import ./config/hyprland/waybar.nix {inherit pkgs;};
+        text = import ./hyprland/waybar.nix {inherit pkgs;};
       };
       "hypr/hyprlock.conf" = {
-        text = import ./config/hyprland/hyprlock.nix { inherit hostname; };
+        text = import ./hyprland/hyprlock.nix { inherit hostname; };
       };
       "hypr/hypridle.conf" = {
-        text = import ./config/hyprland/hypridle.nix { inherit pkgs; };
+        text = import ./hyprland/hypridle.nix { inherit pkgs; };
       };
       # "xplr/init.lua" = {
-      #   text = import ./config/hyprland/xplr.nix {};
+      #   text = import ./hyprland/xplr.nix {};
       # };
     };
     wayland.windowManager = {
