@@ -68,8 +68,8 @@
     nvidiaSettings = true;
     open = false;
     powerManagement = {
-      enable = false;
-      finegrained = false; 
+      enable = true;
+      finegrained = true; 
     };
     prime = {
       reverseSync.enable = true;
@@ -80,7 +80,7 @@
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:65:0:0";
     };
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.latest;
   };
 
   boot.kernelParams = [
