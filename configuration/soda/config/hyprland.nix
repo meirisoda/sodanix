@@ -215,7 +215,7 @@
             first_launch_animation = true;
           };
           animation = [
-            "workspaces,1,1,default"
+            "workspaces,1,1,easeOutExpo, fade"
             "windows,1,1,default"
             "fade,0"
           ];
