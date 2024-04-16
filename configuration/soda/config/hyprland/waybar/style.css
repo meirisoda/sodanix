@@ -47,6 +47,7 @@ window#waybar {
 }
 
 #battery.charging {
+    color: #464646; 
 }
 
 @keyframes blink {
@@ -75,17 +76,13 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #f53c3c;
+    color: #f53c3c;
 }
 
 #pulseaudio {
 }
 
 #pulseaudio.muted {
-}
-
-#custom-spotify {
-    color: rgb(102, 220, 105);
 }
 
 #tray {
