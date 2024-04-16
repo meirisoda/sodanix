@@ -215,9 +215,12 @@
             first_launch_animation = true;
           };
           animation = [
-            "workspaces,1,1,easeOutExpo, fade"
+            "workspaces,1,1,beziername, fade"
             "windows,1,1,default"
             "fade,0"
+          ];
+          bezier = [
+            "beziername,0.16,1,0.3,1"
           ];
           
           env = if hostname != "sodaROG" then [
