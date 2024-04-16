@@ -215,7 +215,7 @@
             first_launch_animation = true;
           };
           animation = [
-            "workspaces,1,3,beziername,fade"
+            "workspaces,1,2,beziername,fade"
             "windows,1,1,default"
             "fade,0"
           ];
