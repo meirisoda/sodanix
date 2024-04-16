@@ -8,7 +8,7 @@
 
 window#waybar {
     background: transparent;
-    color: black;
+    color: #464646 ;
 }
 #window {
     font-weight: bold;
@@ -18,7 +18,7 @@ window#waybar {
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: black;
+    color: #464646 ;
     border-top: 2px solid transparent;
 }
 #workspaces button.active {
@@ -52,12 +52,12 @@ window#waybar {
 @keyframes blink {
     to {
         background-color: #ffffff;
-        color: black;
+        color: #464646 ;
     }
 }
 
 #battery.warning:not(.charging) {
-    color: black;
+    color: #464646 ;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
