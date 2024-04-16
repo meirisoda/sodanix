@@ -220,7 +220,7 @@
             "fade,0"
           ];
           bezier = [
-            "beziername,0.33,1,0.68,1"
+            "beziername,0.37,0,0.63,1"
           ];
           
           env = if hostname != "sodaROG" then [
