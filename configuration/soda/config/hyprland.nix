@@ -186,14 +186,14 @@
             fullscreen_opacity = 1.0;
             drop_shadow = true;
             shadow_range = 5;
-            shadow_render_power = 3;
+            shadow_render_power = 2;
             shadow_ignore_window = true;
             shadow_offset = "0 0";
             shadow_scale = 1.0;
             dim_inactive = true;
             dim_strength = 0.1;
             dim_special = 0.1;
-            dim_around = 0.4;
+            dim_around = 0.1;
             blur = {
               enabled = true;
               size = 8;

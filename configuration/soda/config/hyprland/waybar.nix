@@ -109,7 +109,7 @@ builtins.toJSON {
       "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
       "format" = "{:%m/%d %a %T}";
       "interval" = 1;
-      "format-alt" = "{:%b %a %T}";
+      "format-alt" = "{:%m/%d %a %T}";
     };
     "cpu" = {
       "interval" = 1;
