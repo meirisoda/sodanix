@@ -71,6 +71,9 @@
             "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down allppli"
 
 
+            "SUPER_ALT, right, movefocus, right"
+            "SUPER_ALT, left, movefocus, left"
+            
             "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
             "SUPER_SHIFT, S, exec, ${pkgs.grimblast}/bin/grimblast copy area"
             ", XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle"
