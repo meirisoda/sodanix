@@ -32,7 +32,7 @@ in
     };
     wayland.windowManager = {
       hyprland = {
-        enable = true;
+        # enable = true;
         xwayland.enable = true;
         package = pkgs-hyprland.hyprland; 
         plugins = [];
@@ -291,7 +291,6 @@ in
             workspace_swipe_direction_lock = true;
             workspace_swipe_direction_lock_threshold = 20;
             workspace_swipe_forever = true;
-            workspace_swipe_numbered = false;
           };
           group = {
             insert_after_current = true;
