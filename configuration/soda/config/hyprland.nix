@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, username, hostname, ... }@args :
+{ config, pkgs, stablepkgs, username, hostname, hyprland, ... }@args :
 {
   home-manager.users.${username} = {
     xdg.configFile = {
@@ -30,6 +30,7 @@
     wayland.windowManager = {
       hyprland = {
         enable = true;
+        package = inputs.hyprland.packages.${pkgs.system}.hyprland;
         xwayland.enable = true;
         plugins = [];
         settings = {
@@ -114,7 +115,7 @@
           ];
           binde = [
             ", XF86AudioLowerVolume, exec, ${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 3%-"
-            ", XF86AudioRaiseVolume, exec, ${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 3%+"
+            ", XF86AudioRaiseVolume, exec, $stra{pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 3%+"
             ", XF86MonBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d $(${pkgs.brightnessctl}/bin/brightnessctl -l -c backlight -m | cut -f 1 -d\",\") s 5%-"
             ", XF86MonBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl -d $(${pkgs.brightnessctl}/bin/brightnessctl -l -c backlight -m | cut -f 1 -d\",\") s 5%+"
           ];

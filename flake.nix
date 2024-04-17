@@ -16,6 +16,9 @@
       url = "github:Mic92/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+    };
     plasma-manager = {
       url = "github:pjones/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -31,7 +34,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, sodasddm,  auto-cpufreq, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, hyprland, sodasddm,  auto-cpufreq, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       # cudaSupport = true;
