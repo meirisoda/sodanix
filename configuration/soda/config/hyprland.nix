@@ -162,6 +162,8 @@ in
           ];
           windowrulev2 = [
             "float, class:^(kitty)$"
+            "float, class:^(konsole)$"
+            "float, class:^(dolphin)$"
             "float, class:^(pavucontrol)$"
             "float, class:^(org\.gnome\.Nautilus)$"
             "float, class:^(org\.kde\.Gwenview)$"
