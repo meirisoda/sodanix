@@ -32,7 +32,7 @@ in
     };
     wayland.windowManager = {
       hyprland = {
-        # enable = true;
+        enable = true;
         xwayland.enable = true;
         package = pkgs-hyprland.hyprland; 
         plugins = [];
@@ -320,8 +320,8 @@ in
     };
   };
 
-  programs.hyprland = {
-    enable = true; 
-    package = pkgs-hyprland.hyprland; 
-  };
+  # programs.hyprland = {
+  #   enable = true; 
+  #   package = pkgs-hyprland.hyprland; 
+  # };
 }
