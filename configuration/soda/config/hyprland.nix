@@ -1,4 +1,7 @@
 { config, pkgs, stablepkgs, username, hostname, attrs, ... }@args :
+let
+  pkgs-hyprland = attrs.hyprland.packages.${pkgs.system};
+in
 {
   home-manager.users.${username} = {
     xdg.configFile = {
@@ -29,6 +32,7 @@
     };
     wayland.windowManager = {
       hyprland = {
+        # enable = true;
         xwayland.enable = true;
         plugins = [];
         settings = {
@@ -308,8 +312,14 @@
       };
     };
 
-    programs.xplr = {
-      enable = true;
+    programs = {
+      xplr = {
+        enable = true;
+      };
+      hyprland = {
+        enable = true; 
+        package = pkgs-hyprland.hyprland; 
+      }
     };
   };
 }
