@@ -83,8 +83,9 @@ in
             ", XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle"
             "SHIFT, XF86AudioMicMute, exec, ${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
             
-            "CTRL_ALT, T, exec, kitty"
-            "ALT, E, exec, nautilus"
+            # "CTRL_ALT, T, exec, kitty"
+            "CTRL_ALT, T, exec, konsole"
+            "ALT, E, exec, dolphin"
             "ALT, F, exec, firefox"
             "ALT, O, exec, obsidian"
             "ALT, V, exec, codium"

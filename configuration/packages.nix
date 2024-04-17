@@ -52,12 +52,14 @@
     # hyprland
     blueman
     brightnessctl
+    kdePackages.dolphin
     dunst
     grimblast
     hypridle
     hyprlock
     hyprpaper
     jq
+    kdePackages.konsole
     gnome.nautilus
     networkmanagerapplet
     pavucontrol
