@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, username, hostname, hyprland, allConfig, ... }@args :
+{ config, pkgs, stablepkgs, username, hostname, allConfig, ... }@args :
 {
   home-manager.users.${username} = {
     xdg.configFile = {
@@ -30,7 +30,7 @@
     wayland.windowManager = {
       hyprland = {
         enable = true;
-        package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+        package = hyprland.packages;
         xwayland.enable = true;
         plugins = [];
         settings = {
