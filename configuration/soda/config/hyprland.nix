@@ -30,7 +30,6 @@
     wayland.windowManager = {
       hyprland = {
         enable = true;
-        package = hyprland.packages;
         xwayland.enable = true;
         plugins = [];
         settings = {
