@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, username, hostname, ... }@args :
+{ config, pkgs, stablepkgs, username, hostname, attrs, ... }@args :
 {
   home-manager.users.${username} = {
     xdg.configFile = {
