@@ -316,10 +316,12 @@ in
       xplr = {
         enable = true;
       };
-      hyprland = {
-        enable = true; 
-        package = pkgs-hyprland.hyprland; 
-      };
+
     };
+  };
+
+  programs.hyprland = {
+    enable = true; 
+    package = pkgs-hyprland.hyprland; 
   };
 }
