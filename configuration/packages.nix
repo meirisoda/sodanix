@@ -1,4 +1,4 @@
-{ config, lib, hostname, pkgs, stablepkgs, ...}:
+{ config, lib, hostname, pkgs, stablepkgs, attrs, ...}:
 
 {
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [
