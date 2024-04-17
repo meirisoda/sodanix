@@ -32,8 +32,9 @@ in
     };
     wayland.windowManager = {
       hyprland = {
-        # enable = true;
+        enable = true;
         xwayland.enable = true;
+        package = pkgs-hyprland.hyprland; 
         plugins = [];
         settings = {
           monitor = [
