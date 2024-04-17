@@ -121,6 +121,7 @@
     noisetorch.enable = true; 
     virt-manager.enable = true;
     zsh.enable = true;
+    hyprland.package = attrs.hyprland.packages.${pkgs.system}.hyprland;
   };
 
   services.tailscale.enable = true;
