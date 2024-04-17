@@ -48,6 +48,7 @@
       nix-index-database.nixosModules.nix-index
       auto-cpufreq.nixosModules.default
       hyprland.homeManagerModules.default
+      {wayland.windowManager.hyprland.enable = true;}
       # plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
