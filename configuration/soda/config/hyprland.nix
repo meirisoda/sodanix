@@ -319,7 +319,7 @@ in
       hyprland = {
         enable = true; 
         package = pkgs-hyprland.hyprland; 
-      }
+      };
     };
   };
 }
