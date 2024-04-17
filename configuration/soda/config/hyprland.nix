@@ -163,7 +163,9 @@ in
           windowrulev2 = [
             "float, class:^(kitty)$"
             "float, class:^(org\.kde\.konsole)$"
+            "size 1080 720, class:^(org\.kde\.konsole)$"
             "float, class:^(org\.kde\.dolphin)$"
+            "size 1080 720, class:^(org\.kde\.dolphin)$"
             "float, class:^(pavucontrol)$"
             "float, class:^(org\.gnome\.Nautilus)$"
             "float, class:^(org\.kde\.Gwenview)$"
