@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [
     # system
     asusctl
+    tlp
 
     # development
     # cudatoolkit
