@@ -120,7 +120,7 @@
         settings = {
           preview_images = true;
           background_opacity = "0.5";
-          background_blur = 5;
+          # background_blur = 5;
           foreground = "#ffffff";
           cursor = "#d6d6d6";
           selection_background = "#5b5b5b";
