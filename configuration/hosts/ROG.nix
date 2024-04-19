@@ -80,13 +80,13 @@
   #   };
   # };
 
-  systemd.services = {
-    # supergfxd.path = [ pkgs.pciutils ];
-    power-profiles-daemon = {
-      enable = true;
-      wantedBy = [ "multi-user.target" ];
-    };
-  };
+  # systemd.services = {
+  #   # supergfxd.path = [ pkgs.pciutils ];
+  #   power-profiles-daemon = {
+  #     enable = true;
+  #     wantedBy = [ "multi-user.target" ];
+  #   };
+  # };
 
   hardware.nvidia = {
     modesetting.enable = true;
