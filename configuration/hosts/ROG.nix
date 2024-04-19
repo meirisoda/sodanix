@@ -17,7 +17,7 @@
       enable = true; 
       enableUserService = true; 
     };
-    # power-profiles-daemon.enable = true;
+    power-profiles-daemon.enable = false;
     thermald.enable = true;
     tlp = {
       enable = true;
