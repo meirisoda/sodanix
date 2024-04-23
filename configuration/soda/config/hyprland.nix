@@ -75,7 +75,7 @@ in
             "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down allppli"
 
 
-            "SUPER_CTRL, right, movefocus, r"
+            "SUPER_ALT, right, movefocus, r"
             "SUPER_ALT, left, movefocus, l"
             
             "ALT, Space, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
