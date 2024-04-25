@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-    background: transparent;
+    background: rgba(201, 201, 201, 0.5);
     color: #464646 ;
 }
 #window {
@@ -22,11 +22,11 @@ window#waybar {
     border-top: 2px solid transparent;
 }
 #workspaces button.active {
-    color: #7991b3;
-    border-top: 2px solid #7991b3;
+    color: #464646;
+    border-top: 2px solid #464646;
 }
 #mode {
-    background: #64727D;
+    background: #464646;
     border-bottom: 3px solid white;
 }
 
