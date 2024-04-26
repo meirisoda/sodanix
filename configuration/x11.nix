@@ -40,7 +40,7 @@
 # TODO env vars
   environment.variables = {
     KWIN_DRM_USE_MODIFIERS = "0";
-    ENABLE_VKBASALT = "1";
+    # ENABLE_VKBASALT = "1";
     GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
     WLR_NO_HARDWARE_CURSORS = "1";
   }; 
