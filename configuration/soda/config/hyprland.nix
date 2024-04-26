@@ -54,25 +54,25 @@ in
           ];
 
           bind = [
-            "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right all"
-            "SUPER_CTRL, left, exec, sh ${./hyprland/workspace2d.sh} left all"
-            "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all"
-            "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down all"
+            "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right all sync"
+            "SUPER_CTRL, left, exec, sh ${./hyprland/workspace2d.sh} left all sync"
+            "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all sync"
+            "SUPER_CTRL, down, exec, sh ${./hyprland/workspace2d.sh} down all sync"
             
-            "SUPER_CTRL, 1, exec, sh ${./hyprland/workspace2d.sh} right all"
-            "SUPER_CTRL, 2, exec, sh ${./hyprland/workspace2d.sh} left all"
-            "SUPER_CTRL_SHIFT, 1, exec, sh ${./hyprland/workspace2d.sh} up all"
-            "SUPER_CTRL_SHIFT, 2, exec, sh ${./hyprland/workspace2d.sh} down all"
+            "SUPER_CTRL, 1, exec, sh ${./hyprland/workspace2d.sh} right all sync"
+            "SUPER_CTRL, 2, exec, sh ${./hyprland/workspace2d.sh} left all sync"
+            "SUPER_CTRL_SHIFT, 1, exec, sh ${./hyprland/workspace2d.sh} up all sync"
+            "SUPER_CTRL_SHIFT, 2, exec, sh ${./hyprland/workspace2d.sh} down all sync"
 
-            "SUPER_CTRL_ALT, right, exec, sh ${./hyprland/workspace2d.sh} move_right all"
-            "SUPER_CTRL_ALT, left, exec, sh ${./hyprland/workspace2d.sh} move_left all"
-            "SUPER_CTRL_ALT, up, exec, sh ${./hyprland/workspace2d.sh} move_up all"
-            "SUPER_CTRL_ALT, down, exec, sh ${./hyprland/workspace2d.sh} move_down all"
+            "SUPER_CTRL_ALT, right, exec, sh ${./hyprland/workspace2d.sh} move_right all sync"
+            "SUPER_CTRL_ALT, left, exec, sh ${./hyprland/workspace2d.sh} move_left all sync"
+            "SUPER_CTRL_ALT, up, exec, sh ${./hyprland/workspace2d.sh} move_up all sync"
+            "SUPER_CTRL_ALT, down, exec, sh ${./hyprland/workspace2d.sh} move_down all sync"
 
-            "SUPER_CTRL_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_right all"
-            "SUPER_CTRL_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_left all"
-            "SUPER_CTRL_SHIFT_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_up all"
-            "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down allppli"
+            "SUPER_CTRL_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_right all sync"
+            "SUPER_CTRL_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_left all sync"
+            "SUPER_CTRL_SHIFT_ALT, 1, exec, sh ${./hyprland/workspace2d.sh} move_up all sync"
+            "SUPER_CTRL_SHIFT_ALT, 2, exec, sh ${./hyprland/workspace2d.sh} move_down all sync"
 
 
             "SUPER_ALT, right, movefocus, r"
