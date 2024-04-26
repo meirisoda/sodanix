@@ -17,7 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland = {
-      url = "github:hyprwm/Hyprland";
+      url = "github:hyprwm/Hyprland/f94264928a8ab4da8759d4ded25a46af44451d38";
     };
     plasma-manager = {
       url = "github:pjones/plasma-manager";
