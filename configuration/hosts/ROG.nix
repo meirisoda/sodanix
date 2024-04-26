@@ -78,7 +78,7 @@
         };
       };
     };
-  # };
+  };
 
   # systemd.services = {
   #   # supergfxd.path = [ pkgs.pciutils ];
