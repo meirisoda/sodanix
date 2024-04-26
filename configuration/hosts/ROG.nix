@@ -45,13 +45,13 @@
     #   };
     # };
     # Battery
-    # supergfxd = {
-    #   enable = true;
-    #   settings = {
-    #     supergfxctl-mode = "Integrated";
-    #     gfx-vfio-enable = true;
-    #   };  # Power Profiles
-    # };
+    supergfxd = {
+      enable = true;
+      settings = {
+        supergfxctl-mode = "Integrated";
+        gfx-vfio-enable = true;
+      };  # Power Profiles
+    };
   };
 
   # powerManagement = {
