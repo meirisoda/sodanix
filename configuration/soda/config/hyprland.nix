@@ -267,7 +267,7 @@ in
             touchpad = {
               disable_while_typing = true;
               natural_scroll = true;
-              scroll_factor = 1.0;
+              scroll_factor = 0.8;
               middle_button_emulation = false;
               tap_button_map = "lrm";
               clickfinger_behavior = true;
