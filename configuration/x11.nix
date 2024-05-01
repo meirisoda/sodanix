@@ -10,9 +10,11 @@
     greetd = {
       enable = true;
       restart = true;
-      default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --theme container=gray;text=black;border=black;action=darkgray;button=black;--cmd Hyprland";
-        user = "soda";
+      settings = {
+        default_session = {
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --theme container=gray;text=black;border=black;action=darkgray;button=black;--cmd Hyprland";
+          user = "soda";
+        };
       };
     };
     # displayManager = {
