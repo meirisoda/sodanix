@@ -18,7 +18,7 @@ builtins.toJSON {
       "tray"
     ];
     "modules-left" = [
-      "group/group-power"
+      # "group/group-power"
       "hyprland/workspaces"
     ];
 

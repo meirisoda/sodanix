@@ -7,12 +7,24 @@
     desktopManager = {
       plasma6.enable = true;
     };
-    displayManager = {
-      sddm = {
-        enable = true;
-        # theme = "${sodasddm}";
+    greetd = {
+      enable = true;
+      restart = true;
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --theme container=gray;text=black;border=black;action=darkgray;button=black;--cmd Hyprland";
+        user = "soda";
       };
     };
+    # displayManager = {
+    #   lightdm = {
+    #     defaultSession = "Hyprland";
+    #     enable = true;
+    #   };
+    #   # sddm = {
+    #   #   enable = true;
+    #   #   # theme = "${sodasddm}";
+    #   # };
+    # };
     xserver = {
       enable = true;
       libinput = { 
