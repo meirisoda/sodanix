@@ -15,6 +15,13 @@ window#waybar {
     font-family: "monospace";
 }
 
+#custom-power,
+#custom-quit,
+#custom-lock,
+#custom-reboot {
+    padding-right: 10px;
+}
+
 #workspaces button {
     padding: 0 5px;
     background: transparent;
