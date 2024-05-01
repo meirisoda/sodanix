@@ -18,8 +18,10 @@ builtins.toJSON {
       "tray"
     ];
     "modules-left" = [
+      "group/group-power"
       "hyprland/workspaces"
     ];
+
     "keyboard-state" = {
       "numlock" = true;
       "capslock" = true;
@@ -188,5 +190,35 @@ builtins.toJSON {
       "on-click-right" = "${pkgs.wireplumber}/bin/wpctl set-mute @DEFAULT_SINK@ toggle";
       "on-scroll-up" = "${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+";
       "on-scroll-down" = "${pkgs.wireplumber}/bin/wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%-";
+    };
+
+    "group/group-power" = {
+      "orientation" = "inherit";
+      "modules" = [
+        "custom/power"
+        "custom/quit"
+        "custom/lock"
+        "custom/reboot"
+      ];
+    };
+    "custom/quit"= {
+      "format"= "󰗼";
+      "tooltip"= false;
+      "on-click"= "hyprctl dispatch exit";
+    };
+    "custom/lock"= {
+      "format"= "󰍁";
+      "tooltip"= false;
+      "on-click"= "hyprlock";
+    };
+    "custom/reboot"= {
+      "format"= "󰜉";
+      "tooltip"= false;
+      "on-click"= "reboot";
+    };
+    "custom/power"= {
+      "format"= "";
+      "tooltip"= false;
+      "on-click"= "poweroff";
     };
 }
