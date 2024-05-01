@@ -196,8 +196,6 @@ builtins.toJSON {
       "orientation" = "inherit";
       "modules" = [
         "custom/power"
-        "custom/quit"
-        "custom/lock"
         "custom/reboot"
       ];
     };
