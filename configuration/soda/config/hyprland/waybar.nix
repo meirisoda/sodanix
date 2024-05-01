@@ -103,7 +103,7 @@ builtins.toJSON {
       };
     };
     "tray" = {
-      # "icon-size" = 21;
+      "icon-size" = 21;
       "spacing" = 10;
     };
     "clock" = {
@@ -194,12 +194,12 @@ builtins.toJSON {
 
     "group/group-power" = {
       "orientation" = "inherit";
-      "format-icons" = {
-        "custom/power" = "󰗼";
-        "custom/quit" = "󰍁";
-        "custom/lock" = "󰜉";
-        "custom/reboot" = "";
-      };
+      "modules" = [
+        "custom/power"
+        "custom/quit"
+        "custom/lock"
+        "custom/reboot"
+      ];
     };
     "custom/quit"= {
       "format"= "󰗼";
