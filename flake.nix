@@ -34,7 +34,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, hyprland, sodasddm,  auto-cpufreq, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, nixos-hardware, nix-index-database, hyprland, auto-cpufreq, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       # cudaSupport = true;
@@ -61,7 +61,6 @@
       inherit attrs;
       pkgs = import nixpkgs { system = "x86_64-linux"; inherit config; };
       stablepkgs = import nixpkgs-stable { system = "x86_64-linux"; inherit config; };
-      inherit sodasddm; 
       hostname = "sodaROG"; 
     };
   in {

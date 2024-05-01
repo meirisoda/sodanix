@@ -10,7 +10,7 @@
     displayManager = {
       sddm = {
         enable = true;
-        theme = "${sodasddm}";
+        # theme = "${sodasddm}";
       };
     };
     xserver = {
