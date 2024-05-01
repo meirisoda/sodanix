@@ -15,9 +15,9 @@ window#waybar {
     font-family: "monospace";
 }
 
-#custom-power,
-#custom-reboot {
+#custom-power{
     padding-left: 10px;
+    padding-right: 15px;
 }
 
 #workspaces button {
