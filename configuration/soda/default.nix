@@ -8,5 +8,6 @@ allConfig@{ config, pkgs, username, stablepkgs, attrs, ...}:
       # (import ./config/programs/plasma.nix (allConfig // {inherit username;}))
       # (pkgs.callPackage ./config/rofi.nix allConfig)
       ./config/programs/vscode.nix
+      ./config/hyprland/xdg.nix
     ];
 }
