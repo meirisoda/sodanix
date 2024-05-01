@@ -194,12 +194,12 @@ builtins.toJSON {
 
     "group/group-power" = {
       "orientation" = "inherit";
-      "modules" = [
-        "custom/power"
-        "custom/quit"
-        "custom/lock"
-        "custom/reboot"
-      ];
+      "format-icons" = {
+        "custom/power" = "󰗼";
+        "custom/quit" = "󰍁";
+        "custom/lock" = "󰜉";
+        "custom/reboot" = "";
+      };
     };
     "custom/quit"= {
       "format"= "󰗼";
