@@ -7,8 +7,6 @@
     tlp
 
     # development
-    # cudatoolkit
-    # github-desktop
     
     # utilities
     android-tools
@@ -22,10 +20,10 @@
     ani-cli
     audacity
     # blender
-    # gimp
+    gimp
     inkscape
-    # krita
-    # libreoffice
+    krita
+    libreoffice
     obs-studio
     pdfsam-basic
     puredata
@@ -43,7 +41,6 @@
   ]) ++ [ # TODO both systems
     # system
     comma
-    curl
     openssh
     pciutils
     wget
@@ -73,12 +70,10 @@
     xplr
 
     # development
-    cmake
     zsh
     zsh-powerlevel10k
     
     # utilities
-    barrier
     bat 
     btop
     gparted
