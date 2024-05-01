@@ -12,7 +12,7 @@
       restart = true;
       settings = {
         default_session = {
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --theme container=gray;text=black;border=black;action=darkgray;button=black --cmd Hyprland";
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
           user = "greeter";
         };
       };
