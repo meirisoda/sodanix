@@ -1,8 +1,8 @@
 * {
     border: none;
-    border-radius: 26px;
+    border-radius: 0;
     font-family: "monospace";
-    font-size: 13px;
+    font-size: 12px;
     min-height: 0;
 }
 
@@ -39,6 +39,7 @@ window#waybar {
 #pulseaudio, 
 #tray, 
 #mode {
+    border radius: 26px;
     padding: 0 4px;
     margin: 0 3px;
 }
