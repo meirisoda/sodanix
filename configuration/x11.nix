@@ -17,6 +17,13 @@
         };
       };
     };
+    libinput = { 
+        enable = true;
+        mouse = {
+          scrollMethod = "button";
+          scrollButton = 3;
+        };
+      };
     # displayManager = {
     #   lightdm = {
     #     defaultSession = "Hyprland";
@@ -29,13 +36,6 @@
     # };
     xserver = {
       enable = true;
-      libinput = { 
-        enable = true;
-        mouse = {
-          scrollMethod = "button";
-          scrollButton = 3;
-        };
-      };
       xkb = {
         layout = "us";
         variant = "";
