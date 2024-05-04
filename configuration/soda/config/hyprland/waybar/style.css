@@ -1,6 +1,6 @@
 * {
     border: none;
-    border-radius: 0;
+    border-radius: 26px;
     font-family: "monospace";
     font-size: 13px;
     min-height: 0;
@@ -13,11 +13,6 @@ window#waybar {
 #window {
     font-weight: bold;
     font-family: "monospace";
-}
-
-#custom-power{
-    padding-left: 10px;
-    padding-right: 15px;
 }
 
 #workspaces button {
@@ -35,7 +30,15 @@ window#waybar {
     border-bottom: 3px solid white;
 }
 
-#clock, #battery, #power-profiles-daemon, #idle_inhibitor, #backlight, #network, #pulseaudio, #tray, #mode {
+#clock, 
+#battery, 
+#power-profiles-daemon, 
+#idle_inhibitor, 
+#backlight, 
+#network, 
+#pulseaudio, 
+#tray, 
+#mode {
     padding: 0 4px;
     margin: 0 3px;
 }
@@ -44,24 +47,9 @@ window#waybar {
     font-weight: bold;
 }
 
-#battery {
-}
 
-#battery icon {
-    color: red;
-}
-
-#battery.charging {
-    color: #464646; 
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #464646 ;
-    }
-}
-
+#battery icon { color: red; }
+#battery.charging { color: #464646; }
 #battery.warning:not(.charging) {
     color: #464646 ;
     animation-name: blink;
@@ -71,13 +59,11 @@ window#waybar {
     animation-direction: alternate;
 }
 
-#cpu {
-}
-
-#memory {
-}
-
-#network {
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #464646 ;
+    }
 }
 
 #network.disconnected {
