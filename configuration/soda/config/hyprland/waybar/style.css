@@ -22,8 +22,9 @@ window#waybar {
     border-top: 2px solid transparent;
 }
 #workspaces button.active {
-    color: #464646;
-    border-top: 2px solid #464646;
+    color: #000;
+    background-color: #dde4ed;
+    /* border-top: 2px solid #464646; */
 }
 #mode {
     background: #464646;
