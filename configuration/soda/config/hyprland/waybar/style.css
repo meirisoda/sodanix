@@ -39,17 +39,12 @@ window#waybar {
 #power-profiles-daemon, 
 #idle_inhibitor, 
 #backlight, 
+#network, 
 #pulseaudio, 
 #tray, 
 #mode {
     padding: 0 4px;
     margin: 0 5px;
-}
-
-#network {
-    padding: 0 4px;
-    margin: 0 7px;
-    background-color: #f5f0e3;
 }
 
 #clock {
