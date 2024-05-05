@@ -1,6 +1,6 @@
 { hostname, ... }:
 let
-  wallpaper = ./wallpaper/VESSEL.png;
+  wallpaper = ./wallpaper/flowers.png;
   pfp = ./wallpaper/pfp.png;
 in
 ''
@@ -28,7 +28,7 @@ background {
 label {
     monitor =
     text = $USER
-    color = black
+    color = rgb(0, 0, 0)
     font_size = 18
     font_family = monospace
 
