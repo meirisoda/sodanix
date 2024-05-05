@@ -173,6 +173,7 @@ in
 
           layerrule = [
             "blur, launcher"
+            "blur, waybar"
           ];
 
           general = {

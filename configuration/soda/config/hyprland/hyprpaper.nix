@@ -1,7 +1,7 @@
 { ... }:
 
 let 
-  wallpaper = ./wallpaper/baby.jpg; 
+  wallpaper = ./wallpaper/bass.png; 
   wallpaper2 = ./wallpaper/grey2.jpg;
 in
   '' 
