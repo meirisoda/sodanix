@@ -48,6 +48,7 @@ window#waybar {
 
 #network {
     padding: 4 4px;
+    margin: 5 5px;
     background-color: #f5f0e3;
 }
 
