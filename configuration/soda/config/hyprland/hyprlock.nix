@@ -44,9 +44,9 @@ input-field {
     dots_spacing = 0.15
     dots_center = false
     dots_rounding = -1
-    outer_color = rgb(119, 119, 119)
+    outer_color = rgb(0, 0, 0)
     inner_color = rgb(255, 255, 255)
-    font_color = rgb(119,119,119)
+    font_color = rgb(0,0,0)
     fade_on_empty = true
     fade_timeout = 1000
     placeholder_text = <i>Input Password...</i>
