@@ -4,9 +4,6 @@
   home-manager.users.${username} = {
     home = {
       stateVersion = "24.05";
-      packages = with pkgs; [
-        libForQt5.gwenview
-      ];
     };
     dconf.settings = {
       "org/virt-manager/virt-manager/connections" = {
