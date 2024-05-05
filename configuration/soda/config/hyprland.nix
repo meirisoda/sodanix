@@ -167,7 +167,7 @@ in
             "size 1080 720, class:^(org\.kde\.dolphin)$"
             "float, class:^(pavucontrol)$"
             "float, class:^(org\.gnome\.Nautilus)$"
-            "float, class:^(org\.kde\.Gwenview)$"
+            "float, class:^(org\.kde\.gwenview)$"
             "size 1080 720, class:^(org\.gnome\.Nautilus)$"
           ];
 
