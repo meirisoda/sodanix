@@ -53,7 +53,6 @@
     kdePackages.dolphin
     dunst
     grimblast
-    libForQt5.gwenview
     hypridle
     hyprlock
     hyprpaper
