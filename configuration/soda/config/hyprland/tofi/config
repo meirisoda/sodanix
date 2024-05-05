@@ -7,9 +7,15 @@ width = 20%
 height = 15%
 
 background-color = #fff
+
 corner-radius = 0
+outline-width = 0
+outline-color = #464646
+border-width = 0
+border-color = #464646
 
 prompt-background = #fff
+prompt-background-padding = 0
 prompt-background-corner-radius = 0
 
 input-background = #fff
