@@ -22,7 +22,7 @@ input-background = #fff
 
 default-result-background = #fff
 
-selection-color = black
+selection-color = #000000
 selection-background = #dde4ed
 
 selection-match-color = #be0e21
