@@ -1,29 +1,25 @@
-font = "monospace"
+font = "Trebuchet MS"
 font-size = 12
-text-color = #464646
+letter-spacing = 0.5px
+text-color = #000000
 
 width = 20%
 height = 15%
 
 background-color = #fff
-outline-width = 0
-outline-color = #464646
-border-width = 0
-border-color = #464646
-corner-radius = 3
+corner-radius = 0
 
 prompt-background = #fff
-prompt-background-padding = 0
-prompt-background-corner-radius = 3
+prompt-background-corner-radius = 0
 
 input-background = #fff
 
 default-result-background = #fff
 
-selection-color = #fff
-selection-background = #464646 
+selection-color = black
+selection-background = #dde4ed
 
-selection-match-color = #bdc6d3
+selection-match-color = #be0e21
 
 text-cursor-style = block
 text-cursor-corner-radius = 0
