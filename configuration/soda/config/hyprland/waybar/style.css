@@ -44,7 +44,7 @@ window#waybar {
 #tray, 
 #mode {
     padding: 0 4px;
-    margin: 0 3px;
+    margin: 0 5px;
 }
 
 #clock {
