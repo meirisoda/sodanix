@@ -195,7 +195,7 @@ in
             active_opacity = 1.0;
             inactive_opacity = 1.0;
             fullscreen_opacity = 1.0;
-            drop_shadow = true;
+            drop_shadow = false;
             shadow_range = 5;
             shadow_render_power = 2;
             shadow_ignore_window = true;
