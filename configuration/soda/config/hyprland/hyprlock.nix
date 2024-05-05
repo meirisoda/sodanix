@@ -28,7 +28,7 @@ background {
 label {
     monitor =
     text = $USER
-    color = rgba(0,0,0)
+    color = black
     font_size = 18
     font_family = monospace
 
