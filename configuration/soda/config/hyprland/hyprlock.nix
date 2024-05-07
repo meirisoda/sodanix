@@ -1,6 +1,6 @@
 { hostname, ... }:
 let
-  wallpaper = ./wallpaper/flowers.png;
+  wallpaper = ./wallpaper/etcetera.png;
   pfp = ./wallpaper/pfp.png;
 in
 ''

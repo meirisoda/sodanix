@@ -7,7 +7,7 @@ general {
 }
 
 listener {
-    timeout = 150                                # 2.5min.
+    timeout = 480                                # 8min.
     on-timeout = ${pkgs.brightnessctl}/bin/brightnessctl -s set 10         # set monitor backlight to minimum, avoid 0 on OLED monitor.
     on-resume = ${pkgs.brightnessctl}/bin/brightnessctl -r                 # monitor backlight restore.
 }
@@ -20,12 +20,12 @@ listener {
 }
 
 listener {
-    timeout = 300                                 # 5min
+    timeout = 720                                 # 12min
     on-timeout = loginctl lock-session            # lock screen when timeout has passed
 }
 
 listener {
-    timeout = 330                                 # 5.5min
+    timeout = 900                                 # 15min
     on-timeout = hyprctl dispatch dpms off        # screen off when timeout has passed
     on-resume = hyprctl dispatch dpms on          # screen on when activity is detected after timeout has fired.
 }
