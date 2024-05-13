@@ -18,6 +18,7 @@
 
     # programs
     ani-cli
+    ardour
     audacity
     # blender
     gimp
