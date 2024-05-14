@@ -94,6 +94,7 @@
     noisetorch
     piper
     syncthing
+    tailscale
     qbittorrent
     qpwgraph
 
