@@ -10,8 +10,9 @@
     
     # utilities
     android-tools
+    gallery-dl
     nvtopPackages.full
-    # powertop
+    powertop
 
     # virtualisation
     wineWowPackages.stable
