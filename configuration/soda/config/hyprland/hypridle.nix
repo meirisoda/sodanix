@@ -1,7 +1,10 @@
 { pkgs, ... }:
 ''
 general {
-    lock_cmd = pidof hyprlock || ${pkgs.hyprlock}/bin/hyprlock       # avoid starting multiple hyprlock instances.
+    lock_cmd = notify-send "lock!"          # dbus/sysd lock command (loginctl lock-session)
+    unlock_cmd = notify-send "unlock!"      # same as above, but unlock
+    before_sleep_cmd = notify-send "Zzz"    # command ran before sleep
+    after_sleep_cmd = notify-send "Awake!"  # command ran after sleep
     before_sleep_cmd = loginctl lock-session    # lock before suspend.
     after_sleep_cmd = hyprctl dispatch dpms on  # to avoid having to press a key twice to turn on the display.
 }
