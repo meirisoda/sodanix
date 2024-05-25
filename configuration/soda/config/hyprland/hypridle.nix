@@ -1,8 +1,8 @@
 { pkgs, ... }:
 ''
 general {
-    lock_cmd = loginctl lock-session          # dbus/sysd lock command (loginctl lock-session)
-    before_sleep_cmd = loginctl lock-session    # lock before suspend.
+    # lock_cmd = loginctl lock-session          # dbus/sysd lock command (loginctl lock-session)
+    # before_sleep_cmd = loginctl lock-session    # lock before suspend.
     after_sleep_cmd = hyprctl dispatch dpms on  # to avoid having to press a key twice to turn on the display.
 }
 
@@ -21,7 +21,7 @@ listener {
 
 listener {
     timeout = 720                                 # 12min
-    on-timeout = loginctl lock-session            # lock screen when timeout has passed
+    # on-timeout = loginctl lock-session            # lock screen when timeout has passed
 }
 
 listener {
