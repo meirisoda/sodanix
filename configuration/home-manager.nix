@@ -3,7 +3,7 @@
 {
   home-manager.users.${username} = {
     home = {
-      stateVersion = "24.05";
+      stateVersion = "24.11";
       packages = with pkgs; [
         libsForQt5.gwenview
       ];
