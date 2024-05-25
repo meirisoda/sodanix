@@ -7,6 +7,7 @@
       packages = with pkgs; [
         libsForQt5.gwenview
       ];
+      enableNixpkgsReleaseCheck = true;
     };
     dconf.settings = {
       "org/virt-manager/virt-manager/connections" = {
