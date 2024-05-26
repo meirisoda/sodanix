@@ -43,7 +43,7 @@ in
           ];
           exec-once = [
             "${pkgs.dunst}/bin/dunst"
-            "${pkgs.hypridle}/bin/hypridle"
+            # "${pkgs.hypridle}/bin/hypridle"
             "${pkgs.hyprpaper}/bin/hyprpaper"
             "${pkgs.networkmanagerapplet}/bin/nm-applet --indicatior"
             "${pkgs.waybar}/bin/waybar"
