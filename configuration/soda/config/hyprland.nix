@@ -202,7 +202,7 @@ in
             shadow_ignore_window = true;
             shadow_offset = "0 0";
             shadow_scale = 1.0;
-            dim_inactive = true;
+            dim_inactive = false;
             dim_strength = 0.1;
             dim_special = 0.1;
             dim_around = 0.1;
