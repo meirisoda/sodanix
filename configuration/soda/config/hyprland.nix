@@ -250,8 +250,8 @@ in
             # kb_variant = "qwerty";
             kb_options = "compose:ralt";
             numlock_by_default = false;
-            repeat_rate = 25;
-            repeat_delay = 500;
+            repeat_rate = 50;
+            repeat_delay = 800;
             sensitivity = 1.0;
             accel_profile = "flat";
             force_no_accel = false;
