@@ -251,7 +251,7 @@ in
             kb_options = "compose:ralt";
             numlock_by_default = false;
             repeat_rate = 50;
-            repeat_delay = 800;
+            repeat_delay = 300;
             sensitivity = 1.0;
             accel_profile = "flat";
             force_no_accel = false;
