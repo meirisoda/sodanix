@@ -190,11 +190,11 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1716987116,
-        "narHash": "sha256-uuEkErFVsFdg2K0cKbNQ9JlFSAm/xYqPr4rbPLI91Y8=",
+        "lastModified": 1717248095,
+        "narHash": "sha256-e8X2eWjAHJQT82AAN+mCI0B68cIDBJpqJ156+VRrFO0=",
         "owner": "NixOS",
         "repo": "nixos-hardware",
-        "rev": "8251761f93d6f5b91cee45ac09edb6e382641009",
+        "rev": "7b49d3967613d9aacac5b340ef158d493906ba79",
         "type": "github"
       },
       "original": {
@@ -278,11 +278,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1717240486,
-        "narHash": "sha256-9nfK6a+TchfVje3QhZ4TmtLq5GVFYMlU/U/dheaEGjw=",
+        "lastModified": 1717265895,
+        "narHash": "sha256-SsNTqFnefBO5wV5qD7nzd5wwrf2eOA/yahnP0lnQXhk=",
         "owner": "pjones",
         "repo": "plasma-manager",
-        "rev": "41f42c35f5dee303200854d1eecbcd3c5b2fa689",
+        "rev": "6e6d6a457355c7675484c0197bab06c2a4840b7d",
         "type": "github"
       },
       "original": {
