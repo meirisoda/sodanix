@@ -82,10 +82,10 @@
     gparted
     fd
     file
-    # ffmpeg
+    ffmpeg
     graphviz
     jellyfin-media-player
-    kime
+    kime #korean keyboard
     lsd
     lshw
     man-pages
@@ -99,6 +99,7 @@
     tailscale
     qbittorrent
     qpwgraph
+    yt-dlp
 
     # programs
     bitwarden
