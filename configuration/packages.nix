@@ -13,6 +13,7 @@
     gallery-dl
     nvtopPackages.full
     powertop
+    scrcpy
 
     # virtualisation
     wineWowPackages.stable
@@ -29,10 +30,8 @@
     obs-studio
     pdfsam-basic
     puredata
-    scrcpy
     sunvox
     # (pkgs.callPackage ./soda/config/programs/sunvox.nix {})
-    ungoogled-chromium
     zoom-us
 
     # games
@@ -55,7 +54,7 @@
     blueman
     brightnessctl
     kdePackages.dolphin
-    dunst
+    dunst # notification manager
     grimblast
     hypridle
     hyprlock
@@ -65,7 +64,6 @@
     gnome.nautilus
     networkmanagerapplet
     pavucontrol
-    rofi
     xfce.thunar
     tofi
     waybar
@@ -76,12 +74,12 @@
     # development
     zsh
     zsh-powerlevel10k
-    
+
     # utilities
     bat 
     btop
     gparted
-    fd
+    fd # lists files in directory
     file
     ffmpeg
     graphviz
@@ -104,15 +102,13 @@
     # programs
     bitwarden
     calibre
-    discord
-    element-desktop
+    discorde
     kitty
     localsend
     obsidian
     signal-desktop
     spotify
     tidal-hifi
-    trilium-desktop
     vscodium
   ];
 
