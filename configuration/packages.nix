@@ -30,7 +30,8 @@
     pdfsam-basic
     puredata
     scrcpy
-    (pkgs.callPackage ./soda/config/programs/sunvox.nix {})
+    sunvox
+    # (pkgs.callPackage ./soda/config/programs/sunvox.nix {})
     ungoogled-chromium
     zoom-us
 
