@@ -102,7 +102,7 @@
     # programs
     bitwarden
     calibre
-    discorde
+    discord
     kitty
     localsend
     obsidian
