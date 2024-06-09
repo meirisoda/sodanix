@@ -97,7 +97,6 @@
     noisetorch
     piper
     syncthing
-    tailscale
     qbittorrent
     qpwgraph
     yt-dlp
@@ -126,6 +125,4 @@
     virt-manager.enable = true;
     zsh.enable = true;
   };
-
-  services.tailscale.enable = true;
 }
