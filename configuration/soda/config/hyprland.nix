@@ -37,9 +37,12 @@ in
         package = pkgs-hyprland.hyprland; 
         plugins = [];
         settings = {
-          monitor = [
-            "eDP-1, 2560x1600@120, 0x0,1.25"
-            "HDMI-A-1,2560x1440@120,2048x0,1"
+          monitor =
+            if hostname == "sodaROG" then [
+              "eDP-1, 2560x1600@120, 0x0,1.25"
+              "HDMI-A-1,2560x1440@120,2048x0,1"
+            ] else [
+              "eDP-1, 3840x2160@59.99700, 0x0, 1.75"
           ];
           exec-once = [
             "${pkgs.dunst}/bin/dunst"
