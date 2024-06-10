@@ -23,6 +23,7 @@
     ardour
     audacity
     # blender
+    discord
     gimp
     inkscape
     krita
@@ -30,8 +31,10 @@
     obs-studio
     pdfsam-basic
     puredata
+    sonic-pi
     sunvox
     # (pkgs.callPackage ./soda/config/programs/sunvox.nix {})
+    supercollider
     zoom-us
 
     # games
@@ -82,7 +85,7 @@
     fd # lists files in directory
     file
     ffmpeg
-    graphviz
+    # graphviz
     jellyfin-media-player
     kime #korean keyboard
     lsd
@@ -94,7 +97,6 @@
     neofetch
     noisetorch
     piper
-    syncthing
     qbittorrent
     qpwgraph
     yt-dlp
@@ -102,7 +104,6 @@
     # programs
     bitwarden
     calibre
-    discord
     kitty
     localsend
     obsidian

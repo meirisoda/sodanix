@@ -26,9 +26,9 @@ in
       "tofi/config" = {
         source = ./hyprland/tofi/config;
       };
-      # "xplr/init.lua" = {
-      #   source = ./hyprland/init.lua;
-      # };
+      "xplr/init.lua" = {
+        source = ./hyprland/init.lua;
+      };
     };
     wayland.windowManager = {
       hyprland = {
