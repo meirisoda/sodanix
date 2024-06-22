@@ -65,7 +65,6 @@
 # TODO hardware opengl
   hardware.opengl = with pkgs; {
     enable = true;
-    driSupport = true;
     driSupport32Bit = true;
     extraPackages = [
       vaapiVdpau
