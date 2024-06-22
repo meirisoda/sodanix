@@ -24,13 +24,13 @@ window#waybar {
 }
 #workspaces button.active {
     color: #000;
-    background-color: #dde4ed;
-    /* border-top: 2px solid #464646; */
+    /* background-color: #dde4ed; */
+    border-top: 2px solid black;
 }
 #mode {
     background: black;
-    background-color: #f5f0e3;
-    /* border-bottom: 3px solid white; */
+    /* background-color: #f5f0e3; */
+    border-bottom: 3px solid black;
 }
 
 #clock, 
