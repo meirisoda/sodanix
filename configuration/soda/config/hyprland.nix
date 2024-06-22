@@ -182,7 +182,7 @@ in
           general = {
             border_size = 1;
             col.inactive_border =  "0xc2c2c2";
-            col.inactive_border = "0x839bc2";
+            col.active_border = "0x839bc2";
             gaps_in = 2;
             gaps_out = 2;
             gaps_workspaces = 0;
