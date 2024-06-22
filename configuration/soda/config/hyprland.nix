@@ -181,10 +181,8 @@ in
 
           general = {
             border_size = 1;
-            col.inactive_border =  "0xc2c2c2";
-            col.active_border = "0x839bc2";
-            gaps_in = 2;
-            gaps_out = 2;
+            gaps_in = 3;
+            gaps_out = 0;
             gaps_workspaces = 0;
 
             cursor_inactive_timeout = 10;
