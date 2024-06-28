@@ -2,7 +2,7 @@
 
 let 
   wallpaper = ./wallpaper/cardcaptor.jpeg; 
-  wallpaper2 = ./wallpaper/A.jpeg;
+  wallpaper2 = ./wallpaper/bass.png;
 in
   '' 
   preload = ${wallpaper}
