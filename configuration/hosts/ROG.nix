@@ -10,6 +10,7 @@
     xserver = {
       videoDrivers = [
         "amdgpu"
+        "nvidia"
       ];
     };
     asusd = {
@@ -86,6 +87,8 @@
   #     wantedBy = [ "multi-user.target" ];
   #   };
   # };
+
+  hardware.graphics.enable = true; 
 
   hardware.nvidia = {
     modesetting.enable = true;
