@@ -24,7 +24,7 @@ default-result-background = #fff
 selection-color = #000000
 selection-background = #dde4ed
 
-selection-match-color = #be0e21
+selection-match-color = #7ca8d1
 
 text-cursor-style = block
 text-cursor-corner-radius = 0
