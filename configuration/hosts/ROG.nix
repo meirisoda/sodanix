@@ -127,6 +127,7 @@
         prime.offload.enableOffloadCmd = lib.mkForce true;
         prime.sync.enable = lib.mkForce false;
       };
+      boot.initrd.kernelModules = if hostname == "sodaROG" then [ "amdgpu" ] else [ "kvm-intel" ];
     };
   };
 
