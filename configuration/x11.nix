@@ -63,7 +63,7 @@
     # } else {});
 
 # TODO hardware opengl
-  hardware.opengl = with pkgs; {
+  hardware.graphics = with pkgs; {
     enable = true;
     driSupport32Bit = true;
     extraPackages = [
