@@ -44,6 +44,7 @@ in
               # "HDMI-A-1,2560x1440@120,2048x0,1"
             ] else [
               "eDP-1, 3840x2160@60, 0x0, 2"
+              "HDMI-A-1, preferred,auto,1"
           ];
           exec-once = [
             "${pkgs.dunst}/bin/dunst"
