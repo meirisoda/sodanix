@@ -110,7 +110,7 @@
     localsend
     obsidian
     signal-desktop
-    spotify
+    # spotify
     tidal-hifi
     vscodium
   ];
