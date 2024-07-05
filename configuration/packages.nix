@@ -70,6 +70,7 @@
     pavucontrol
     xfce.thunar
     tofi
+    udiskie
     waybar
     wireplumber
     wl-clipboard
