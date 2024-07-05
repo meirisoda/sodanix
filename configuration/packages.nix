@@ -65,7 +65,7 @@
     hyprpaper
     jq
     kdePackages.konsole
-    gnome.nautilus
+    nautilus
     networkmanagerapplet
     pavucontrol
     xfce.thunar
