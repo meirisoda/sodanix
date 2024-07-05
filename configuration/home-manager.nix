@@ -117,6 +117,7 @@
           sodasw = "sudo /run/current-system/specialisation/soda/bin/switch-to-configuration switch";
           mobilesw = "sudo /run/current-system/specialisation/mobile/bin/switch-to-configuration switch";
           watch = "watch -n 0.1 hyprctl activewindow";
+          udm = "udiskie"
         };
       };
       kitty = {
