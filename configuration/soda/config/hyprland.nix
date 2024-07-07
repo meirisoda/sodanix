@@ -260,7 +260,7 @@ in
             numlock_by_default = false;
             repeat_rate = 25;
             repeat_delay = 500;
-            sensitivity = 1.0;
+            sensitivity = 1.2;
             accel_profile = "flat";
             force_no_accel = false;
             left_handed = false;
