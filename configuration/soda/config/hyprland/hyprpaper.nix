@@ -1,8 +1,8 @@
 { ... }:
 
 let 
-  wallpaper = ./wallpaper/july2024.jpg; 
-  wallpaper2 = ./wallpaper/july2024.jpg;
+  wallpaper = ./wallpaper/grey.jpg; 
+  wallpaper2 = ./wallpaper/grey.jpg;
 in
   '' 
   preload = ${wallpaper}

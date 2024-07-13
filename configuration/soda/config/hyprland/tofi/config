@@ -1,5 +1,5 @@
-font = "monospace"
-font-size = 13
+font = "Arial"
+font-size = 14
 text-color = #000000
 
 width = 20%
