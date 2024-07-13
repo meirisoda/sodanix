@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1720251696,
-        "narHash": "sha256-vLdF080nOH8PjRYz9d/ymLPnCjqw0QyJ43sOotdyZt8=",
+        "lastModified": 1720865723,
+        "narHash": "sha256-B976wzyTCHDdmqBBdZo/VEdAvWJgoTkRjAK5DPJUEUI=",
         "owner": "AdnanHodzic",
         "repo": "auto-cpufreq",
-        "rev": "f300d31e0ff07010f7ecacb0e89f44533d1c2386",
+        "rev": "432883acee548641fcfc12833c369ba184290679",
         "type": "github"
       },
       "original": {
@@ -278,11 +278,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1720805306,
-        "narHash": "sha256-9BwcxqS6/74en4vJnr/PDgEvZpNcltmO9vU9EI32+js=",
+        "lastModified": 1720863765,
+        "narHash": "sha256-Q+LSZm9w1htVrRDY1d+0T8rBdifA/6JnAWuBMneGCCE=",
         "owner": "pjones",
         "repo": "plasma-manager",
-        "rev": "19e2925799d9c6ba2e2a1fad7e05c089c2b1c2a3",
+        "rev": "40fa15eceeda6f3fb539367ccee462fa06a4d760",
         "type": "github"
       },
       "original": {
