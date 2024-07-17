@@ -24,12 +24,14 @@
     audacity
     # blender
     discord
+    easytag
     gimp
     inkscape
     krita
     libreoffice
     obs-studio
     pdfsam-basic
+    puddletag
     puredata
     sonic-pi
     sunvox
