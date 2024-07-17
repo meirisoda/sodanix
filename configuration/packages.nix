@@ -75,6 +75,7 @@
     wireplumber
     wl-clipboard
     xplr
+    yazu
 
     # development
     zsh
