@@ -10,7 +10,7 @@
     xserver = {
       videoDrivers = [
         "amdgpu"
-        "nvidia"
+        # "nvidia" # 👈 ENABLE NVIDIA
       ];
     };
     asusd = {
@@ -107,8 +107,7 @@
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:65:0:0";
     };
-    package = config.boot.kernelPackages.nvidiaPackages.latest; 
-    # 👈 ENABLE NVIDIA
+    # package = config.boot.kernelPackages.nvidiaPackages.latest;  # 👈 ENABLE NVIDIA
   };
 
   boot.kernelParams = [
