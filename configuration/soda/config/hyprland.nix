@@ -90,7 +90,7 @@ in
             
             "CTRL_ALT, T, exec, kitty"
             # "ALT, E, exec, nautilus"
-            "ALT, E, exec, yazi"
+            "ALT, E, exec, sh yazi"
             "ALT, F, exec, firefox"
             "ALT, O, exec, obsidian"
             "ALT, V, exec, codium"
