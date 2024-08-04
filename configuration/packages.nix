@@ -33,6 +33,7 @@
     pdfsam-basic
     puddletag
     puredata
+    processing
     sonic-pi
     sunvox
     # (pkgs.callPackage ./soda/config/programs/sunvox.nix {})
