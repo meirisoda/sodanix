@@ -26,7 +26,7 @@
       LC_TIME = "en_US.UTF-8";
     };
     inputMethod = {
-      enable = "true";
+      enable = true;
       type = "kime";
       kime = {
         daemonModules = [
