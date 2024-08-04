@@ -7,6 +7,7 @@
     tlp
 
     # development
+    python3
     
     # utilities
     android-tools
