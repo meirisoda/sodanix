@@ -33,7 +33,7 @@
       #     "Wayland"
       #     "Indicator"
       #   ];
-        iconColor = "White";
+        # iconColor = "White";
     #  };
     };
   };  
