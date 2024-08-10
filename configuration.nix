@@ -34,7 +34,7 @@
       #     "Indicator"
       #   ];
         iconColor = "White";
-     };
+    #  };
     };
   };  
 
