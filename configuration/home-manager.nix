@@ -124,7 +124,7 @@
         enable = true;
         settings = {
           preview_images = true;
-          background_opacity = "0.5";
+          background_opacity = "0.8";
           # background_blur = 5;
           foreground = "#ffffff";
           cursor = "#d6d6d6";
