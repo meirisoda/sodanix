@@ -114,7 +114,7 @@
     kitty
     localsend
     obsidian
-    signal-desktop
+    # signal-desktop
     # spotify
     tidal-hifi
     vscodium
