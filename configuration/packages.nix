@@ -61,8 +61,8 @@
     blueman
     brightnessctl
     kdePackages.dolphin
-    kdePackages.full
-    dunst # notification manager
+    # kdePackages.full
+    dunst 
     grimblast
     hypridle
     hyprlock
