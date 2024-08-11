@@ -188,9 +188,9 @@ in
             gaps_out = 0;
             gaps_workspaces = 0;
 
-            cursor_inactive_timeout = 10;
+            # cursor_inactive_timeout = 10;
             layout = "dwindle";
-            no_cursor_warps = false;
+            # no_cursor_warps = false;
             no_focus_fallback = false;
             resize_on_border = true;
             extend_border_grab_area = 15;
