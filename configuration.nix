@@ -27,14 +27,14 @@
     };
     inputMethod = {
       enable = true;
-      type = "kime";
-      kime = {
-        daemonModules = [
-          "Wayland"
-          "Indicator"
-        ];
-        iconColor = "White";
-     };
+    #   type = "kime";
+    #   kime = {
+    #     daemonModules = [
+    #       "Wayland"
+    #       "Indicator"
+    #     ];
+    #     iconColor = "White";
+    #  };
     };
   };  
 
