@@ -245,7 +245,7 @@ in
             "LIBVA_DRIVER_NAME,nvidia" # 👈 ENABLE NVIDIA
             "XDG_SESSION_TYPE,wayland"
             "GBM_BACKEND,nvidia" # 👈 ENABLE NVIDIA
-            # "__GLX_VENDOR_LIBRARY_NAME,nvidia" # 👈 ENABLE NVIDIA
+            "__GLX_VENDOR_LIBRARY_NAME,nvidia" # 👈 ENABLE NVIDIA
             "WLR_NO_HARDWARE_CURSORS,1"
             "MOZ_USE_XINPUT2,1"
           ] else [];
