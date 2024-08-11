@@ -63,6 +63,7 @@ in
             "SUPER_CTRL, 1, workspace, e+1"
             "SUPER_CTRL, left, workspace, e-1"
             "SUPER_CTRL, 2, workspace, e-1"
+
             # "SUPER_CTRL, right, exec, sh ${./hyprland/workspace2d.sh} right all sync"
             # "SUPER_CTRL, left, exec, sh ${./hyprland/workspace2d.sh} left all sync"
             # "SUPER_CTRL, up, exec, sh ${./hyprland/workspace2d.sh} up all sync"
@@ -135,33 +136,33 @@ in
           ];
 
 
-          workspace = [
-            #laptop
-            "1, defaultName:1a"
-            "11, defaultName:2a"
-            "21, defaultName:3a"
+          # workspace = [
+          #   #laptop
+          #   "1, defaultName:1a"
+          #   "11, defaultName:2a"
+          #   "21, defaultName:3a"
 
-            "31, defaultName:1b"
-            "41, defaultName:2b"
-            "51, defaultName:3b"
+          #   "31, defaultName:1b"
+          #   "41, defaultName:2b"
+          #   "51, defaultName:3b"
 
-            "61, defaultName:1c"
-            "71, defaultName:2c"
-            "81, defaultName:3c"
+          #   "61, defaultName:1c"
+          #   "71, defaultName:2c"
+          #   "81, defaultName:3c"
 
-            #monitor
-            "2, defaultName:1a"
-            "12, defaultName:2a"
-            "22, defaultName:3a"
+          #   #monitor
+          #   "2, defaultName:1a"
+          #   "12, defaultName:2a"
+          #   "22, defaultName:3a"
 
-            "32, defaultName:1b"
-            "42, defaultName:2b"
-            "52, defaultName:3b"
+          #   "32, defaultName:1b"
+          #   "42, defaultName:2b"
+          #   "52, defaultName:3b"
 
-            "62, defaultName:1c"
-            "72, defaultName:2c"
-            "82, defaultName:3c"
-          ];
+          #   "62, defaultName:1c"
+          #   "72, defaultName:2c"
+          #   "82, defaultName:3c"
+          # ];
 
           # windowrule = [
           #   "workspace 1, firefox"
