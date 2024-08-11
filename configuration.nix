@@ -25,8 +25,8 @@
       LC_TELEPHONE = "en_US.UTF-8";
       LC_TIME = "en_US.UTF-8";
     };
-    inputMethod = {
-      enable = true;
+    # inputMethod = {
+    #   enable = true;
     #   type = "kime";
     #   kime = {
     #     daemonModules = [
@@ -35,7 +35,7 @@
     #     ];
     #     iconColor = "White";
     #  };
-    };
+    # };
   };  
 
 
