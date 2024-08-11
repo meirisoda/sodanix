@@ -188,9 +188,9 @@ in
             gaps_out = 0;
             gaps_workspaces = 0;
 
-            # cursor_inactive_timeout = 10;
+            cursor_inactive_timeout = 10;
             layout = "dwindle";
-            # no_cursor_warps = false;
+            no_cursor_warps = false;
             no_focus_fallback = false;
             resize_on_border = true;
             extend_border_grab_area = 15;
@@ -242,10 +242,10 @@ in
           ];
           
           env = if hostname != "sodaROG" then [
-            # "LIBVA_DRIVER_NAME,nvidia" # 👈 ENABLE NVIDIA
+            "LIBVA_DRIVER_NAME,nvidia" # 👈 ENABLE NVIDIA
             "XDG_SESSION_TYPE,wayland"
-            # "GBM_BACKEND,nvidia" # 👈 ENABLE NVIDIA
-            # "__GLX_VENDOR_LIBRARY_NAME,nvidia" # 👈 ENABLE NVIDIA
+            "GBM_BACKEND,nvidia-drm" # 👈 ENABLE NVIDIA
+            "__GLX_VENDOR_LIBRARY_NAME,nvidia" # 👈 ENABLE NVIDIA
             "WLR_NO_HARDWARE_CURSORS,1"
             "MOZ_USE_XINPUT2,1"
           ] else [];
