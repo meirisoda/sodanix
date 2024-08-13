@@ -278,11 +278,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1723462913,
-        "narHash": "sha256-cfwBU/FNhzVXuWVVpJ9ZsISgdePbfKVNAnjRWfObWsE=",
+        "lastModified": 1723483411,
+        "narHash": "sha256-h6F9JK9PrrTmt5WgsZChLCn7ECk+G/cYJL2CuQVY/Cc=",
         "owner": "pjones",
         "repo": "plasma-manager",
-        "rev": "dff427dd04c4a27d9e461c279b258da7f5673534",
+        "rev": "b3b9d4ce20d75319c20a7faada08ad9135a1f008",
         "type": "github"
       },
       "original": {
