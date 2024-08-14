@@ -26,7 +26,7 @@
             offset = "10x10";
             origin = "top-right";
             transparency = 10;
-            font = "monospace 8";
+            font = "Arial 10";
 
             frame_width = "1";
             frame_color = "#464646";
