@@ -20,7 +20,7 @@
       url = "github:hyprwm/Hyprland/f94264928a8ab4da8759d4ded25a46af44451d38";
     };
     plasma-manager = {
-      url = "github:pjones/plasma-manager";
+      url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };

@@ -6,7 +6,8 @@ allConfig@{ config, pkgs, username, stablepkgs, attrs, ...}:
       (import ./config/programs/comma.nix (allConfig // {inherit username;}))
       (import ./config/hyprland.nix (allConfig // {inherit username;}))
       # (import ./config/programs/plasma.nix (allConfig // {inherit username;}))
-      # (pkgs.callPackage ./config/rofi.nix allConfig)
+      # (pkgs.callPackage ./config/rofi.nix allConfig)\
+      ./config/plasma/default.nix
       ./config/programs/vscode.nix
       ./config/hyprland/xdg.nix
     ];
