@@ -47,7 +47,7 @@
       home-manager.nixosModules.default
       nix-index-database.nixosModules.nix-index
       auto-cpufreq.nixosModules.default
-      attrs.plasma-manager.homeManagerModules.plasma-manager
+      plasma-manager.homeManagerModules.plasma-manager
       # plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
@@ -55,7 +55,7 @@
       nixos-hardware.nixosModules.dell-xps-13-9380
       home-manager.nixosModules.default
       nix-index-database.nixosModules.nix-index
-      attrs.plasma-manager.homeManagerModules.plasma-manager
+      plasma-manager.homeManagerModules.plasma-manager
       # plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
