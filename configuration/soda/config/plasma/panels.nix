@@ -1,3 +1,5 @@
+allConfig@{ config, pkgs, username, stablepkgs, attrs, ...}:
+
 {
   home-manager.users.${username} = {
     programs.plasma = {
