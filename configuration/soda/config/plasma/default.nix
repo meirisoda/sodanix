@@ -5,7 +5,7 @@
 
     # ./kwin.nix # Night light, titlebar, virtual desktops
     ./panels.nix # Panels
-    ./theme.nix # Colorschemes, Cursors, Effects, Fonts, Icons, Sounds and Wallpapers.
+    (import ./theme.nix (allConfig // {inherit username;})) # Colorschemes, Cursors, Effects, Fonts, Icons, Sounds and Wallpapers.
   ];
   home-manager.users.${username} = {
     programs.plasma = {
