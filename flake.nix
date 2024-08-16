@@ -34,7 +34,7 @@
     };
   }; 
 
-  outputs = inputs@{ nixpkgs, nixpkgs-stable, home-manager, plasma-manager, nixos-hardware, nix-index-database, hyprland, auto-cpufreq, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, plasma-manager, nixos-hardware, nix-index-database, hyprland, auto-cpufreq, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       # cudaSupport = true;
@@ -47,7 +47,7 @@
       home-manager.nixosModules.default
       nix-index-database.nixosModules.nix-index
       auto-cpufreq.nixosModules.default
-      inputs.plasma-manager.homeManagerModules.plasma-manager
+      attrs.plasma-manager.homeManagerModules.plasma-manager
       # plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
@@ -55,7 +55,7 @@
       nixos-hardware.nixosModules.dell-xps-13-9380
       home-manager.nixosModules.default
       nix-index-database.nixosModules.nix-index
-            inputs.plasma-manager.homeManagerModules.plasma-manager
+      attrs.plasma-manager.homeManagerModules.plasma-manager
       # plasma-manager.homeManagerModules.plasma-manager
       ./configuration.nix
     ];
