@@ -7,7 +7,7 @@ allConfig@{ config, pkgs, username, stablepkgs, attrs, ...}:
       (import ./config/hyprland.nix (allConfig // {inherit username;}))
       # (import ./config/programs/plasma.nix (allConfig // {inherit username;}))
       # (pkgs.callPackage ./config/rofi.nix allConfig)\
-      ./config/plasma/default.nix
+      (import ./config/plasma/default.nix (allConfig // {inherit username;}))
       ./config/programs/vscode.nix
       ./config/hyprland/xdg.nix
     ];
