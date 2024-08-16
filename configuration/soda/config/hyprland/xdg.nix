@@ -3,7 +3,7 @@
   xdg.mime = {
     enable = true;
     defaultApplications = {
-      "application/pdf" = "org.kde.okular.desktop";
+      # "application/pdf" = "org.kde.okular.desktop";
       "image/png" = "org.kde.gwenview.desktop";
       "image/jpeg" = "org.kde.gwenview.desktop";
       "text/plain" = "codium.desktop";
