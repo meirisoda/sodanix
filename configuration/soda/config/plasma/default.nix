@@ -7,13 +7,14 @@
     ./panels.nix # Panels
     ./theme.nix # Colorschemes, Cursors, Effects, Fonts, Icons, Sounds and Wallpapers.
   ];
+  home-manager.users.${username} = {
+    programs.plasma = {
+      enable = true;
+      overrideConfig = true;
 
-  programs.plasma = {
-    enable = true;
-    overrideConfig = true;
-
-    windows = {
-      allowWindowsToRememberPositions = true;
+      windows = {
+        allowWindowsToRememberPositions = true;
+      };
     };
   };
 }
