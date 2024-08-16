@@ -11,7 +11,7 @@
       soundTheme = "ocean";
       theme = "MacSequoia-Light";
       tooltipDelay = 500;
-      wallpaper = "./wallpaper/ware.png"
+      wallpaper = "./wallpaper/blue.png"
     };
   };
 }

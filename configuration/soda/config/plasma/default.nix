@@ -1,12 +1,7 @@
+{ config, inputs, lib, pkgs, ...}: 
 {
-  config,
-  inputs,
-  lib,
-  pkgs,
-  ...
-}: {
   imports = [
-    inputs.plasma-manager.homeManagerModules.plasma-manager
+    attrs.plasma-manager.homeManagerModules.plasma-manager
     # ./kwin.nix # Night light, titlebar, virtual desktops
     ./panels.nix # Panels
     ./theme.nix # Colorschemes, Cursors, Effects, Fonts, Icons, Sounds and Wallpapers.
