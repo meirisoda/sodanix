@@ -1,4 +1,4 @@
-{ config, inputs, lib, pkgs, username, ...}: 
+allConfig@{ config, inputs, lib, pkgs, username, ...}: 
 {
   imports = [
     # attrs.plasma-manager.homeManagerModules.plasma-manager
