@@ -4,7 +4,7 @@
     # attrs.plasma-manager.homeManagerModules.plasma-manager
 
     # ./kwin.nix # Night light, titlebar, virtual desktops
-    ./panels.nix # Panels
+    (import ./panels.nix (allConfig // {inherit username;})) # Panels
     (import ./theme.nix (allConfig // {inherit username;})) # Colorschemes, Cursors, Effects, Fonts, Icons, Sounds and Wallpapers.
   ];
   home-manager.users.${username} = {
