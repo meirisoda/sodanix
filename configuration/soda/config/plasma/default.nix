@@ -1,7 +1,7 @@
 { config, inputs, lib, pkgs, username, ...}: 
 {
   imports = [
-    attrs.plasma-manager.homeManagerModules.plasma-manager
+    plasma-manager.homeManagerModules.plasma-manager
 
     # # ./kwin.nix # Night light, titlebar, virtual desktops
     # (import ./panels.nix (allConfig // {inherit username;})) # Panels
