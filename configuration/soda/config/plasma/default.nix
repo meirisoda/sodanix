@@ -1,12 +1,13 @@
 { config, inputs, lib, pkgs, username, ...}: 
 {
-  imports = [
-    plasma-manager.homeManagerModules.plasma-manager
+  # imports = [
+  #   plasma-manager.homeManagerModules.plasma-manager
 
-    # # ./kwin.nix # Night light, titlebar, virtual desktops
-    # (import ./panels.nix (allConfig // {inherit username;})) # Panels
-    # (import ./theme.nix (allConfig // {inherit username;})) # Colorschemes, Cursors, Effects, Fonts, Icons, Sounds and Wallpapers.
-  ];
+  #   # # ./kwin.nix # Night light, titlebar, virtual desktops
+  #   # (import ./panels.nix (allConfig // {inherit username;})) # Panels
+  #   # (import ./theme.nix (allConfig // {inherit username;})) # Colorschemes, Cursors, Effects, Fonts, Icons, Sounds and Wallpapers.
+  # ];
+
   home-manager.users.${username} = {
     programs.plasma = {
       enable = true;
