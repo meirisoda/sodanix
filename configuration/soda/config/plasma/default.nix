@@ -1,4 +1,4 @@
-{ config, inputs, lib, pkgs, username, ...}: 
+{ config, lib, pkgs, username, ...}: 
 {
   # imports = [
   #   plasma-manager.homeManagerModules.plasma-manager
