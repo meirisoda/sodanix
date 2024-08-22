@@ -5,9 +5,9 @@ in
 {
   home-manager.users.${username} = {
     xdg.configFile = {
-      "plasma-org.kde.plasma.desktop-appletsrc" = { 
-        text = import ./plasma/plasmaappletsrc.nix {};
-      };
+      # "plasma-org.kde.plasma.desktop-appletsrc" = { 
+      #   text = import ./plasma/unused/plasmaappletsrc.nix {};
+      # };
       "hypr/hyprpaper.conf" = {
         text = import ./hyprland/hyprpaper.nix {};
       };

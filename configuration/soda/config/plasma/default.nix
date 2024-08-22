@@ -28,7 +28,7 @@
         soundTheme = "ocean";
         theme = "MacSequoia-Light";
         tooltipDelay = 500;
-        wallpaper = "./wallpaper/blue.png";
+        wallpaper = ./wallpaper/blue.png;
       };
 
       panels = [
@@ -47,7 +47,7 @@
                 appearance = {
                   fill = false;
                   highlightWindows = true;
-                  iconSpacing = "normal";
+                  iconSpacing = "medium";
                   indicateAudioStreams = true;
                   rows = {
                     multirowView = "never";

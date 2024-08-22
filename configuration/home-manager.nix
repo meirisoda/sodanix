@@ -1,6 +1,7 @@
-{ config, pkgs, stablepkgs, username, hostname, ... }:
+{ config, pkgs, stablepkgs, username, hostname, attrs, ... }:
 
 {
+  home-manager.sharedModules = [ attrs.plasma-manager.homeManagerModules.plasma-manager ];
   home-manager.users.${username} = {
     home = {
       stateVersion = "24.11";
