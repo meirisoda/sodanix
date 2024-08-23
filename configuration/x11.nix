@@ -12,7 +12,7 @@
       restart = true;
       settings = {
         default_session = {
-          # command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --greeting welcome! --remember --cmd hyprland";
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --greeting welcome! --remember";
           user = "greeter";
         };
       };
@@ -47,7 +47,7 @@
   programs = {
     xwayland.enable = true; 
     hyprland = {
-      enable = false; # ENABLE HYPRLAND
+      enable = true; # ENABLE HYPRLAND
     };
   };
 
