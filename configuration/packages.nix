@@ -111,6 +111,7 @@
 
     # programs
     bitwarden
+    bottles
     calibre
     kitty
     localsend
