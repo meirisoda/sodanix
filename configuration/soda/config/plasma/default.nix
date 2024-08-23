@@ -79,6 +79,8 @@
                 launchers = [
                   "applications:org.kde.dolphin.desktop"
                   "preferred://browser"
+                  "applications:ytmdesktop"
+                  "applications:signal-desktop"
                 ];
               };
             }
@@ -91,7 +93,7 @@
                 };
                 panelIcon = {
                   albumCover = {
-                    useAsIcon = false;
+                    useAsIcon = true;
                     radius = 8;
                   };
                   icon = "view-media-track";
@@ -99,7 +101,7 @@
                 preferredSource = "any";
                 songText = {
                   displayInSeparateLines = true;
-                  maximumWidth = 600;
+                  maximumWidth = 200;
                   scrolling = {
                     behavior = "alwaysScrollExceptOnHover";
                     enable = true;
