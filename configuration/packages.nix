@@ -59,7 +59,7 @@
     yubico-pam
 
     # hyprland
-    blueman
+    # blueman
     brightnessctl
     kdePackages.dolphin
     kdePackages.full
