@@ -169,11 +169,11 @@
                     "holidaysevents"
                   ];
                 };
-                # date = {
-                #   enable = true;
-                #   format = "shortDate";
-                #   position = "adaptiveLocation";
-                # };
+                date = {
+                  enable = false;
+                  # format = "shortDate";
+                  # position = "adaptiveLocation";
+                };
 
                 # font = {
                 #   bold = false;
