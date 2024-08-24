@@ -108,8 +108,6 @@
                 launchers = [
                   "applications:org.kde.dolphin.desktop"
                   "preferred://browser"
-                  "applications:ytmdesktop"
-                  "applications:signal-desktop"
                 ];
               };
             }
