@@ -34,7 +34,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, plasma-manager, nixos-hardware, nix-index-database, hyprland, auto-cpufreq, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, home-manager, plasma-manager, nixos-hardware, nix-index-database, auto-cpufreq, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       # cudaSupport = true;

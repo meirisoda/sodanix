@@ -47,7 +47,7 @@
   programs = {
     xwayland.enable = true; 
     hyprland = {
-      enable = true; # ENABLE HYPRLAND
+      enable = false; # ENABLE HYPRLAND
     };
   };
 
