@@ -65,9 +65,9 @@
     kdePackages.full
     # dunst 
     grimblast
-    hypridle
-    hyprlock
-    hyprpaper
+    # hypridle
+    # hyprlock
+    # hyprpaper
     jq
     kdePackages.konsole
     nautilus
