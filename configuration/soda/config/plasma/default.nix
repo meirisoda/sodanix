@@ -51,12 +51,12 @@
         soundTheme = "ocean";
         theme = "MacSequoia-Light";
         tooltipDelay = 500;
-        wallpaper = ./wallpaper/ware.png;
+        wallpaper = ./wallpaper/wish.png;
       };
 
       kscreenlocker = {
         appearance = {
-          wallpaper = ./wallpaper/ware.png;
+          wallpaper = ./wallpaper/blue.png;
         };
       };
 
