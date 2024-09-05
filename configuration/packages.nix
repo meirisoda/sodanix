@@ -28,6 +28,7 @@
     easytag
     gimp
     inkscape
+    kdePackages.kwallet-pam
     krita
     libreoffice
     obs-studio
