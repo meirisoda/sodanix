@@ -42,6 +42,7 @@
     supercollider
     ytmdesktop
     zoom-us
+    zotero
 
     # games
     lutris
