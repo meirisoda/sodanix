@@ -43,7 +43,7 @@
     # (pkgs.callPackage ./soda/config/programs/sunvox.nix {})
     supercollider
     ytmdesktop
-    zoom-us
+    # zoom-us
     zotero
 
     # games
