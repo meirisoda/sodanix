@@ -24,7 +24,7 @@
     ardour
     audacity
     # blender
-    citrix_workspace
+    # citrix_workspace
     discord
     drawio
     easytag
