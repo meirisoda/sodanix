@@ -24,7 +24,9 @@
     ardour
     audacity
     # blender
+    citrix_workspace
     discord
+    drawio
     easytag
     gimp
     inkscape
