@@ -13,28 +13,28 @@
       enable = true;
       overrideConfig = false;
 
-      # powerdevil = {
-      #   AC = {
-      #     autoSuspend = {
-      #       action = "sleep";
-      #       idleTimeout = 900; 
-      #     };
-      #     dimDisplay = {
-      #       enable = true;
-      #       idleTimeout = 600; 
-      #     };
-      #   };
-      #   battery = {
-      #     autoSuspend = {
-      #       action = "sleep";
-      #       idleTimeout = 900; 
-      #     };
-      #     dimDisplay = {
-      #       enable = true;
-      #       idleTimeout = 600; 
-      #     };
-      #   };
-      # };
+      powerdevil = {
+        AC = {
+          autoSuspend = {
+            action = "sleep";
+            idleTimeout = 900; 
+          };
+          dimDisplay = {
+            enable = true;
+            idleTimeout = 600; 
+          };
+        };
+        battery = {
+          autoSuspend = {
+            action = "sleep";
+            idleTimeout = 900; 
+          };
+          dimDisplay = {
+            enable = true;
+            idleTimeout = 600; 
+          };
+        };
+      };
       
       windows = {
         allowWindowsToRememberPositions = true;
