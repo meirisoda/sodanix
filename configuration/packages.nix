@@ -22,9 +22,9 @@
     # programs
     ani-cli
     ardour
+    aseprite
     audacity
     # blender
-    # citrix_workspace
     discord
     drawio
     easytag
@@ -40,10 +40,9 @@
     processing
     sonic-pi
     sunvox
-    # (pkgs.callPackage ./soda/config/programs/sunvox.nix {})
     supercollider
     ytmdesktop
-    # zoom-us
+    zoom-us
     zotero
 
     # games
