@@ -21,7 +21,7 @@
           };
           dimDisplay = {
             enable = true;
-            idleTimeOut = 600; 
+            idleTimeout = 600; 
           };
         };
         battery = {
@@ -31,7 +31,7 @@
           };
           dimDisplay = {
             enable = true;
-            idleTimeOut = 600; 
+            idleTimeout = 600; 
           };
         };
       };
