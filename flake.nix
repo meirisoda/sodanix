@@ -10,7 +10,7 @@
       url = github:NixOS/nixos-hardware/master;
     };
     nixpkgs-stable = {
-      url = github:NixOS/nixpkgs/nixos-23.11;
+      url = github:NixOS/nixpkgs/nixos-24.05;
     };
     nix-index-database = {
       url = "github:Mic92/nix-index-database";

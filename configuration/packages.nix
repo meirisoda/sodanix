@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [
     # system
-    asusctl
+    stablepkgs.asusctl
     tlp
 
     # development

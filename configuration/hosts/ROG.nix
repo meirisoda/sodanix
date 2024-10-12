@@ -16,6 +16,7 @@
     asusd = {
       enable = true; 
       enableUserService = true; 
+      package = stablepkgs.asusctl;
     };
     power-profiles-daemon.enable = true;
     thermald.enable = true;
