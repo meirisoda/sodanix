@@ -26,6 +26,7 @@ in
       krita
       zoom-us
       spotify
+      google-chrome
     ];
   };
 
