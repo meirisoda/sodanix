@@ -1,7 +1,7 @@
 allconfig@{ attrs, config, pkgs, hostname, nixpkgs, stablepkgs,  ... }:
 
 let
-  username = "hj";
+  username = "guest";
 in
 {
   imports =
@@ -12,21 +12,20 @@ in
 
   users.defaultUserShell = pkgs.zsh;
   users.users.${username} = {
-    hashedPassword = ''$y$j9T$yYV6C6CqIwPdTHRVU0UKz.$YeP3Y3tmGqA0F7IllV.x9jc2dOp6rsAPoQrmDK/8xUD'';
+    hashedPassword = ''$y$j9T$8sqzTIX1c8nrtBaDUec1h0$qIWDEcpoNIH7B8BmhAYFihIvHA0hL2cMFE3r9i6PTaB'';
     isNormalUser = true;
-    description = "temp for hyunjung";
+    description = "guest";
     extraGroups = [ "networkmanager" "libvirtd"];
     shell = pkgs.zsh;
     packages = with pkgs; [
       firefox
-      vscodium
+      google-chrome
       libreoffice
       gimp
       inkscape
       krita
       zoom-us
       spotify
-      google-chrome
     ];
   };
 
