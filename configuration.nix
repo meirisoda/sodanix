@@ -9,7 +9,7 @@
       ./configuration/hosts.nix
       ./configuration/packages.nix
       ./configuration/soda.nix
-      ./configuration/hj.nix
+      ./configuration/guest.nix
     ];
 
   time.timeZone = "America/New_York";
