@@ -41,7 +41,6 @@
     sonic-pi
     sunvox
     supercollider
-    teams
     ytmdesktop
     zoom-us
     zotero
