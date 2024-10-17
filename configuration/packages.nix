@@ -101,6 +101,7 @@
     kime #korean keyboard
     lsd
     lshw
+    lsp-plugins
     man-pages
     mpv
     mullvad
