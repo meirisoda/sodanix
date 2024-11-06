@@ -38,6 +38,7 @@
     puddletag
     puredata
     processing
+    redact
     sonic-pi
     sunvox
     supercollider
