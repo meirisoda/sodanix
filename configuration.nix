@@ -26,17 +26,17 @@
       LC_TELEPHONE = "en_US.UTF-8";
       LC_TIME = "en_US.UTF-8";
     };
-    inputMethod = {
-      enable = true;
-      type = "kime";
-      kime = {
-        daemonModules = [
-          "Wayland"
-          "Indicator"
-        ];
-        iconColor = "White";
-     };
-    };
+    # inputMethod = {
+    #   enable = true;
+    #   type = "kime";
+    #   kime = {
+    #     daemonModules = [
+    #       "Wayland"
+    #       "Indicator"
+    #     ];
+    #     iconColor = "White";
+    #  };
+    # };
   };  
 
 
