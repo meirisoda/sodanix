@@ -125,7 +125,7 @@
                   };
                   icon = "view-media-track";
                 };
-                preferredSource = "any";
+                # preferredSource = "any";
                 songText = {
                   displayInSeparateLines = true;
                   maximumWidth = 200;
