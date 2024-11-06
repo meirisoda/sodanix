@@ -12,6 +12,10 @@
     nixpkgs-stable = {
       url = github:NixOS/nixpkgs/nixos-24.05;
     };
+    nixpkgs-kernel = {
+      url = github:NixOS/nixpkgs/955fb771416a6d65bc3ee868221f86f838b40828;
+      flake = false; 
+    };
     nix-index-database = {
       url = "github:Mic92/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -34,7 +38,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, home-manager, plasma-manager, nixos-hardware, nix-index-database, auto-cpufreq, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, nixpkgs-kernel, home-manager, plasma-manager, nixos-hardware, nix-index-database, auto-cpufreq, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       # cudaSupport = true;
@@ -63,6 +67,7 @@
       inherit attrs;
       pkgs = import nixpkgs { system = "x86_64-linux"; inherit config; };
       stablepkgs = import nixpkgs-stable { system = "x86_64-linux"; inherit config; };
+      kernelpkgs = import nixpkgs-kernel { system = "x86_64-linux"; inherit config; };
       hostname = "sodaROG"; 
     };
   in {

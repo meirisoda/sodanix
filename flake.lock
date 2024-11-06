@@ -220,6 +220,23 @@
         "type": "github"
       }
     },
+    "nixpkgs-kernel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1728532759,
+        "narHash": "sha256-aBw7wnBghrN/t2hu32n+yjPHhKK3TbngS6vKeRp+Ak0=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "955fb771416a6d65bc3ee868221f86f838b40828",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "955fb771416a6d65bc3ee868221f86f838b40828",
+        "type": "github"
+      }
+    },
     "nixpkgs-stable": {
       "locked": {
         "lastModified": 1730741070,
@@ -299,6 +316,7 @@
         "nix-index-database": "nix-index-database",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_3",
+        "nixpkgs-kernel": "nixpkgs-kernel",
         "nixpkgs-stable": "nixpkgs-stable",
         "plasma-manager": "plasma-manager",
         "sodasddm": "sodasddm"
