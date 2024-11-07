@@ -45,13 +45,12 @@
     #     USB_EXCLUDE_AUDIO = 1; 
     #   };
     # };
-    # Battery
     supergfxd = {
       enable = true;
       settings = {
         supergfxctl-mode = "Integrated";
         gfx-vfio-enable = true;
-      };  # Power Profiles
+      };
     };
   };
 
@@ -80,13 +79,13 @@
     };
   };
 
-  # systemd.services = {
-  #   # supergfxd.path = [ pkgs.pciutils ];
-  #   power-profiles-daemon = {
-  #     enable = true;
-  #     wantedBy = [ "multi-user.target" ];
-  #   };
-  # };
+  systemd.services = {
+    supergfxd.path = [ pkgs.pciutils ];
+    power-profiles-daemon = {
+      enable = true;
+      wantedBy = [ "multi-user.target" ];
+    };
+  };
 
   hardware.graphics.enable = true; 
 
