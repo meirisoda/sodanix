@@ -12,6 +12,6 @@
       efi.canTouchEfiVariables = true;
     };
     # kernelPackages = pkgs.linuxPackages_latest; # manually update kernel // run uname -a to see current version
-    kernelPackages = kernelpkgs.linuxPackages_6_10; #temporarily testing older kernel version to fix ppd/active gpu bleh
+    kernelPackages = kernelpkgs.linuxPackages_6_10; #manually switching to 6.10 to fix ppd issue with 6.11 (reported to kernel maintainers)
   };
 }
