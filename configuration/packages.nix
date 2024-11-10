@@ -99,7 +99,7 @@
     ffmpeg
     # graphviz
     jellyfin-media-player
-    # kime #korean keyboard
+    kime #korean keyboard
     lsd
     lshw
     lsp-plugins

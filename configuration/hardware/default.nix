@@ -31,6 +31,9 @@
   networking = {
     networkmanager = {
       enable = true;
+      plugins = with pkgs; [
+        networkmanager-openvpn 
+      ];
     };
     hostName = hostname;
     # useDHCP = lib.mkDefault true;
