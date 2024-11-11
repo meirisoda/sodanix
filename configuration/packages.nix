@@ -4,7 +4,7 @@
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [
     # system
     stablepkgs.asusctl
-    tlp
+    # tlp
 
     # development
     # python3
