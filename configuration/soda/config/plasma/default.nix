@@ -51,7 +51,7 @@
         soundTheme = "ocean";
         theme = "MacSequoia-Light";
         tooltipDelay = 500;
-        wallpaper = ./wallpaper/grey.jpg;
+        wallpaper = ./wallpaper/dither_it_grey.png;
       };
 
       kscreenlocker = {
