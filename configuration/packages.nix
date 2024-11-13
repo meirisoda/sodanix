@@ -24,7 +24,7 @@
     ardour
     aseprite
     audacity
-    # blender
+    blender
     discord
     drawio
     easytag
