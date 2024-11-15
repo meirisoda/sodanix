@@ -67,14 +67,14 @@
           scaling_max_freq = 3300000; 
           turbo = "never";
         };
-        # battery = {
-        #   governor = "powersave";
-        #   scaling_min_freq = 400000;
-        #   scaling_max_freq = 2000000;
-        #   turbo = "never";
-        #   enable_thresholds = true;
-        #   stop_threshold = 95;
-        # };
+        battery = {
+          governor = "powersave";
+          scaling_min_freq = 400000;
+          scaling_max_freq = 2000000;
+          turbo = "never";
+          enable_thresholds = true;
+          stop_threshold = 95;
+        };
       };
     };
   };
