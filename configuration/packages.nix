@@ -119,7 +119,7 @@
     # programs
     bitwarden
     bottles
-    calibre
+    # calibre
     kitty
     localsend
     obsidian
