@@ -38,6 +38,7 @@
     puddletag
     puredata
     processing
+    reaper
     redact
     sonic-pi
     soulseekqt
