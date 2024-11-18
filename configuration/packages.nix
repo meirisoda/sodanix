@@ -40,6 +40,7 @@
     processing
     redact
     sonic-pi
+    soulseekqt
     sunvox
     supercollider
     ytmdesktop
