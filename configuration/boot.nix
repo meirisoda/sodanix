@@ -22,7 +22,7 @@
             version = "6.9-test";
             modDirVersion = version;
 
-            src = attrs.linux-kernel;
+            src = "${attrs.linux-kernel}";
 
             extraMeta.branch = "6.9";
           } // (args.argsOverride or {}));
