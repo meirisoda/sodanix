@@ -36,6 +36,10 @@
       url = "github:AdnanHodzic/auto-cpufreq";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    linux-kernel = {
+      url = "file:///home/soda/Documents/nix/linux/";
+      flake = false; 
+    };
   }; 
 
   outputs = { nixpkgs, nixpkgs-stable, nixpkgs-kernel, home-manager, plasma-manager, nixos-hardware, nix-index-database, auto-cpufreq, ... }@attrs: let 

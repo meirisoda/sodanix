@@ -1,4 +1,4 @@
-{ config, pkgs, stablepkgs, kernelpkgs, hostname, ...}:
+{ config, pkgs, stablepkgs, kernelpkgs, hostname, attrs, ...}:
 
 {
   boot = {
@@ -12,6 +12,22 @@
       efi.canTouchEfiVariables = true;
     };
     # kernelPackages = pkgs.linuxPackages_latest; # manually update kernel // run uname -a to see current version
-    kernelPackages = kernelpkgs.linuxPackages_6_10; #manually switching to 6.10 to fix ppd issue with 6.11 (reported to kernel maintainers)
+    # kernelPackages = kernelpkgs.linuxPackages_6_10; #manually switching to 6.10 to fix ppd issue with 6.11 (reported to kernel maintainers)
+    
+    kernelPackages = 
+      let
+        linux_hardened_pkg = { fetchurl, buildLinux, ... } @ args:
+
+          buildLinux (args // rec {
+            version = "6.9-test";
+            modDirVersion = version;
+
+            src = attrs.linux-kernel;
+
+            extraMeta.branch = "6.9";
+          } // (args.argsOverride or {}));
+        linux_hardened = pkgs.callPackage linux_hardened_pkg{};
+      in
+        pkgs.recurseIntoAttrs (pkgs.linuxPackagesFor linux_hardened);
   };
 }
