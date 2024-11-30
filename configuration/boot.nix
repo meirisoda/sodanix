@@ -20,9 +20,10 @@
 
           buildLinux (args // rec {
             version = "6.9-test";
-            modDirVersion = version;
+            modDirVersion = "6.11.0";
 
             src = "${attrs.linux-kernel}";
+            ignoreConfigErrors = true;
 
             extraMeta.branch = "6.9";
           } // (args.argsOverride or {}));

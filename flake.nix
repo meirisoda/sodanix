@@ -37,7 +37,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     linux-kernel = {
-      url = "file:///home/soda/Documents/nix/linux/";
+      url = "git+file:///home/soda/Documents/nix/linux";
       flake = false; 
     };
   }; 

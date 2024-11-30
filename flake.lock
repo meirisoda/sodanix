@@ -171,13 +171,16 @@
     "linux-kernel": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-/hk/cKyhfeTyB3DpmBs15o4AfCVkvMk3r7HvzJDKEB0=",
-        "type": "file",
-        "url": "file:///home/soda/Documents/nix/linux/"
+        "lastModified": 1729800255,
+        "narHash": "sha256-JndJgxs2qKaMYUEeVO8WNQSz+BeXsO4yFPXduq6d5cE=",
+        "rev": "4e46774408d942efe4eb35dc62e5af3af71b9a30",
+        "revCount": 29143,
+        "type": "git",
+        "url": "file:///home/soda/Documents/nix/linux"
       },
       "original": {
-        "type": "file",
-        "url": "file:///home/soda/Documents/nix/linux/"
+        "type": "git",
+        "url": "file:///home/soda/Documents/nix/linux"
       }
     },
     "nix-index-database": {
