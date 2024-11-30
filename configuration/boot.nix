@@ -20,7 +20,7 @@
 
           buildLinux (args // rec {
             version = "6.9-test";
-            modDirVersion = "6.11.0";
+            modDirVersion = "6.12.0-rc4";
 
             src = "${attrs.linux-kernel}";
             ignoreConfigErrors = true;
