@@ -95,6 +95,7 @@
     # utilities
     bat 
     btop
+    easyeffects
     gparted
     fd # lists files in directory
     file
