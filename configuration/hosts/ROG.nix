@@ -7,12 +7,12 @@
   ];
 
   services = {
-    xserver = {
-      videoDrivers = [
-        "amdgpu"
-        "nvidia" # 👈 ENABLE NVIDIA
-      ];
-    };
+    # xserver = {
+    #   videoDrivers = [
+    #     "amdgpu"
+    #     "nvidia" # 👈 ENABLE NVIDIA
+    #   ];
+    # };
     asusd = {
       enable = true; 
       enableUserService = true; 

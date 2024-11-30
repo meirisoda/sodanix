@@ -34,13 +34,13 @@
     #   #   # theme = "${sodasddm}";
     #   # };
     # };
-    xserver = {
-      enable = true;
-      xkb = {
-        layout = "us";
-        variant = "";
-      };
-    };  
+    # xserver = {
+    #   enable = true;
+    #   xkb = {
+    #     layout = "us";
+    #     variant = "";
+    #   };
+    # };  
   };
 
 # TODO programs
