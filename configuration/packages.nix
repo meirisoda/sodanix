@@ -44,8 +44,8 @@
     soulseekqt
     sunvox
     supercollider
+    linuxKernel.packages.linux_zen.v4l2loopback
     ytmdesktop
-    zoom-us
     zotero
 
     # games
@@ -128,6 +128,7 @@
     # spotify
     tidal-hifi
     vscodium
+    zoom-us
   ];
 
   programs = {
