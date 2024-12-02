@@ -44,7 +44,7 @@
     soulseekqt
     sunvox
     supercollider
-    linuxKernel.packages.linux_zen.v4l2loopback
+    # linuxKernel.packages.linux_zen.v4l2loopback
     ytmdesktop
     zotero
 
