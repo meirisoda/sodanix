@@ -26,7 +26,7 @@
     audacity
     blender
     discord
-    drawio
+    # drawio
     easytag
     gimp
     inkscape
