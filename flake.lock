@@ -168,21 +168,6 @@
         "type": "github"
       }
     },
-    "linux-kernel": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1732145206,
-        "narHash": "sha256-NPh4MQL0bazKcqcOfXR02LMl5YMTd6JYyZEHwewkGwk=",
-        "rev": "9c39d5ab450f7181775957000f4aff33bfef9f7b",
-        "revCount": 33802,
-        "type": "git",
-        "url": "file:///home/soda/Documents/nix/linux"
-      },
-      "original": {
-        "type": "git",
-        "url": "file:///home/soda/Documents/nix/linux"
-      }
-    },
     "nix-index-database": {
       "inputs": {
         "nixpkgs": [
@@ -328,7 +313,6 @@
         "auto-cpufreq": "auto-cpufreq",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
-        "linux-kernel": "linux-kernel",
         "nix-index-database": "nix-index-database",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_3",

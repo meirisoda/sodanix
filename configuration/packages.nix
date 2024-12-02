@@ -120,6 +120,7 @@
     # programs
     bitwarden
     bottles
+    brave
     # calibre
     kitty
     localsend
