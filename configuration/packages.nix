@@ -93,7 +93,7 @@
     # programs
     bitwarden
     bottles
-    brave
+    # brave
     kitty
     localsend
     obsidian
