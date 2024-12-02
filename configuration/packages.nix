@@ -4,10 +4,9 @@
   environment.systemPackages = with pkgs; (if hostname == "sodaROG" then [
     # system
     stablepkgs.asusctl
-    # tlp
 
     # development
-    # python3
+    python3
     
     # utilities
     android-tools
@@ -44,7 +43,6 @@
     soulseekqt
     sunvox
     supercollider
-    # linuxKernel.packages.linux_zen.v4l2loopback
     ytmdesktop
     zotero
 
@@ -64,30 +62,6 @@
     xorg.xrandr
     yubico-pam
 
-    # hyprland
-    # blueman
-    brightnessctl
-    kdePackages.dolphin
-    kdePackages.full
-    # dunst 
-    grimblast
-    # hypridle
-    # hyprlock
-    # hyprpaper
-    jq
-    kdePackages.konsole
-    nautilus
-    networkmanagerapplet
-    pavucontrol
-    xfce.thunar
-    tofi
-    udiskie
-    waybar
-    wireplumber
-    wl-clipboard
-    xplr
-    yazi
-
     # development
     zsh
     zsh-powerlevel10k
@@ -97,12 +71,11 @@
     btop
     easyeffects
     gparted
-    fd # lists files in directory
+    fd
     file
     ffmpeg
-    # graphviz
     jellyfin-media-player
-    # kime #korean keyboard
+    # kime # TODO until maintainer responds
     lsd
     lshw
     lsp-plugins
@@ -121,12 +94,10 @@
     bitwarden
     bottles
     brave
-    # calibre
     kitty
     localsend
     obsidian
     signal-desktop
-    # spotify
     tidal-hifi
     uxn
     vscodium
@@ -143,3 +114,27 @@
     zsh.enable = true;
   };
 }
+
+    # # hyprland
+    # blueman
+    # brightnessctl
+    # kdePackages.dolphin
+    # kdePackages.full
+    # dunst 
+    # grimblast
+    # hypridle
+    # hyprlock
+    # hyprpaper
+    # jq
+    # kdePackages.konsole
+    # nautilus
+    # networkmanagerapplet
+    # pavucontrol
+    # xfce.thunar
+    # tofi
+    # udiskie
+    # waybar
+    # wireplumber
+    # wl-clipboard
+    # xplr
+    # yazi
