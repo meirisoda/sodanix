@@ -3,10 +3,10 @@
 {
   boot = {
     initrd = {
-      kernelModules = if hostname == "sodaROG" then [ "amdgpu" "v4l2loopback"] else [ "kvm-intel" ]; 
+      kernelModules = if hostname == "sodaROG" then [ "amdgpu" ] else [ "kvm-intel" ]; 
       availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" "usb_storage" "sd_mod" "rtsx_pci_sdmmc"]; 
     };
-    kernelModules = [ ]; 
+    kernelModules = [ "v4l2loopback" ]; 
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
