@@ -4,7 +4,7 @@
   boot = {
     initrd = {
       kernelModules = if hostname == "sodaROG" then [ "amdgpu" ] else [ "kvm-intel" ]; 
-      availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" "usb_storage" "sd_mod" "rtsx_pci_sdmmc"]; 
+      availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" "v4l2loopback"]; 
     };
     kernelModules = [ ]; 
     loader = {
