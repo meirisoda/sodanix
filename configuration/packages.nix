@@ -128,6 +128,7 @@
     signal-desktop
     # spotify
     tidal-hifi
+    uxn
     vscodium
     zoom-us
   ];
