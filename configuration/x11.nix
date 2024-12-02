@@ -74,7 +74,9 @@
 
   fonts = {
     packages = with pkgs; [
-      nerd-fonts
+      nerd-fonts.fira-mono
+      nerd-fonts.fira-code
+      nerd-fonts.fira-code-symbols
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-emoji
