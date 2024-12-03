@@ -97,12 +97,14 @@
     # brave
     kdePackages.full
     kitty
+    kiwix
     localsend
     obsidian
     signal-desktop
     tidal-hifi
     uxn
     vscodium
+    w3m
     zoom-us
   ];
 
