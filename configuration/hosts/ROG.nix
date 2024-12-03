@@ -54,9 +54,9 @@
     };
   };
 
-  # powerManagement = {
-  #   powertop.enable = true;
-  # };
+  powerManagement = {
+    powertop.enable = true;
+  };
 
   # programs = {
   #   auto-cpufreq = {
