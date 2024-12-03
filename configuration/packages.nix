@@ -91,9 +91,11 @@
     yt-dlp
 
     # programs
+    anki
     bitwarden
     bottles
     # brave
+    kdePackages.full
     kitty
     localsend
     obsidian
@@ -119,7 +121,6 @@
     # blueman
     # brightnessctl
     # kdePackages.dolphin
-    # kdePackages.full
     # dunst 
     # grimblast
     # hypridle
