@@ -7,7 +7,7 @@
     powerOnBoot = true;
     # settings = {}; 
   };
-  services.blueman.enable = true;
+  # services.blueman.enable = true;
 
   # Printing
   services.printing = {
