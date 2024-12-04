@@ -95,6 +95,7 @@
     bitwarden
     bottles
     # brave
+    hugo
     kdePackages.full
     kitty
     kiwix
