@@ -20,31 +20,31 @@
     };
     power-profiles-daemon.enable = true;
     thermald.enable = true;
-    tlp = {
-      enable = true;
-      settings = {
-        START_CHARGE_THRESH_BAT0 = 40;
-        STOP_CHARGE_THRESH_BAT0 = 95; 
+    # tlp = {
+    #   enable = true;
+    #   settings = {
+    #     START_CHARGE_THRESH_BAT0 = 40;
+    #     STOP_CHARGE_THRESH_BAT0 = 95; 
 
-        # CPU_SCALING_GOVERNOR_ON_AC = "balanced";
-        # CPU_ENERGY_PERF_POLICY_ON_AC = "balanced";
+    #     # CPU_SCALING_GOVERNOR_ON_AC = "balanced";
+    #     # CPU_ENERGY_PERF_POLICY_ON_AC = "balanced";
 
-        # CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
-        # CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+    #     # CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+    #     # CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
         
-        CPU_MIN_PERF_ON_AC = 0;
-        CPU_MAX_PERF_ON_AC = 100;
-        CPU_MIN_PERF_ON_BAT = 0;
-        CPU_MAX_PERF_ON_BAT = 40;
+    #     CPU_MIN_PERF_ON_AC = 0;
+    #     CPU_MAX_PERF_ON_AC = 100;
+    #     CPU_MIN_PERF_ON_BAT = 0;
+    #     CPU_MAX_PERF_ON_BAT = 40;
 
-        DISK_DEVICES = "nvme0n1 sda";
-        DISK_IDLE_SECS_ON_AC = 0;
-        DISK_IDLE_SECS_ON_BAT = 2;
+    #     DISK_DEVICES = "nvme0n1 sda";
+    #     DISK_IDLE_SECS_ON_AC = 0;
+    #     DISK_IDLE_SECS_ON_BAT = 2;
 
-        USB_AUTOSUSPEND = 0;
-        USB_EXCLUDE_AUDIO = 1; 
-      };
-    };
+    #     USB_AUTOSUSPEND = 0;
+    #     USB_EXCLUDE_AUDIO = 1; 
+    #   };
+    # };
     supergfxd = {
       enable = true;
       settings = {
