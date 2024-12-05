@@ -58,26 +58,26 @@
   #   powertop.enable = true;
   # };
 
-  # programs = {
-  #   auto-cpufreq = {
-  #     enable = true;
-  #     settings = {
-  #       charger = {
-  #         governor = "performance";
-  #         scaling_max_freq = 3300000; 
-  #         turbo = "never";
-  #       };
-  #       battery = {
-  #         governor = "powersave";
-  #         scaling_min_freq = 400000;
-  #         scaling_max_freq = 2000000;
-  #         turbo = "never";
-  #         enable_thresholds = true;
-  #         stop_threshold = 95;
-  #       };
-  #     };
-  #   };
-  # };
+  programs = {
+    auto-cpufreq = {
+      enable = true;
+      settings = {
+        charger = {
+          governor = "performance";
+          scaling_max_freq = 3300000; 
+          turbo = "never";
+        };
+        battery = {
+          governor = "powersave";
+          scaling_min_freq = 400000;
+          scaling_max_freq = 2000000;
+          turbo = "never";
+          enable_thresholds = true;
+          stop_threshold = 95;
+        };
+      };
+    };
+  };
 
   systemd.services = {
     supergfxd.path = [ pkgs.pciutils ];
@@ -112,11 +112,11 @@
     # package = config.boot.kernelPackages.nvidiaPackages.beta; # temporarily to fix ppd/active gpu issues
   };
 
-  boot.kernelParams = [
-    "amdgpu.gpu_recovery=1"
-    "amdgpu.sg_display=0"
-    "amdgpu.dcdebugmask=0x10"
-  ];
+  # boot.kernelParams = [
+  #   "amdgpu.gpu_recovery=1"
+  #   "amdgpu.sg_display=0"
+  #   "amdgpu.dcdebugmask=0x10"
+  # ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
