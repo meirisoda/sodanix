@@ -10,7 +10,7 @@
     xserver = {
       videoDrivers = [
         "amdgpu"
-        # "nvidia" # 👈 ENABLE NVIDIA
+        "nvidia" # 👈 ENABLE NVIDIA
       ];
     };
     asusd = {
@@ -72,8 +72,7 @@
           scaling_min_freq = 400000;
           scaling_max_freq = 2000000;
           turbo = "never";
-          enable_thresholds = true;
-          stop_threshold = 95;
+          enable_thresholds = false;
         };
       };
     };
@@ -109,7 +108,7 @@
       amdgpuBusId = "PCI:65:0:0";
     };
     # package = config.boot.kernelPackages.nvidiaPackages.latest;  # 👈 ENABLE NVIDIA
-    # package = config.boot.kernelPackages.nvidiaPackages.beta; # temporarily to fix ppd/active gpu issues
+    package = config.boot.kernelPackages.nvidiaPackages.beta; # temporarily to fix ppd/active gpu issues
   };
 
   # boot.kernelParams = [
