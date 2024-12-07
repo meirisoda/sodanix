@@ -98,6 +98,7 @@
     # brave
     hugo
     kdePackages.full
+    kdePackages.konsole
     kitty
     kiwix
     localsend
