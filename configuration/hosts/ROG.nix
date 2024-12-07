@@ -96,14 +96,14 @@
     open = true;
     powerManagement = {
       enable = true;
-      finegrained = true; 
+      finegrained = false; 
     };
     prime = {
-      # reverseSync.enable = true;
-      offload = {
-        enable = lib.mkForce true; 
-        enableOffloadCmd = true;
-      };
+      reverseSync.enable = true;
+      # offload = {
+      #   enable = lib.mkForce true; 
+      #   enableOffloadCmd = true;
+      # };
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:65:0:0";
     };
