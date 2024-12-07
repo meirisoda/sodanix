@@ -61,85 +61,85 @@
       };
 
       panels = [
-        # Dock
-        {
-          alignment = "center";
-          floating = true;
-          height = 70;
-          hiding = "dodgewindows";
-          lengthMode = "fit";
-          location = "bottom";
-          screen = "all";
-          widgets = [
-            {
-              iconTasks = {
-                appearance = {
-                  fill = false;
-                  highlightWindows = true;
-                  iconSpacing = "medium";
-                  indicateAudioStreams = true;
-                  rows = {
-                    multirowView = "never";
-                    maximum = null;
-                  };
-                  showTooltips = true;
-                };
-                behavior = {
-                  grouping = {
-                    clickAction = "showPresentWindowsEffect";
-                    method = "byProgramName";
-                  };
-                  middleClickAction = "newInstance";
-                  minimizeActiveTaskOnClick = true;
-                  newTasksAppearOn = "right";
-                  showTasks = {
-                    onlyInCurrentActivity = true;
-                    onlyInCurrentDesktop = true;
-                    onlyMinimized = false;
-                    onlyInCurrentScreen = false;
-                  };
-                  sortingMethod = "manually";
-                  unhideOnAttentionNeeded = true;
-                  wheel = {
-                    ignoreMinimizedTasks = true;
-                    switchBetweenTasks = true;
-                  };
-                };
-                launchers = [
-                  "applications:org.kde.dolphin.desktop"
-                  "preferred://browser"
-                ];
-              };
-            }
-            "org.kde.plasma.marginsseparator"
-            {
-              plasmusicToolbar = {
-                musicControls = {
-                  showPlaybackControls = true;
-                  volumeStep = 1;
-                };
-                panelIcon = {
-                  albumCover = {
-                    useAsIcon = true;
-                    radius = 8;
-                  };
-                  icon = "view-media-track";
-                };
-                # preferredSource = "any";
-                songText = {
-                  displayInSeparateLines = true;
-                  maximumWidth = 200;
-                  scrolling = {
-                    behavior = "alwaysScrollExceptOnHover";
-                    enable = true;
-                    resetOnPause = true;
-                    speed = 3;
-                  };
-                };
-              };
-            }
-          ];
-        }
+        # # Dock
+        # {
+        #   alignment = "center";
+        #   floating = true;
+        #   height = 70;
+        #   hiding = "dodgewindows";
+        #   lengthMode = "fit";
+        #   location = "bottom";
+        #   screen = "all";
+        #   widgets = [
+        #     {
+        #       iconTasks = {
+        #         appearance = {
+        #           fill = false;
+        #           highlightWindows = true;
+        #           iconSpacing = "medium";
+        #           indicateAudioStreams = true;
+        #           rows = {
+        #             multirowView = "never";
+        #             maximum = null;
+        #           };
+        #           showTooltips = true;
+        #         };
+        #         behavior = {
+        #           grouping = {
+        #             clickAction = "showPresentWindowsEffect";
+        #             method = "byProgramName";
+        #           };
+        #           middleClickAction = "newInstance";
+        #           minimizeActiveTaskOnClick = true;
+        #           newTasksAppearOn = "right";
+        #           showTasks = {
+        #             onlyInCurrentActivity = true;
+        #             onlyInCurrentDesktop = true;
+        #             onlyMinimized = false;
+        #             onlyInCurrentScreen = false;
+        #           };
+        #           sortingMethod = "manually";
+        #           unhideOnAttentionNeeded = true;
+        #           wheel = {
+        #             ignoreMinimizedTasks = true;
+        #             switchBetweenTasks = true;
+        #           };
+        #         };
+        #         launchers = [
+        #           "applications:org.kde.dolphin.desktop"
+        #           "preferred://browser"
+        #         ];
+        #       };
+        #     }
+        #     "org.kde.plasma.marginsseparator"
+        #     {
+        #       plasmusicToolbar = {
+        #         musicControls = {
+        #           showPlaybackControls = true;
+        #           volumeStep = 1;
+        #         };
+        #         panelIcon = {
+        #           albumCover = {
+        #             useAsIcon = true;
+        #             radius = 8;
+        #           };
+        #           icon = "view-media-track";
+        #         };
+        #         # preferredSource = "any";
+        #         songText = {
+        #           displayInSeparateLines = true;
+        #           maximumWidth = 200;
+        #           scrolling = {
+        #             behavior = "alwaysScrollExceptOnHover";
+        #             enable = true;
+        #             resetOnPause = true;
+        #             speed = 3;
+        #           };
+        #         };
+        #       };
+        #     }
+        #   ];
+        # }
         # Top panel
         {
           alignment = "right";
