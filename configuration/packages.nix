@@ -74,6 +74,7 @@
     fd
     file
     ffmpeg
+    imagemagick
     jellyfin-media-player
     # kime # TODO until maintainer responds
     lsd
