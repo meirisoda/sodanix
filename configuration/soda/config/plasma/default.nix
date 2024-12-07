@@ -17,21 +17,21 @@
         AC = {
           autoSuspend = {
             action = "sleep";
-            idleTimeout = 900; 
+            idleTimeout = 1800; 
           };
           dimDisplay = {
             enable = true;
-            idleTimeout = 600; 
+            idleTimeout = 900; 
           };
         };
         battery = {
           autoSuspend = {
             action = "sleep";
-            idleTimeout = 900; 
+            idleTimeout = 1800; 
           };
           dimDisplay = {
             enable = true;
-            idleTimeout = 600; 
+            idleTimeout = 900; 
           };
         };
       };
