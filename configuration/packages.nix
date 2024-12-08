@@ -14,6 +14,7 @@
     nvtopPackages.full
     powertop
     scrcpy
+    supergfxctl-plasmoid
 
     # virtualisation
     wineWowPackages.stable
