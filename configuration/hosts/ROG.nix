@@ -48,7 +48,7 @@
     supergfxd = {
       enable = true;
       settings = {
-        supergfxctl-mode = "Integrated";
+        supergfxctl-mode = "Hybrid";
         gfx-vfio-enable = true;
       };
     };
