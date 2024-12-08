@@ -164,10 +164,10 @@
                 sortAlphabetically = true;
               };
             }
-            # {
-            #   name = "org.kde.plasma.appmenu";
-            #   config.Appearance.compactView = false;
-            # }
+            {
+              name = "org.kpple.kppleMenu";
+              config.Appearance.compactView = false;
+            }
             {
               name = "org.kde.plasma.panelspacer";
               config.General = {
@@ -180,6 +180,9 @@
             }
             {
               name = "org.kde.plasma.marginsseparator";
+            }
+            {
+              name = "plasma_applet_dev.jhyub.supergfxctl";
             }
             {
               systemTray = {
