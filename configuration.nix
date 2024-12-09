@@ -32,7 +32,7 @@
       fcitx5 = {
         addons = with pkgs; [ fcitx5-hangul fcitx5-anthy ];
         waylandFrontend = true;
-      }
+      };
     };
   };  
 
