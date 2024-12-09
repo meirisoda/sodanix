@@ -150,24 +150,24 @@
           location = "top";
           screen = "all";
           widgets = [
-            # {
-            #   kickoff = {
-            #     applicationsDisplayMode = "list";
-            #     compactDisplayStyle = false;
-            #     favoritesDisplayMode = "grid";
-            #     icon = "nix-snowflake";
-            #     label = null;
-            #     pin = false;
-            #     showActionButtonCaptions = true;
-            #     showButtonsFor = "power";
-            #     sidebarPosition = "right";
-            #     sortAlphabetically = true;
-            #   };
-            # }
             {
-              name = "org.kpple.kppleMenu";
-              config.Appearance.compactView = false;
+              kickoff = {
+                applicationsDisplayMode = "list";
+                compactDisplayStyle = false;
+                favoritesDisplayMode = "grid";
+                icon = "./favicon.ico";
+                label = null;
+                pin = false;
+                showActionButtonCaptions = true;
+                showButtonsFor = "power";
+                sidebarPosition = "right";
+                sortAlphabetically = true;
+              };
             }
+            # {
+            #   name = "org.kpple.kppleMenu";
+            #   config.Appearance.compactView = false;
+            # }
             {
               name = "org.kde.plasma.panelspacer";
               config.General = {
@@ -197,7 +197,6 @@
                   ];
                   hidden = [
                     "dev.jhyub.supergfxctl"
-                    "org.kde.plasma.brightness"
                     "org.kde.plasma.bluetooth"
                     "org.kde.plasma.clipboard"
                     "org.kde.plasma.notifications"
