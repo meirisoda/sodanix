@@ -57,7 +57,11 @@
     # ENABLE_VKBASALT = "1";
     GLFW_IM_MODULE = "ibus"; # kitty only supports ibus afaik
     WLR_NO_HARDWARE_CURSORS = "1";
-    XMODIFIERS="@im=nabi";
+    XMODIFIERS="@im=uim";
+    GTK_IM_MODULE= "uim"; 
+    QT_IM_MODULE="uim";
+     XIM="uim";
+    SDL_IM_MODULE="uim"; 
   }; 
   # // (if hostname == "sodaROG" then {
       # KWIN_DRM_DEVICES = "/dev/dri/by-path/pci-0000\\:01\\:00.0-card"; 

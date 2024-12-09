@@ -89,6 +89,7 @@
     neofetch
     noisetorch
     piper
+    uim
     qbittorrent
     qpwgraph
     yt-dlp

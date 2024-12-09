@@ -28,7 +28,7 @@
     };
     inputMethod = {
       enable = true;
-      type = "nabi";
+      type = "uim";
     };
   };  
 
