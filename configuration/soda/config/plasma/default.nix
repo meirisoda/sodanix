@@ -51,7 +51,7 @@
         soundTheme = "ocean";
         theme = "MacSequoia-Dark";
         tooltipDelay = 500;
-        wallpaper = ./wallpaper/grey.png;
+        wallpaper = ./wallpaper/grey.jpg;
       };
 
       kscreenlocker = {
@@ -144,7 +144,7 @@
         {
           alignment = "right";
           floating = false;
-          height = 28;
+          height = 22;
           hiding = "none";
           lengthMode = "fill";
           location = "top";
@@ -155,7 +155,7 @@
                 applicationsDisplayMode = "list";
                 compactDisplayStyle = false;
                 favoritesDisplayMode = "grid";
-                icon = "./favicon.ico";
+                icon = "~/Documents/nix/sodanix/configuration/soda/config/plasma/favicon.ico";
                 label = null;
                 pin = false;
                 showActionButtonCaptions = true;
