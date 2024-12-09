@@ -46,12 +46,12 @@
           theme = "WhiteSur-Cursors";
           size = 30;
         };
-        iconTheme = "WhiteSur";
-        lookAndFeel = "com.github.vinceliuice.MacSequoia-Light";
+        iconTheme = "WhiteSur-dark";
+        lookAndFeel = "com.github.vinceliuice.MacSequoia-Dark";
         soundTheme = "ocean";
-        theme = "MacSequoia-Light";
+        theme = "MacSequoia-Dark";
         tooltipDelay = 500;
-        wallpaper = ./wallpaper/dither_it_grey.png;
+        wallpaper = ./wallpaper/invert.png;
       };
 
       kscreenlocker = {
@@ -144,7 +144,7 @@
         {
           alignment = "right";
           floating = false;
-          height = 30;
+          height = 28;
           hiding = "none";
           lengthMode = "fill";
           location = "top";
@@ -218,14 +218,13 @@
                   # format = "shortDate";
                   # position = "adaptiveLocation";
                 };
-
-                # font = {
-                #   bold = false;
-                #   family = "Inter";
-                #   italic = false;
-                #   size = 12;
-                #   weight = 400;
-                # };
+                font = {
+                  bold = false;
+                  family = "monospace";
+                  italic = false;
+                  size = 12;
+                  weight = 400;
+                };
                 time = {
                   format = "12h";
                   showSeconds = "always";
