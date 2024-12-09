@@ -197,6 +197,10 @@
                   ];
                   hidden = [
                     "dev.jhyub.supergfxctl"
+                    "org.kde.plasma.brightness"
+                    "org.kde.plasma.bluetooth"
+                    "org.kde.plasma.clipboard"
+                    "org.kde.plasma.notifications"
                   ];
                 };
               };
