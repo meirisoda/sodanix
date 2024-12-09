@@ -191,12 +191,14 @@
                   spacing = "medium";
                 };
                 pin = false;
-                shown = [
-                  "org.kde.plasma.battery"
-                ];
-                Hidden = [
-                  "dev.jhyub.supergfxctl"
-                ];
+                items = {
+                  shown = [
+                    "org.kde.plasma.battery"
+                  ];
+                  hidden = [
+                    "dev.jhyub.supergfxctl"
+                  ];
+                };
               };
             }
             {
