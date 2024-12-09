@@ -150,20 +150,20 @@
           location = "top";
           screen = "all";
           widgets = [
-            {
-              kickoff = {
-                applicationsDisplayMode = "list";
-                compactDisplayStyle = false;
-                favoritesDisplayMode = "grid";
-                icon = "nix-snowflake";
-                label = null;
-                pin = false;
-                showActionButtonCaptions = true;
-                showButtonsFor = "power";
-                sidebarPosition = "right";
-                sortAlphabetically = true;
-              };
-            }
+            # {
+            #   kickoff = {
+            #     applicationsDisplayMode = "list";
+            #     compactDisplayStyle = false;
+            #     favoritesDisplayMode = "grid";
+            #     icon = "nix-snowflake";
+            #     label = null;
+            #     pin = false;
+            #     showActionButtonCaptions = true;
+            #     showButtonsFor = "power";
+            #     sidebarPosition = "right";
+            #     sortAlphabetically = true;
+            #   };
+            # }
             {
               name = "org.kpple.kppleMenu";
               config.Appearance.compactView = false;
