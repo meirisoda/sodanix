@@ -20,7 +20,6 @@
     wineWowPackages.stable
 
     # programs
-    ani-cli
     ardour
     aseprite
     audacity
@@ -68,6 +67,7 @@
     zsh-powerlevel10k
 
     # utilities
+    ani-cli
     bat 
     btop
     easyeffects
@@ -82,6 +82,7 @@
     lshw
     lsp-plugins
     man-pages
+    mov-cli
     mpv
     mullvad
     mullvad-vpn
