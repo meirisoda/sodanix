@@ -66,4 +66,6 @@
     # kde.u2fAuth = true;
     xscreensaver.u2fAuth = true;
   };
+
+  # security.polkit.enable = true;
 }

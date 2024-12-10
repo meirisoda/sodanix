@@ -70,7 +70,7 @@
         battery = {
           governor = "powersave";
           scaling_min_freq = 400000;
-          scaling_max_freq = 1800000;
+          scaling_max_freq = 2200000;
           turbo = "never";
           enable_thresholds = false;
         };
