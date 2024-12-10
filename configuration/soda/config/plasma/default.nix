@@ -155,7 +155,6 @@
                 applicationsDisplayMode = "list";
                 compactDisplayStyle = false;
                 favoritesDisplayMode = "grid";
-                icon = "~/Documents/nix/sodanix/configuration/soda/config/plasma/favicon.ico";
                 label = null;
                 pin = false;
                 showActionButtonCaptions = true;
