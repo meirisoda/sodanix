@@ -78,6 +78,7 @@
     imagemagick
     jellyfin-media-player
     # kime # TODO until maintainer responds
+    libsForQt5.bismuth
     lsd
     lshw
     lsp-plugins
