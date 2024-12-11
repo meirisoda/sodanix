@@ -78,7 +78,6 @@
     imagemagick
     jellyfin-media-player
     # kime # TODO until maintainer responds
-    libsForQt5.bismuth
     lsd
     lshw
     lsp-plugins
@@ -94,6 +93,7 @@
     uim
     qbittorrent
     qpwgraph
+    yazi
     yt-dlp
 
     # programs
@@ -148,4 +148,3 @@
     # wireplumber
     # wl-clipboard
     # xplr
-    # yazi
