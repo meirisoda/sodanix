@@ -90,7 +90,7 @@
     bitwarden
     # brave
     easytag
-    emacs
+    uemacs
     hugo
     kdePackages.full
     kdePackages.konsole
