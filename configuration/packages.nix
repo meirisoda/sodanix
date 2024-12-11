@@ -10,9 +10,7 @@
     
     # utilities
     android-tools
-    gallery-dl
     nvtopPackages.full
-    powertop
     scrcpy
     supergfxctl-plasmoid
 
@@ -21,12 +19,7 @@
 
     # programs
     ardour
-    aseprite
-    audacity
     blender
-    discord
-    # drawio
-    easytag
     gimp
     inkscape
     kdePackages.kwallet-pam
@@ -34,16 +27,9 @@
     libreoffice
     obs-studio
     pdfsam-basic
-    puddletag
-    puredata
-    processing
-    reaper
     redact
     sonic-pi
-    soulseekqt
-    sunvox
     supercollider
-    ytmdesktop
     zotero
 
     # games
@@ -70,7 +56,7 @@
     ani-cli
     bat 
     btop
-    easyeffects
+    gallery-dl
     gparted
     fd
     file
@@ -90,6 +76,7 @@
     neofetch
     noisetorch
     piper
+    powertop
     uim
     qbittorrent
     qpwgraph
@@ -98,9 +85,11 @@
 
     # programs
     anki
+    aseprite
+    audacity
     bitwarden
-    bottles
     # brave
+    easytag
     hugo
     kdePackages.full
     kdePackages.konsole
@@ -108,7 +97,11 @@
     kiwix
     localsend
     obsidian
+    puddletag
+    puredata
+    processing
     signal-desktop
+    sunvox
     tidal-hifi
     uxn
     vscodium
