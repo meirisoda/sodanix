@@ -77,6 +77,7 @@
     noisetorch
     piper
     powertop
+    toot
     uim
     qbittorrent
     qpwgraph
