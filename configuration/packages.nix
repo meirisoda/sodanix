@@ -58,6 +58,7 @@
     ani-cli
     bat 
     btop
+    cmus
     gallery-dl
     gparted
     fd
