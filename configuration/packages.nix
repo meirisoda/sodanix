@@ -49,6 +49,8 @@
     yubico-pam
 
     # development
+    python312Packages.urwidgets
+    python312Packages.pillow
     zsh
     zsh-powerlevel10k
 
