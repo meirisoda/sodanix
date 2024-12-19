@@ -49,8 +49,6 @@
     yubico-pam
 
     # development
-    python312Packages.urwidgets
-    python312Packages.pillow
     zsh
     zsh-powerlevel10k
 
@@ -58,7 +56,6 @@
     ani-cli
     bat 
     btop
-    cmus
     gallery-dl
     gparted
     fd
