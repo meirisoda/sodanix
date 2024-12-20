@@ -77,6 +77,7 @@
     noisetorch
     piper
     powertop
+    scli
     termimage
     toot
     uim
