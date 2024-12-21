@@ -33,6 +33,7 @@
     zotero
 
     # games
+    dwarf-fortress
     lutris
     prismlauncher
     steam
