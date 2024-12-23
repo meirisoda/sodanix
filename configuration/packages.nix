@@ -92,7 +92,7 @@
     aseprite
     audacity
     bitwarden
-    # brave
+    brave
     easytag
     hugo
     kdePackages.full
