@@ -24,23 +24,6 @@
           scrollButton = 3;
         };
       };
-    # displayManager = {
-    #   lightdm = {
-    #     defaultSession = "Hyprland";
-    #     enable = true;
-    #   };
-    #   # sddm = {
-    #   #   enable = true;
-    #   #   # theme = "${sodasddm}";
-    #   # };
-    # };
-    # xserver = {
-    #   enable = true;
-    #   xkb = {
-    #     layout = "us";
-    #     variant = "";
-    #   };
-    # };  
   };
 
 # TODO programs
@@ -51,7 +34,7 @@
         enable = false; # ENABLE HYPRLAND
       }
       else {
-        enable = true;
+
       };
   };
 
