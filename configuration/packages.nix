@@ -20,16 +20,20 @@
     # programs
     ardour
     blender
+    easytag
     gimp
+    hugo
     inkscape
     kdePackages.kwallet-pam
     krita
     libreoffice
     obs-studio
     pdfsam-basic
+    puddletag
     redact
     sonic-pi
     supercollider
+    tidal-hifi
     zotero
 
     # games
@@ -93,20 +97,17 @@
     audacity
     bitwarden
     brave
-    easytag
-    hugo
+    freefilesync
     kdePackages.full
     kdePackages.konsole
     kitty
     kiwix
     localsend
     obsidian
-    puddletag
     puredata
     processing
     signal-desktop
     sunvox
-    tidal-hifi
     uxn
     vscodium
     w3m
