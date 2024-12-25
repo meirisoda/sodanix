@@ -46,9 +46,13 @@
 # TODO programs
   programs = {
     xwayland.enable = true; 
-    hyprland = {
-      enable = false; # ENABLE HYPRLAND
-    };
+    hyprland = 
+      if hostname == "sodaROG" then {
+        enable = false; # ENABLE HYPRLAND
+      }
+      else {
+        enable = true;
+      };
   };
 
 # TODO env vars
