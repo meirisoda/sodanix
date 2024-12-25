@@ -19,6 +19,7 @@
 
     # programs
     ardour
+    aseprite
     blender
     easytag
     gimp
@@ -29,6 +30,7 @@
     libreoffice
     obs-studio
     pdfsam-basic
+    processing
     puddletag
     redact
     sonic-pi
@@ -93,7 +95,6 @@
 
     # programs
     anki
-    aseprite
     audacity
     bitwarden
     brave
@@ -105,7 +106,6 @@
     localsend
     obsidian
     puredata
-    processing
     signal-desktop
     sunvox
     uxn
