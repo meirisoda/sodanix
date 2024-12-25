@@ -145,7 +145,7 @@
           alignment = "right";
           floating = false;
           height = 22;
-          hiding = "none";
+          hiding = "autohide";
           lengthMode = "fill";
           location = "top";
           screen = "all";
