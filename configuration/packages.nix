@@ -37,6 +37,7 @@
     supercollider
     tidal-hifi
     zotero
+    (pkgs.callPackage ./soda/config/programs/grayjay.nix {})
 
     # games
     dwarf-fortress
