@@ -40,9 +40,12 @@
     #   url = "git+file:///home/soda/Documents/nix/linux";
     #   flake = false; 
     # };
+    htms = {
+      url = "github:tnichols217/htms#htms";
+    };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, nixpkgs-kernel, home-manager, plasma-manager, nixos-hardware, nix-index-database, auto-cpufreq, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, nixpkgs-kernel, home-manager, plasma-manager, nixos-hardware, nix-index-database, auto-cpufreq, htms, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       # cudaSupport = true;

@@ -5,7 +5,7 @@
   pname = "grayjay";
   version = "2";
   # Absolute path to where the contents of Grayjay.Desktop-linux-x64-v{x} is located
-  installDir = "/home/user/Grayjay";
+  installDir = "/home/soda/Grayjay";
 
   # grayjay script wrapper that sets cwd to `installdir'
   start-grayjay = pkgs.writeShellScriptBin "start-grayjay" ''cd ${installDir} && ./Grayjay'';
