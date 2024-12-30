@@ -41,7 +41,7 @@
     #   flake = false; 
     # };
     htms = {
-      url = "github:tnichols217/htms#htms";
+      url = "github:tnichols217/htms";
     };
   }; 
 
