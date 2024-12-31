@@ -20,9 +20,9 @@
       url = "github:Mic92/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland = {
-      url = "github:hyprwm/Hyprland/f94264928a8ab4da8759d4ded25a46af44451d38";
-    };
+    # hyprland = {
+    #   url = "github:hyprwm/Hyprland/f94264928a8ab4da8759d4ded25a46af44451d38";
+    # };
     plasma-manager = {
       url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -41,7 +41,7 @@
     #   flake = false; 
     # };
     htms = {
-      url = "github:tnichols217/htms#htms";
+      url = "github:tnichols217/htms";
     };
   }; 
 
