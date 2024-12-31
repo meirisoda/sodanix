@@ -102,7 +102,6 @@
     mpv
     mullvad
     mullvad-vpn
-    nabi
     neofetch
     noisetorch
     piper
