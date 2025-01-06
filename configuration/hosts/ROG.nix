@@ -107,8 +107,8 @@
       nvidiaBusId = "PCI:1:0:0";
       amdgpuBusId = "PCI:65:0:0";
     };
-    # package = config.boot.kernelPackages.nvidiaPackages.latest;  # 👈 ENABLE NVIDIA
-    package = config.boot.kernelPackages.nvidiaPackages.beta; # temporarily to fix ppd/active gpu issues
+    package = config.boot.kernelPackages.nvidiaPackages.latest;  # 👈 ENABLE NVIDIA
+    # package = config.boot.kernelPackages.nvidiaPackages.beta; # temporarily to fix ppd/active gpu issues
   };
 
   boot.kernelParams = [
