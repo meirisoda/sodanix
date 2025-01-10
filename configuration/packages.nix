@@ -47,28 +47,28 @@
     steam
     
   ] else [
-    # TODO XPS only
-    # hyprland
-    blueman
-    brightnessctl
-    kdePackages.dolphin
-    dunst 
-    grimblast
-    hypridle
-    hyprlock
-    hyprpaper
-    jq
-    kdePackages.konsole
-    nautilus
-    networkmanagerapplet
-    pavucontrol
-    xfce.thunar
-    tofi
-    udiskie
-    waybar
-    wireplumber
-    wl-clipboard
-    xplr
+    # # TODO XPS only
+    # # hyprland
+    # blueman
+    # brightnessctl
+    # kdePackages.dolphin
+    # dunst 
+    # grimblast
+    # hypridle
+    # hyprlock
+    # hyprpaper
+    # jq
+    # kdePackages.konsole
+    # nautilus
+    # networkmanagerapplet
+    # pavucontrol
+    # xfce.thunar
+    # tofi
+    # udiskie
+    # waybar
+    # wireplumber
+    # wl-clipboard
+    # xplr
     
   ]) ++ [ # TODO both systems
     # system
