@@ -22,6 +22,7 @@
     aseprite
     blender
     easytag
+    figma-linux
     gimp
     hugo
     inkscape
