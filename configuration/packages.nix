@@ -6,10 +6,10 @@
     stablepkgs.asusctl
 
     # development
-    python3
+    # python3
     
     # utilities
-    android-tools
+    # android-tools
     nvtopPackages.full
     scrcpy
     supergfxctl-plasmoid
@@ -18,13 +18,13 @@
     wineWowPackages.stable
 
     # programs
-    ardour
-    aseprite
+    # ardour
+    # aseprite
     blender
     easytag
     figma-linux
     gimp
-    hugo
+    # hugo
     inkscape
     kdePackages.kwallet-pam
     krita
@@ -34,14 +34,14 @@
     processing
     puddletag
     redact
-    sonic-pi
+    # sonic-pi
     supercollider
     tidal-hifi
     zotero
     (pkgs.callPackage ./soda/config/programs/grayjay.nix {})
 
     # games
-    dwarf-fortress
+    # dwarf-fortress
     lutris
     prismlauncher
     steam
