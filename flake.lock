@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1743760379,
-        "narHash": "sha256-DDkyW0Mz8Rr6EGupI8SZS48XV2bbAt+33biMu3WPiXA=",
+        "lastModified": 1744263992,
+        "narHash": "sha256-bTaTRbEgqtU/UQomgL2Qw4D/nEQKbj61Ml0n4ImMQxY=",
         "owner": "AdnanHodzic",
         "repo": "auto-cpufreq",
-        "rev": "3898246f4b732ed5c5d2f1148fa2375416da4c0d",
+        "rev": "8870b62b172b11fea9de63971158a76c271d939a",
         "type": "github"
       },
       "original": {
