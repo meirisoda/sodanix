@@ -48,16 +48,13 @@
         "soda"
       ];
       trusted-substituters = [
-        "https://tln32asus.student.cwru.edu:5000/"
         "https://hyprland.cachix.org"
       ];
       trusted-public-keys = [
-        "tln32asus.student.cwru.edu:V8MCTN/ox+Y5GxqFsjAml4IfcUvTacLFIqw48A9Ic/o="
         "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
       ];
       trusted-users = [ "soda" ];
       "max-jobs" = 8;
-      "builders" = ''ssh://soda@pigsgomoo.com:2200?ssh-key=/home/soda/.ssh/id_ed25519 i686_linux,x86_64-linux - 8 5 kvm - c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUExd1hDelZSTkt5VHlLUENVYUZBV0xwaFRRdmt1citpUDZMWEszYWRWY0sgcm9vdEBBU1VTCg''; 
     };
     distributedBuilds = true;
     gc = {
