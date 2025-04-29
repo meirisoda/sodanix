@@ -63,11 +63,6 @@
             hostname = "sodaxps.student.cwru.edu";
             inherit user port identityFile;
           };
-          "tln" = {
-            hostname = "pigsgomoo.com";
-            port = 2200;
-            inherit user identityFile;
-          };
           "nfs" = {
             hostname = "meirisoda_meirisoda@ssh.nyc1.nearlyfreespeech.net";
             user = "meirisoda_meirisoda"; 
@@ -114,7 +109,6 @@
           upg = "sudo bash -c \"cd ~/Documents/nix/sodanix; git stash; git stash clear; git pull; nixos-rebuild switch --flake \\\".#${hostname}\\\"\"";
           xps = "ssh soda@sodaxps.student.cwru.edu";
           rog = "ssh soda@sodarog.student.cwru.edu";
-          tln32asus = "ssh soda@tln32asus.student.cwru.edu";
           sodasw = "sudo /run/current-system/specialisation/soda/bin/switch-to-configuration switch";
           mobilesw = "sudo /run/current-system/specialisation/mobile/bin/switch-to-configuration switch";
           watch = "watch -n 0.1 hyprctl activewindow";
