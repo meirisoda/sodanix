@@ -30,6 +30,7 @@
     krita
     libreoffice
     obs-studio
+    okular
     pdfsam-basic
     processing
     puddletag
