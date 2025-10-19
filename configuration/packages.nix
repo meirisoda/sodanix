@@ -22,7 +22,7 @@
     # aseprite
     blender
     easytag
-    figma-linux
+    # figma-linux
     gimp
     # hugo
     inkscape
@@ -33,12 +33,12 @@
     pdfsam-basic
     processing
     puddletag
-    redact
+    # redact
     # sonic-pi
     supercollider
-    tidal-hifi
-    zotero
-    (pkgs.callPackage ./soda/config/programs/grayjay.nix {})
+    # tidal-hifi
+    # zotero
+    # (pkgs.callPackage ./soda/config/programs/grayjay.nix {})
 
     # games
     # dwarf-fortress
@@ -93,7 +93,7 @@
     file
     ffmpeg
     imagemagick
-    jellyfin-media-player
+    # jellyfin-media-player
     # kime # TODO until maintainer responds
     lsd
     lshw
@@ -127,9 +127,9 @@
     kitty
     kiwix
     localsend
-    obsidian
+    # obsidian
     puredata
-    signal-desktop
+    # signal-desktop
     sunvox
     uxn
     vscodium
