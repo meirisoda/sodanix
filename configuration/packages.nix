@@ -130,6 +130,7 @@
     # obsidian
     puredata
     # signal-desktop
+    strawberry
     sunvox
     uxn
     vscodium
