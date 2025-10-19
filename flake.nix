@@ -23,11 +23,11 @@
     # hyprland = {
     #   url = "github:hyprwm/Hyprland/f94264928a8ab4da8759d4ded25a46af44451d38";
     # };
-    plasma-manager = {
-      url = "github:nix-community/plasma-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-    };
+    # plasma-manager = {
+    #   url = "github:nix-community/plasma-manager";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    #   inputs.home-manager.follows = "home-manager";
+    # };
     sodasddm = {
       url = "github:meirisoda/kde-plasma-sodasddm";
       flake = false;
@@ -45,7 +45,7 @@
     };
   }; 
 
-  outputs = { nixpkgs, nixpkgs-stable, nixpkgs-kernel, home-manager, plasma-manager, nixos-hardware, nix-index-database, auto-cpufreq, ... }@attrs: let 
+  outputs = { nixpkgs, nixpkgs-stable, nixpkgs-kernel, home-manager, nixos-hardware, nix-index-database, auto-cpufreq, ... }@attrs: let 
     config = { 
       allowUnfree = true; 
       # cudaSupport = true;
